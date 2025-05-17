@@ -1,0 +1,37 @@
+[2025-05-17 14:19:52] [javac-extractor-102959] Starting extraction for:
+                                               sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/openjdk8u101-db/log/ext/javac-20.args
+                                               user.dir=/root/8u101/jdk/make
+[2025-05-17 14:19:52] [javac-extractor-102959] Compilation name /root/openjdk8u101-db/trap/java/diagnostics/diagnostic-20.trap.gz
+[2025-05-17 14:19:53] [javac-extractor-102959] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-17 14:19:53] [javac-extractor-102959] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-17 14:19:54] [javac-extractor-102959] Processing file /root/8u101/jdk/src/share/classes/sun/text/resources/th/BreakIteratorInfo_th.java
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/util/ListResourceBundle.members/ListResourceBundle.members#52.0-1619009486000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#52.0-1619009468000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/io/Serializable.members/Serializable.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/String.members/String.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] Processing file /root/8u101/jdk/src/share/classes/sun/text/resources/th/BreakIteratorRules_th.java
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/util/ListResourceBundle.members/ListResourceBundle.members#52.0-1619009486000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/util/MissingResourceException.members/MissingResourceException.members#52.0-1619009470000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/net/URL.members/URL.members#52.0-1619009468000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#52.0-1619009468000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/io/Serializable.members/Serializable.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/String.members/String.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] Processing file /root/8u101/jdk/src/share/classes/sun/text/resources/BreakIteratorInfo.java
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/util/ListResourceBundle.members/ListResourceBundle.members#52.0-1619009486000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#52.0-1619009468000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/io/Serializable.members/Serializable.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/String.members/String.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] Processing file /root/8u101/jdk/src/share/classes/sun/text/resources/BreakIteratorRules.java
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/util/ListResourceBundle.members/ListResourceBundle.members#52.0-1619009486000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#52.0-1619009468000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/io/Serializable.members/Serializable.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/String.members/String.members#52.0-1619009460000-java.trap.gz as it exists
+[2025-05-17 14:19:54] [javac-extractor-102959] Javac init time: 1.0s
+[2025-05-17 14:19:54] [javac-extractor-102959] Javac attr time: 0.1s
+[2025-05-17 14:19:54] [javac-extractor-102959] Extractor time: 0.1s
+[2025-05-17 14:19:54] [javac-extractor-102959] Other time: 0.2s
+[2025-05-17 14:19:54] [javac-extractor-102959] Total time: 1.3s

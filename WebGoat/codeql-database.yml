@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: F:\Main-Sec\codeAudit\codeql\source\WebGoat
+baselineLinesOfCode: 9705
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  sha: 8250b4048f70427351646c1b6798bff63071cc01
+  cliVersion: 2.21.0
+  creationTime: 2025-04-22T14:18:00.109037Z
+finalised: true

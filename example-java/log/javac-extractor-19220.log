@@ -1,0 +1,13 @@
+[2025-04-22 09:41:14] [javac-extractor-19220] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 20 --javac-args @@@F:\Main-Sec\codeAudit\codeql\databases\example-java\log\ext\javac.args
+                                              user.dir=F:\Main-Sec\codeAudit\codeql\source\example
+[2025-04-22 09:41:14] [javac-extractor-19220] Compilation name F:/Main-Sec/codeAudit/codeql/databases/example-java/trap/java/diagnostics/diagnostic.trap.gz
+[2025-04-22 09:41:16] [javac-extractor-19220] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-04-22 09:41:16] [javac-extractor-19220] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-04-22 09:41:16] [javac-extractor-19220] Processing file main.java
+[2025-04-22 09:41:26] [javac-extractor-19220] Processing module java.base
+[2025-04-22 09:41:26] [javac-extractor-19220] Javac init time: 1.8s
+[2025-04-22 09:41:26] [javac-extractor-19220] Javac attr time: 0.0s
+[2025-04-22 09:41:26] [javac-extractor-19220] Extractor time: 9.7s
+[2025-04-22 09:41:26] [javac-extractor-19220] Other time: 0.2s
+[2025-04-22 09:41:26] [javac-extractor-19220] Total time: 11.8s

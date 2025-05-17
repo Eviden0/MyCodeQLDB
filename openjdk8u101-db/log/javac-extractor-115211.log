@@ -1,0 +1,14 @@
+[2025-05-17 14:28:53] [javac-extractor-115211] Starting extraction for:
+                                               sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/openjdk8u101-db/log/ext/javac-57.args
+                                               user.dir=/root/8u101/jdk/make
+[2025-05-17 14:28:53] [javac-extractor-115211] Compilation name /root/openjdk8u101-db/trap/java/diagnostics/diagnostic-35.trap.gz
+[2025-05-17 14:28:55] [javac-extractor-115211] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-17 14:28:55] [javac-extractor-115211] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-17 14:28:55] [javac-extractor-115211] Processing file /root/8u101/jdk/src/share/demo/jvmti/mtrace/Mtrace.java
+[2025-05-17 14:28:55] [javac-extractor-115211] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#52.0-1747491814958-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:28:55] [javac-extractor-115211] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Thread.members/Thread.members#52.0-1747491818638-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/Thread.members/Thread.members#0.0-1747489320000-java.trap.gz exists
+[2025-05-17 14:28:55] [javac-extractor-115211] Javac init time: 1.7s
+[2025-05-17 14:28:55] [javac-extractor-115211] Javac attr time: 0.1s
+[2025-05-17 14:28:55] [javac-extractor-115211] Extractor time: 0.1s
+[2025-05-17 14:28:55] [javac-extractor-115211] Other time: 0.6s
+[2025-05-17 14:28:55] [javac-extractor-115211] Total time: 2.6s

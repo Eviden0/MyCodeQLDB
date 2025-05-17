@@ -1,0 +1,22 @@
+[2025-05-17 14:29:37] [javac-extractor-119084] Starting extraction for:
+                                               sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/openjdk8u101-db/log/ext/javac-60.args
+                                               user.dir=/root/8u101/jdk/make
+[2025-05-17 14:29:37] [javac-extractor-119084] Compilation name /root/openjdk8u101-db/trap/java/diagnostics/diagnostic-38.trap.gz
+[2025-05-17 14:29:39] [javac-extractor-119084] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-17 14:29:39] [javac-extractor-119084] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-17 14:29:39] [javac-extractor-119084] Processing file /root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/gen_profile_1/sun/misc/Version.java
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/io/PrintStream.members/PrintStream.members#52.0-1619009470000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/io/PrintStream.members/PrintStream.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/String.members/String.members#52.0-1619009460000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/String.members/String.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#52.0-1619009460000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/Object.members/Object.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/System.members/System.members#52.0-1619009516000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/System.members/System.members#0.0-1747489320000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/CharSequence.members/CharSequence.members#52.0-1619009466000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/CharSequence.members/CharSequence.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Character.members/Character.members#52.0-1619009470000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/Character.members/Character.members#0.0-1747489320000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Integer.members/Integer.members#52.0-1619009468000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/Integer.members/Integer.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/NumberFormatException.members/NumberFormatException.members#52.0-1619009470000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/NumberFormatException.members/NumberFormatException.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#52.0-1619009468000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] [WARN] Not rewriting trap file for /root/openjdk8u101-db/trap/java/classes/java/io/Serializable.members/Serializable.members#52.0-1619009460000-java.trap.gz as /root/openjdk8u101-db/trap/java/classes/java/io/Serializable.members/Serializable.members#0.0-1747489313000-java.trap.gz exists
+[2025-05-17 14:29:40] [javac-extractor-119084] Javac init time: 1.8s
+[2025-05-17 14:29:40] [javac-extractor-119084] Javac attr time: 0.2s
+[2025-05-17 14:29:40] [javac-extractor-119084] Extractor time: 0.4s
+[2025-05-17 14:29:40] [javac-extractor-119084] Other time: 0.2s
+[2025-05-17 14:29:40] [javac-extractor-119084] Total time: 2.7s

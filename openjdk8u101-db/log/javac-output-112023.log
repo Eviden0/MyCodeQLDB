@@ -1,0 +1,11 @@
+[2025-05-17 14:28:12] [javac-output-112023] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:28:12] [javac-output-112023] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:28:12] [javac-output-112023] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:28:12] [javac-output-112023] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:28:12] [javac-output-112023] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:28:18] [javac-output-112023] /root/8u101/jdk/src/share/demo/applets/Fractal/CLSFractal.java:228: warning: [lossy-conversions] implicit cast from float to int in compound assignment is possibly lossy
+[2025-05-17 14:28:18] [javac-output-112023]                             - ((Ymax - Ymin) * xscale)) / 2;
+[2025-05-17 14:28:18] [javac-output-112023]                                                         ^
+[2025-05-17 14:28:18] [javac-output-112023] /root/8u101/jdk/src/share/demo/applets/Fractal/CLSFractal.java:232: warning: [lossy-conversions] implicit cast from float to int in compound assignment is possibly lossy
+[2025-05-17 14:28:18] [javac-output-112023]                             - ((Xmax - Xmin) * yscale)) / 2;
+[2025-05-17 14:28:18] [javac-output-112023]                                                         ^

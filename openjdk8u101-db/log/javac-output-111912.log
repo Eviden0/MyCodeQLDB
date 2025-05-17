@@ -1,0 +1,8 @@
+[2025-05-17 14:28:12] [javac-output-111912] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:28:12] [javac-output-111912] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:28:12] [javac-output-111912] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:28:12] [javac-output-111912] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:28:12] [javac-output-111912] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:28:17] [javac-output-111912] /root/8u101/jdk/src/share/demo/applets/Blink/Blink.java:42: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:17] [javac-output-111912] /**
+[2025-05-17 14:28:17] [javac-output-111912] ^

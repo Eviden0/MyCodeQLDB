@@ -1,0 +1,19 @@
+[2025-05-17 20:30:30] [javac-output-79952] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 20:30:30] [javac-output-79952] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 20:30:30] [javac-output-79952] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 20:31:15] [javac-output-79952] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\map\MultiKeyMap.java:200: error: remove(Object,Object) in MultiKeyMap cannot implement remove(Object,Object) in Map
+[2025-05-17 20:31:15] [javac-output-79952]     public Object remove(Object key1, Object key2) {
+[2025-05-17 20:31:15] [javac-output-79952]                   ^
+[2025-05-17 20:31:15] [javac-output-79952]   return type Object is not compatible with boolean
+[2025-05-17 20:31:15] [javac-output-79952] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\map\MultiValueMap.java:156: error: remove(Object,Object) in MultiValueMap cannot implement remove(Object,Object) in Map
+[2025-05-17 20:31:15] [javac-output-79952]     public Object remove(Object key, Object value) {
+[2025-05-17 20:31:15] [javac-output-79952]                   ^
+[2025-05-17 20:31:15] [javac-output-79952]   return type Object is not compatible with boolean
+[2025-05-17 20:31:15] [javac-output-79952] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\MultiMap.java:69: error: remove(Object,Object) in MultiMap clashes with remove(Object,Object) in Map
+[2025-05-17 20:31:15] [javac-output-79952]     public Object remove(Object key, Object item);
+[2025-05-17 20:31:15] [javac-output-79952]                   ^
+[2025-05-17 20:31:15] [javac-output-79952]   return type Object is not compatible with boolean
+[2025-05-17 20:31:32] [javac-output-79952] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\MultiHashMap.java:334: error: remove(Object,Object) in MultiHashMap cannot implement remove(Object,Object) in Map
+[2025-05-17 20:31:32] [javac-output-79952]     public Object remove(Object key, Object item) {
+[2025-05-17 20:31:32] [javac-output-79952]                   ^
+[2025-05-17 20:31:32] [javac-output-79952]   return type Object is not compatible with boolean

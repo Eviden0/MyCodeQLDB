@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections
+baselineLinesOfCode: 55440
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  sha: 0af3ae8f26388bcdec42d36bf66a1000a9221754
+  cliVersion: 2.21.0
+  creationTime: 2025-05-17T12:39:45.879363600Z
+finalised: true

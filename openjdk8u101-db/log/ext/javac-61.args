@@ -1,0 +1,14 @@
+-Xprefer:source
+-source
+1.8
+-target
+1.8
+-extdirs
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext
+-endorseddirs
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed
+-bootclasspath
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/root/codeql/java/tools/codeql-java-agent.jar
+-d
+/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/gen_profile_3/sun/misc/../../
+/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/gen_profile_3/sun/misc/Version.java

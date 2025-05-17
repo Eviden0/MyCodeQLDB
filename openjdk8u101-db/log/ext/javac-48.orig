@@ -1,0 +1,10 @@
+-bootclasspath
+/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/classes
+-Xlint:all,-deprecation,-unchecked,-rawtypes,-cast,-serial,-dep-ann,-static,-fallthrough,-try,-varargs,-empty,-finally
+-g
+-implicit:none
+-sourcepath
+/root/8u101/jdk/src/share/demo/jfc/Metalworks
+-d
+/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/democlasses/jfc/Metalworks
+@/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/democlasses/jfc/Metalworks/_the.BUILD_DEMO_Metalworks_batch.tmp

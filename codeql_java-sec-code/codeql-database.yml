@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: F:\Main-Sec\codeAudit\codeql\source\java-sec-code
+baselineLinesOfCode: 3273
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  sha: 406b75afe8a815246c8a76c8f614f8fad41f3a9e
+  cliVersion: 2.21.0
+  creationTime: 2025-04-20T05:10:19.733922500Z
+finalised: true

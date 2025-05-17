@@ -1,0 +1,209 @@
+[2025-05-17 14:13:16] [javac-output-83835] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:13:16] [javac-output-83835] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar": no such file or directory
+[2025-05-17 14:13:16] [javac-output-83835] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/classes": no such file or directory
+[2025-05-17 14:13:16] [javac-output-83835] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:13:16] [javac-output-83835] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:13:16] [javac-output-83835] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:13:16] [javac-output-83835] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:13:20] [javac-output-83835] warning: No processor claimed any of these annotations: javax.annotation.processing.SupportedSourceVersion,javax.annotation.processing.SupportedOptions,javax.annotation.processing.SupportedAnnotationTypes,jdk.Exported
+[2025-05-17 14:13:22] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Flags.java:110: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:22] [javac-output-83835]     /*****************************************
+[2025-05-17 14:13:22] [javac-output-83835]     ^
+[2025-05-17 14:13:22] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Type.java:374: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:22] [javac-output-83835]     /** Navigation methods, these will work for classes, type variables,
+[2025-05-17 14:13:22] [javac-output-83835]     ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Symbol.java:1709: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         public Symbol sym;
+[2025-05-17 14:13:23] [javac-output-83835]                       ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Symbol.java:1713: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         public JCDiagnostic diag;
+[2025-05-17 14:13:23] [javac-output-83835]                             ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/util/Log.java:690: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /***************************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/file/Locations.java:170: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         private Set<File> canonicalValues = new HashSet<File>();
+[2025-05-17 14:13:23] [javac-output-83835]                           ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Source.java:48: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835]     /** 1.1 did not have strictfp, and so could not pass the JCK. */
+[2025-05-17 14:13:23] [javac-output-83835]     ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Source.java:45: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835]     /** 1.0 had no inner classes, and so could not pass the JCK. */
+[2025-05-17 14:13:23] [javac-output-83835]     ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassFile.java:119: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassFile.java:163: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/code/Types.java:326: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         JCDiagnostic diagnostic;
+[2025-05-17 14:13:23] [javac-output-83835]                      ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Attr.java:459: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         private Env<AttrContext> env;
+[2025-05-17 14:13:23] [javac-output-83835]                                  ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Resolve.java:1249: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         JCDiagnostic diagnostic;
+[2025-05-17 14:13:23] [javac-output-83835]                      ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Resolve.java:1250: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         JCDiagnostic.Factory diags;
+[2025-05-17 14:13:23] [javac-output-83835]                              ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Infer.java:110: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]         List<JCDiagnostic> messages = List.nil();
+[2025-05-17 14:13:23] [javac-output-83835]                            ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Infer.java:1191: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:23] [javac-output-83835]             InferenceGraph graph;
+[2025-05-17 14:13:23] [javac-output-83835]                            ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:207: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /******************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:248: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /******************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:362: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /******************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:510: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /******************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:726: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /**********************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:986: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /**********************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:1033: warning: [lossy-conversions] implicit cast from int to char in compound assignment is possibly lossy
+[2025-05-17 14:13:23] [javac-output-83835]             if (inner.name.isEmpty()) flags &= ~FINAL; // Anonymous class: unset FINAL flag
+[2025-05-17 14:13:23] [javac-output-83835]                                                ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassWriter.java:1034: warning: [lossy-conversions] implicit cast from int to char in compound assignment is possibly lossy
+[2025-05-17 14:13:23] [javac-output-83835]             flags &= ~STRICTFP; //inner classes should not have the strictfp flag set.
+[2025-05-17 14:13:23] [javac-output-83835]                      ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/Code.java:1218: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/Code.java:1393: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:23] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:23] [javac-output-83835] ^
+[2025-05-17 14:13:23] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/Code.java:2016: warning: [lossy-conversions] implicit cast from int to char in compound assignment is possibly lossy
+[2025-05-17 14:13:23] [javac-output-83835]                         range.length += delta;
+[2025-05-17 14:13:23] [javac-output-83835]                                         ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Flow.java:2422: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835]     /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835]     ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Flow.java:427: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835]     /*************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835]     ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Flow.java:746: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835]     /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835]     ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Flow.java:1312: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835]     /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835]     ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Flow.java:2601: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835]     /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835]     ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/ConstFold.java:44: warning: [strictfp] as of release 17, all floating-point expressions are evaluated strictly and 'strictfp' is not required
+[2025-05-17 14:13:24] [javac-output-83835] strictfp class ConstFold {
+[2025-05-17 14:13:24] [javac-output-83835]                ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/ConstFold.java:44: warning: [strictfp] as of release 17, all floating-point expressions are evaluated strictly and 'strictfp' is not required
+[2025-05-17 14:13:24] [javac-output-83835] strictfp class ConstFold {
+[2025-05-17 14:13:24] [javac-output-83835]                ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/ConstFold.java:44: warning: [strictfp] as of release 17, all floating-point expressions are evaluated strictly and 'strictfp' is not required
+[2025-05-17 14:13:24] [javac-output-83835] strictfp class ConstFold {
+[2025-05-17 14:13:24] [javac-output-83835]                ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/ConstFold.java:44: warning: [strictfp] as of release 17, all floating-point expressions are evaluated strictly and 'strictfp' is not required
+[2025-05-17 14:13:24] [javac-output-83835] strictfp class ConstFold {
+[2025-05-17 14:13:24] [javac-output-83835]                ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/ConstFold.java:44: warning: [strictfp] as of release 17, all floating-point expressions are evaluated strictly and 'strictfp' is not required
+[2025-05-17 14:13:24] [javac-output-83835] strictfp class ConstFold {
+[2025-05-17 14:13:24] [javac-output-83835]                ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:360: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:440: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:621: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:1412: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:1989: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:2351: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/jvm/ClassReader.java:2632: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/tree/TreeInfo.java:689: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:24] [javac-output-83835]             List<JCTree> path;
+[2025-05-17 14:13:24] [javac-output-83835]                          ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javah/JavahTask.java:98: warning: [serial] non-transient instance field of a serializable class declared with an array having a non-serializable base component type Object
+[2025-05-17 14:13:24] [javac-output-83835]             this.args = args;
+[2025-05-17 14:13:24] [javac-output-83835]                 ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/doclint/DocLint.java:107: warning: [serial] non-transient instance field of a serializable class declared with an array having a non-serializable base component type Object
+[2025-05-17 14:13:24] [javac-output-83835]             this.args = args;
+[2025-05-17 14:13:24] [javac-output-83835]                 ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/source/util/TreePath.java:59: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:24] [javac-output-83835]             TreePath path;
+[2025-05-17 14:13:24] [javac-output-83835]                      ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/source/util/DocTreePath.java:58: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:24] [javac-output-83835]             DocTreePath path;
+[2025-05-17 14:13:24] [javac-output-83835]                         ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/sjavac/server/SysInfo.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/CompileStates.java:81: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:24] [javac-output-83835]     protected Context context;
+[2025-05-17 14:13:24] [javac-output-83835]                       ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:136: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:534: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:674: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:816: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:1453: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:1892: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:2354: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/comp/Lower.java:3900: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835] /**************************************************************************
+[2025-05-17 14:13:24] [javac-output-83835] ^
+[2025-05-17 14:13:24] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/doclets/formats/html/AbstractMemberWriter.java:73: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:24] [javac-output-83835]     /*** abstracts ***/
+[2025-05-17 14:13:24] [javac-output-83835]     ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/tree/DocPretty.java:118: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:25] [javac-output-83835]     /**************************************************************************
+[2025-05-17 14:13:25] [javac-output-83835]     ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javac/tree/Pretty.java:168: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:25] [javac-output-83835]     /**************************************************************************
+[2025-05-17 14:13:25] [javac-output-83835]     ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/classfile/ConstantPool.java:94: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+[2025-05-17 14:13:25] [javac-output-83835]             this.value = value;
+[2025-05-17 14:13:25] [javac-output-83835]                 ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/jdeps/JdepsTask.java:54: warning: [serial] non-transient instance field of a serializable class declared with an array having a non-serializable base component type Object
+[2025-05-17 14:13:25] [javac-output-83835]             this.args = args;
+[2025-05-17 14:13:25] [javac-output-83835]                 ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javadoc/JavadocMemberEnter.java:146: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:13:25] [javac-output-83835]         /** default for any non-overridden visit method. */
+[2025-05-17 14:13:25] [javac-output-83835]         ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javap/InternalError.java:38: warning: [serial] non-transient instance field of a serializable class declared with an array having a non-serializable base component type Object
+[2025-05-17 14:13:25] [javac-output-83835]         this.args = args;
+[2025-05-17 14:13:25] [javac-output-83835]             ^
+[2025-05-17 14:13:25] [javac-output-83835] /root/8u101/langtools/src/share/classes/com/sun/tools/javap/JavapTask.java:83: warning: [serial] non-transient instance field of a serializable class declared with an array having a non-serializable base component type Object
+[2025-05-17 14:13:25] [javac-output-83835]             this.args = args;
+[2025-05-17 14:13:25] [javac-output-83835]                 ^

@@ -1,0 +1,55 @@
+[T 01:41:12 26240] Initializing tracer.
+[T 01:41:12 26240] Initializing tags.
+[T 01:41:12 26240] CodeQL CLI version 2.21.0
+[T 01:41:12 26240] Initializing tracer.
+[T 01:41:12 26240] Initializing tags.
+[T 01:41:12 26240] Allocated ID DD3D2EA400006680_0000000000000001 (parent )
+[T 01:41:12 26240] ==== Candidate to intercept: F:\Main-Sec\codeAudit\codeql\codeql-win64\tools\win64\runner.exe (26536) ====
+[T 01:41:12 26240] Lua: === Intercepted call to f:\main-sec\codeaudit\codeql\codeql-win64\tools\win64\runner.exe ===
+[T 01:41:12 26240] Executing the following tracer actions:
+[T 01:41:12 26240] Tracer actions:
+[T 01:41:12 26240] pre_invocations(0)
+[T 01:41:12 26240] post_invocations(0)
+[T 01:41:12 26240] trace_languages(1): [java]
+[T 01:41:12 26536] Initializing tracer.
+[T 01:41:12 26536] Initializing tags.
+[T 01:41:12 26536] ID set to DD3D2EA400006680_0000000000000001 (parent root)
+[T 01:41:12 26536] Allocated ID 7172CCDE000067A8_0000000000000001 (parent DD3D2EA400006680_0000000000000001)
+[T 01:41:12 26536] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (27104) ====
+[T 01:41:12 26536] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 01:41:12 26536] Executing the following tracer actions:
+[T 01:41:12 26536] Tracer actions:
+[T 01:41:12 26536] pre_invocations(0)
+[T 01:41:12 26536] post_invocations(0)
+[T 01:41:12 26536] trace_languages(1): [java]
+[T 01:41:12 27104] Initializing tracer.
+[T 01:41:12 27104] Initializing tags.
+[T 01:41:12 27104] ID set to 7172CCDE000067A8_0000000000000001 (parent DD3D2EA400006680_0000000000000001)
+[T 01:41:12 27104] Allocated ID 1A0B3A30000069E0_0000000000000001 (parent 7172CCDE000067A8_0000000000000001)
+[T 01:41:13 27104] ==== Candidate to intercept: D:\Java 20.0.2\bin\javac.exe (22256) ====
+[T 01:41:13 27104] Lua: === Intercepted call to d:\java 20.0.2\bin\javac.exe ===
+[T 01:41:13 27104] Executing the following tracer actions:
+[T 01:41:13 27104] Tracer actions:
+[T 01:41:13 27104] pre_invocations(0)
+[T 01:41:13 27104] post_invocations(0)
+[T 01:41:13 27104] trace_languages(1): [java]
+[T 01:41:13 22256] Initializing tracer.
+[T 01:41:13 22256] Initializing tags.
+[T 01:41:13 22256] ID set to 1A0B3A30000069E0_0000000000000001 (parent 7172CCDE000067A8_0000000000000001)
+[T 01:41:13 22256] Passing through -javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 01:41:13 22256] Passing through -Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 01:41:13 22256] Intercepted JVM creation with extra hidden args: ['-javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar' ] (result: 1, 0).
+[T 01:41:14 22256] Allocated ID ED786F5A000056F0_0000000000000001 (parent 1A0B3A30000069E0_0000000000000001)
+[T 01:41:14 22256] ==== Candidate to intercept: D:\Java 20.0.2\bin\java.exe (19220) ====
+[T 01:41:14 22256] Lua: === Intercepted call to d:\java 20.0.2\bin\java.exe ===
+[T 01:41:14 22256] Executing the following tracer actions:
+[T 01:41:14 22256] Tracer actions:
+[T 01:41:14 22256] pre_invocations(0)
+[T 01:41:14 22256] post_invocations(0)
+[T 01:41:14 22256] trace_languages(1): [java]
+[T 01:41:14 19220] Initializing tracer.
+[T 01:41:14 19220] Initializing tags.
+[T 01:41:14 19220] ID set to ED786F5A000056F0_0000000000000001 (parent 1A0B3A30000069E0_0000000000000001)
+[T 01:41:14 19220] Passing through -javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 01:41:14 19220] Passing through -Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 01:41:14 19220] Intercepted JVM creation with extra hidden args: ['-javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar' ] (result: 1, 0).

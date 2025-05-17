@@ -1,0 +1,12 @@
+-XDignore.symbol.file=true
+-g
+-Xlint:all,-deprecation
+-Werror
+-g
+-Xprefer:source
+-implicit:none
+-sourcepath
+/root/8u101/langtools/make/tools:/root/8u101/langtools/src/share/classes
+-d
+/root/8u101/build/linux-x86_64-normal-server-fastdebug/langtools/btclasses
+@/root/8u101/build/linux-x86_64-normal-server-fastdebug/langtools/btclasses/_the.BUILD_TOOLS_batch.tmp

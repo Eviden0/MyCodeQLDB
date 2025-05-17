@@ -1,0 +1,55 @@
+[T 05:10:19 41400] Initializing tracer.
+[T 05:10:19 41400] Initializing tags.
+[T 05:10:20 41400] CodeQL CLI version 2.21.0
+[T 05:10:20 41400] Initializing tracer.
+[T 05:10:20 41400] Initializing tags.
+[T 05:10:20 41400] Allocated ID 456F33D40000A1B8_0000000000000001 (parent )
+[T 05:10:20 41400] ==== Candidate to intercept: F:\Main-Sec\codeAudit\codeql\codeql-win64\tools\win64\runner.exe (41180) ====
+[T 05:10:20 41400] Lua: === Intercepted call to f:\main-sec\codeaudit\codeql\codeql-win64\tools\win64\runner.exe ===
+[T 05:10:20 41400] Executing the following tracer actions:
+[T 05:10:20 41400] Tracer actions:
+[T 05:10:20 41400] pre_invocations(0)
+[T 05:10:20 41400] post_invocations(0)
+[T 05:10:20 41400] trace_languages(1): [java]
+[T 05:10:20 41180] Initializing tracer.
+[T 05:10:20 41180] Initializing tags.
+[T 05:10:20 41180] ID set to 456F33D40000A1B8_0000000000000001 (parent root)
+[T 05:10:20 41180] Allocated ID 75AB18630000A0DC_0000000000000001 (parent 456F33D40000A1B8_0000000000000001)
+[T 05:10:20 41180] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (44624) ====
+[T 05:10:20 41180] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 05:10:20 41180] Executing the following tracer actions:
+[T 05:10:20 41180] Tracer actions:
+[T 05:10:20 41180] pre_invocations(0)
+[T 05:10:20 41180] post_invocations(0)
+[T 05:10:20 41180] trace_languages(1): [java]
+[T 05:10:20 44624] Initializing tracer.
+[T 05:10:20 44624] Initializing tags.
+[T 05:10:20 44624] ID set to 75AB18630000A0DC_0000000000000001 (parent 456F33D40000A1B8_0000000000000001)
+[T 05:10:20 44624] Allocated ID E8069D850000AE50_0000000000000001 (parent 75AB18630000A0DC_0000000000000001)
+[T 05:10:20 44624] ==== Candidate to intercept: F:\Main-Sec\JavaSec\JDK\jdk1.8.0_8u65\bin\java.exe (45964) ====
+[T 05:10:20 44624] Lua: === Intercepted call to f:\main-sec\javasec\jdk\jdk1.8.0_8u65\bin\java.exe ===
+[T 05:10:20 44624] Executing the following tracer actions:
+[T 05:10:20 44624] Tracer actions:
+[T 05:10:20 44624] pre_invocations(0)
+[T 05:10:20 44624] post_invocations(0)
+[T 05:10:20 44624] trace_languages(1): [java]
+[T 05:10:20 45964] Initializing tracer.
+[T 05:10:20 45964] Initializing tags.
+[T 05:10:20 45964] ID set to E8069D850000AE50_0000000000000001 (parent 75AB18630000A0DC_0000000000000001)
+[T 05:10:20 45964] Passing through -javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 05:10:20 45964] Passing through -Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 05:10:22 45964] Intercepted JVM creation with extra hidden args: ['-javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar' ] (result: 1, 0).
+[T 05:10:31 45964] Allocated ID 67657F3C0000B38C_0000000000000001 (parent E8069D850000AE50_0000000000000001)
+[T 05:10:32 45964] ==== Candidate to intercept: F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\win64\jdk-extractor-java\bin\java.exe (43188) ====
+[T 05:10:32 45964] Lua: === Intercepted call to f:\main-sec\codeaudit\codeql\codeql-win64\java\tools\win64\jdk-extractor-java\bin\java.exe ===
+[T 05:10:32 45964] Executing the following tracer actions:
+[T 05:10:32 45964] Tracer actions:
+[T 05:10:32 45964] pre_invocations(0)
+[T 05:10:32 45964] post_invocations(0)
+[T 05:10:32 45964] trace_languages(1): [java]
+[T 05:10:32 43188] Initializing tracer.
+[T 05:10:32 43188] Initializing tags.
+[T 05:10:32 43188] ID set to 67657F3C0000B38C_0000000000000001 (parent E8069D850000AE50_0000000000000001)
+[T 05:10:32 43188] Passing through -javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 05:10:32 43188] Passing through -Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 05:10:32 43188] Intercepted JVM creation with extra hidden args: ['-javaagent:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\codeql-java-agent.jar' ] (result: 1, 0).

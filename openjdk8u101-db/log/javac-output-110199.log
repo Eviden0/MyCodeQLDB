@@ -1,0 +1,41 @@
+[2025-05-17 14:27:58] [javac-output-110199] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:27:58] [javac-output-110199] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:27:58] [javac-output-110199] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:27:58] [javac-output-110199] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:27:58] [javac-output-110199] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:28:02] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/tools/java/ClassDefinition.java:1552: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:02] [javac-output-110199]     ////////////////////////////////////////////////////////////
+[2025-05-17 14:28:02] [javac-output-110199]     ^
+[2025-05-17 14:28:02] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/tools/java/ClassDefinition.java:1584: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:02] [javac-output-110199]     ////////////////////////////////////////////////////////////
+[2025-05-17 14:28:02] [javac-output-110199]     ^
+[2025-05-17 14:28:03] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/tools/tree/Expression.java:148: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:03] [javac-output-110199]     /**
+[2025-05-17 14:28:03] [javac-output-110199]     ^
+[2025-05-17 14:28:03] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/tools/tree/IdentifierExpression.java:367: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:03] [javac-output-110199]     /**
+[2025-05-17 14:28:03] [javac-output-110199]     ^
+[2025-05-17 14:28:03] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/tools/tree/FieldExpression.java:99: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:03] [javac-output-110199]     /**
+[2025-05-17 14:28:03] [javac-output-110199]     ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/tools/javac/BatchEnvironment.java:418: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199]     /**
+[2025-05-17 14:28:04] [javac-output-110199]     ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/rmi/rmic/BatchEnvironment.java:31: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199] /*****************************************************************************/
+[2025-05-17 14:28:04] [javac-output-110199] ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/rmi/rmic/BatchEnvironment.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199] /*****************************************************************************/
+[2025-05-17 14:28:04] [javac-output-110199] ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/rmi/rmic/RMIGenerator.java:31: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199] /*****************************************************************************/
+[2025-05-17 14:28:04] [javac-output-110199] ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/rmi/rmic/RMIGenerator.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199] /*****************************************************************************/
+[2025-05-17 14:28:04] [javac-output-110199] ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/rmi/rmic/IndentingWriter.java:31: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199] /*****************************************************************************/
+[2025-05-17 14:28:04] [javac-output-110199] ^
+[2025-05-17 14:28:04] [javac-output-110199] /root/8u101/jdk/src/share/classes/sun/rmi/rmic/IndentingWriter.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:28:04] [javac-output-110199] /*****************************************************************************/
+[2025-05-17 14:28:04] [javac-output-110199] ^

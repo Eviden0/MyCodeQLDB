@@ -1,0 +1,16 @@
+[2025-05-17 20:34:07] [javac-output-81340] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\map\MultiKeyMap.java:200: error: remove(Object,Object) in MultiKeyMap cannot implement remove(Object,Object) in Map
+[2025-05-17 20:34:07] [javac-output-81340]     public Object remove(Object key1, Object key2) {
+[2025-05-17 20:34:07] [javac-output-81340]                   ^
+[2025-05-17 20:34:07] [javac-output-81340]   return type Object is not compatible with boolean
+[2025-05-17 20:34:07] [javac-output-81340] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\map\MultiValueMap.java:156: error: remove(Object,Object) in MultiValueMap cannot implement remove(Object,Object) in Map
+[2025-05-17 20:34:07] [javac-output-81340]     public Object remove(Object key, Object value) {
+[2025-05-17 20:34:07] [javac-output-81340]                   ^
+[2025-05-17 20:34:07] [javac-output-81340]   return type Object is not compatible with boolean
+[2025-05-17 20:34:08] [javac-output-81340] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\MultiMap.java:69: error: remove(Object,Object) in MultiMap clashes with remove(Object,Object) in Map
+[2025-05-17 20:34:08] [javac-output-81340]     public Object remove(Object key, Object item);
+[2025-05-17 20:34:08] [javac-output-81340]                   ^
+[2025-05-17 20:34:08] [javac-output-81340]   return type Object is not compatible with boolean
+[2025-05-17 20:34:26] [javac-output-81340] F:\Main-Sec\codeAudit\codeql\source\cc1\commons-collections\src\java\org\apache\commons\collections\MultiHashMap.java:334: error: remove(Object,Object) in MultiHashMap cannot implement remove(Object,Object) in Map
+[2025-05-17 20:34:26] [javac-output-81340]     public Object remove(Object key, Object item) {
+[2025-05-17 20:34:26] [javac-output-81340]                   ^
+[2025-05-17 20:34:26] [javac-output-81340]   return type Object is not compatible with boolean

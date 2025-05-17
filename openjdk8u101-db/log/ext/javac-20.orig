@@ -1,0 +1,14 @@
+-source
+7
+-target
+7
+-bootclasspath
+/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar
+-Xlint:all,-deprecation,-unchecked,-rawtypes,-cast,-serial,-dep-ann,-static,-fallthrough,-try,-varargs,-empty,-finally
+-g
+-implicit:none
+-sourcepath
+/root/8u101/jdk/src/share/classes/sun/text/resources
+-d
+/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/break_iterator/classes
+@/root/8u101/build/linux-x86_64-normal-server-fastdebug/jdk/break_iterator/classes/_the.BUILD_BREAKITERATOR_batch.tmp

@@ -1,0 +1,9 @@
+-Xlint:none
+-proc:none
+-source
+1.7
+-target
+1.7
+-d
+classes
+@java-files.txt

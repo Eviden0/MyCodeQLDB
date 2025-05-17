@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: F:\Main-Sec\codeAudit\codeql\source\example
+baselineLinesOfCode: 5
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  cliVersion: 2.21.0
+  creationTime: 2025-04-22T01:41:12.176046Z
+finalised: true

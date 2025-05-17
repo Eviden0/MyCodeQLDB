@@ -1,0 +1,11 @@
+[2025-05-17 14:16:50] [javac-extractor-90281] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/openjdk8u101-db/log/ext/javac-10.args
+                                              user.dir=/root/8u101/build/linux-x86_64-normal-server-fastdebug/hotspot
+[2025-05-17 14:16:50] [javac-extractor-90281] Compilation name /root/openjdk8u101-db/trap/java/diagnostics/diagnostic-10.trap.gz
+[2025-05-17 14:16:52] [javac-extractor-90281] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-17 14:16:52] [javac-extractor-90281] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-17 14:16:52] [javac-extractor-90281] Javac init time: 1.1s
+[2025-05-17 14:16:52] [javac-extractor-90281] Javac attr time: 0.1s
+[2025-05-17 14:16:52] [javac-extractor-90281] Extractor time: 0.0s
+[2025-05-17 14:16:52] [javac-extractor-90281] Other time: 0.2s
+[2025-05-17 14:16:52] [javac-extractor-90281] Total time: 1.4s

@@ -1,0 +1,12 @@
+[2025-04-21 21:08:04] This is codeql query run .\select.ql --database=F:\Main-Sec\codeAudit\codeql\databases\codeql_java-sec-code
+[2025-04-21 21:08:04] Log file was started late.
+[2025-04-21 21:08:04] Calling plumbing command: codeql resolve ram --dataset=F:\Main-Sec\codeAudit\codeql\databases\codeql_java-sec-code\db-java --format=json
+[2025-04-21 21:08:04] [PROGRESS] resolve ram> Stringpool size measured as 5800362
+[2025-04-21 21:08:04] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx4258M",
+                        "--off-heap-ram=4996"
+                      ]
+[2025-04-21 21:08:04] Spawning plumbing command: execute queries -J-Xmx4258M --off-heap-ram=4996 --verbosity=progress --logdir=F:\Main-Sec\codeAudit\codeql\databases\codeql_java-sec-code\log --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --qlconfig-file=F:\Code\codeQL\qlconfig.yml -- F:\Main-Sec\codeAudit\codeql\databases\codeql_java-sec-code\db-java path:F:\Code\codeQL\select.ql
+[2025-04-21 21:08:15] Plumbing command codeql execute queries terminated with status 0.
+[2025-04-21 21:08:15] Exiting with code 0

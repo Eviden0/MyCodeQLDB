@@ -1,0 +1,286 @@
+[2025-05-17 14:17:51] [javac-output-93509] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:17:51] [javac-output-93509] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar": no such file or directory
+[2025-05-17 14:17:51] [javac-output-93509] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/classes": no such file or directory
+[2025-05-17 14:17:51] [javac-output-93509] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:17:51] [javac-output-93509] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:17:51] [javac-output-93509] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:17:51] [javac-output-93509] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:18:00] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/stream/XMLStreamReader.java:497: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:00] [javac-output-93509]   /**
+[2025-05-17 14:18:00] [javac-output-93509]   ^
+[2025-05-17 14:18:00] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/stream/XMLStreamReader.java:485: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:00] [javac-output-93509]   /**
+[2025-05-17 14:18:00] [javac-output-93509]   ^
+[2025-05-17 14:18:00] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/stream/XMLStreamReader.java:575: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:00] [javac-output-93509]   /**
+[2025-05-17 14:18:00] [javac-output-93509]   ^
+[2025-05-17 14:18:00] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/stream/XMLStreamWriter.java:256: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:00] [javac-output-93509]   /**
+[2025-05-17 14:18:00] [javac-output-93509]   ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/SAXException.java:176: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/SAXException.java:174: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/SAXParseException.java:67: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/SAXParseException.java:65: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/SAXParseException.java:279: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/SAXParseException.java:277: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/Attributes.java:99: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/Attributes.java:97: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/Attributes.java:196: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/Attributes.java:194: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/InputSource.java:348: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/Transformer.java:146: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     /**
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/stream/StreamResult.java:185: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/stream/StreamResult.java:183: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/stream/StreamSource.java:263: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/stream/StreamSource.java:261: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/dom/DOMResult.java:344: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/dom/DOMResult.java:342: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/XMLReader.java:90: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/XMLReader.java:88: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/XMLReader.java:241: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/XMLReader.java:239: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/XMLReader.java:355: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/XMLReader.java:353: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/sax/SAXResult.java:127: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/transform/sax/SAXResult.java:125: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     //////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:01] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/parsers/DocumentBuilder.java:290: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:01] [javac-output-93509]     /** <p>Get current state of canonicalization.</p>
+[2025-05-17 14:18:01] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/javax/xml/parsers/SAXParser.java:498: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     /** <p>Get current state of canonicalization.</p>
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:76: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:74: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:107: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:105: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:153: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:151: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:323: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/HandlerBase.java:321: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:90: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:88: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:123: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:121: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:175: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:173: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:421: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:419: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/AttributeList.java:101: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/AttributeList.java:99: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/AttributeList.java:179: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/AttributeList.java:177: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:02] [javac-output-93509]     ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:98: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:02] [javac-output-93509]   /**
+[2025-05-17 14:18:02] [javac-output-93509]   ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:205: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable[';'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:206: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable['/'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:207: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable[':'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:208: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable['@'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:209: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable['&'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:210: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable['='] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:211: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable['+'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:212: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable['$'] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:02] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:213: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:02] [javac-output-93509]       fgLookupTable[','] |= PATH_CHARACTERS;
+[2025-05-17 14:18:02] [javac-output-93509]                             ^
+[2025-05-17 14:18:03] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/xpointer/ElementSchemePointer.java:700: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:03] [javac-output-93509]         /**
+[2025-05-17 14:18:03] [javac-output-93509]         ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/util/XMLAttributesIteratorImpl.java:35: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:04] [javac-output-93509] /**
+[2025-05-17 14:18:04] [javac-output-93509] ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/xinclude/XPointerElementHandler.java:387: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:04] [javac-output-93509]     ///////// END OF IMPLEMENTATION  OF XMLComponents methods. //////////
+[2025-05-17 14:18:04] [javac-output-93509]     ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/xinclude/XPointerElementHandler.java:401: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:04] [javac-output-93509]     ///////   END OF IMPLENTATION OF XMLDOCUMENTSOURCE INTERFACE ///////////
+[2025-05-17 14:18:04] [javac-output-93509]     ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/xinclude/XPointerElementHandler.java:460: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:04] [javac-output-93509]     ///////////End Implementation of XPointerSchema Methods //////////////////////
+[2025-05-17 14:18:04] [javac-output-93509]     ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/xinclude/XPointerElementHandler.java:591: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:04] [javac-output-93509]     ///////////  END TOKEN PLAYGROUND ///////////////
+[2025-05-17 14:18:04] [javac-output-93509]     ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/dtd/XMLEntityDecl.java:90: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:04] [javac-output-93509]     /** inExternal */
+[2025-05-17 14:18:04] [javac-output-93509]     ^
+[2025-05-17 14:18:04] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/dtd/models/CMStateSet.java:260: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:18:04] [javac-output-93509]             fByteArray[ofs] &= ~mask;
+[2025-05-17 14:18:04] [javac-output-93509]                                ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java:2968: warning: [lossy-conversions] implicit cast from long to int in compound assignment is possibly lossy
+[2025-05-17 14:18:05] [javac-output-93509]                 fOffset += n;
+[2025-05-17 14:18:05] [javac-output-93509]                            ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/XMLSchemaValidator.java:3297: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:05] [javac-output-93509]     /**********************************/
+[2025-05-17 14:18:05] [javac-output-93509]     ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/dv/XSSimpleType.java:39: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:05] [javac-output-93509]     /**
+[2025-05-17 14:18:05] [javac-output-93509]     ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/dv/XSSimpleType.java:51: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:05] [javac-output-93509]     /**
+[2025-05-17 14:18:05] [javac-output-93509]     ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/dv/XSSimpleType.java:168: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:05] [javac-output-93509]     /**
+[2025-05-17 14:18:05] [javac-output-93509]     ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/XSElementDecl.java:92: warning: [lossy-conversions] implicit cast from int to short in compound assignment is possibly lossy
+[2025-05-17 14:18:05] [javac-output-93509]         fMiscFlags ^= (fMiscFlags & CONSTRAINT_MASK);
+[2025-05-17 14:18:05] [javac-output-93509]                       ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/XSElementDecl.java:94: warning: [lossy-conversions] implicit cast from int to short in compound assignment is possibly lossy
+[2025-05-17 14:18:05] [javac-output-93509]         fMiscFlags |= (constraintType & CONSTRAINT_MASK);
+[2025-05-17 14:18:05] [javac-output-93509]                       ^
+[2025-05-17 14:18:05] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xpath/XPath.java:1280: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:05] [javac-output-93509]         /**
+[2025-05-17 14:18:05] [javac-output-93509]         ^
+[2025-05-17 14:18:06] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/LocatorImpl.java:113: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:06] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:06] [javac-output-93509]     ^
+[2025-05-17 14:18:06] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/LocatorImpl.java:111: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:06] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:06] [javac-output-93509]     ^
+[2025-05-17 14:18:06] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/LocatorImpl.java:173: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:06] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:06] [javac-output-93509]     ^
+[2025-05-17 14:18:06] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/LocatorImpl.java:171: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:06] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:06] [javac-output-93509]     ^
+[2025-05-17 14:18:06] [javac-output-93509] /root/8u101/jaxp/src/org/xml/sax/helpers/LocatorImpl.java:227: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:06] [javac-output-93509]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:06] [javac-output-93509]     ^
+[2025-05-17 14:18:06] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/dom/CoreDocumentImpl.java:91: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:06] [javac-output-93509]     /**
+[2025-05-17 14:18:06] [javac-output-93509]     ^
+[2025-05-17 14:18:07] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/dom/NamedNodeMapImpl.java:260: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:07] [javac-output-93509]     /**
+[2025-05-17 14:18:07] [javac-output-93509]     ^
+[2025-05-17 14:18:07] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/dtd/XMLDTDValidator.java:95: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:07] [javac-output-93509]     /** Symbol: "&lt;&lt;datatypes>>". */
+[2025-05-17 14:18:07] [javac-output-93509]     ^
+[2025-05-17 14:18:07] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/dom/AttributeMap.java:216: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:07] [javac-output-93509]     /**
+[2025-05-17 14:18:07] [javac-output-93509]     ^
+[2025-05-17 14:18:07] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/traversers/XSDAbstractTraverser.java:469: warning: [lossy-conversions] implicit cast from int to short in compound assignment is possibly lossy
+[2025-05-17 14:18:07] [javac-output-93509]                 facetsPresent |= currentFacet;
+[2025-05-17 14:18:07] [javac-output-93509]                                  ^
+[2025-05-17 14:18:07] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/traversers/XSDAbstractTraverser.java:472: warning: [lossy-conversions] implicit cast from int to short in compound assignment is possibly lossy
+[2025-05-17 14:18:07] [javac-output-93509]                     facetsFixed |= currentFacet;
+[2025-05-17 14:18:07] [javac-output-93509]                                    ^
+[2025-05-17 14:18:08] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/opti/DefaultXMLDocumentHandler.java:384: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:08] [javac-output-93509]     /**
+[2025-05-17 14:18:08] [javac-output-93509]     ^
+[2025-05-17 14:18:08] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/opti/DefaultXMLDocumentHandler.java:460: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:08] [javac-output-93509]     /**
+[2025-05-17 14:18:08] [javac-output-93509]     ^
+[2025-05-17 14:18:08] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/xs/opti/DefaultXMLDocumentHandler.java:445: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:08] [javac-output-93509]     /**
+[2025-05-17 14:18:08] [javac-output-93509]     ^
+[2025-05-17 14:18:08] [javac-output-93509] /root/8u101/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentFragmentScannerImpl.java:120: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:08] [javac-output-93509]     /** Scanner state: trailing misc. USED BY DOCUMENT_SCANNER_IMPL*/
+[2025-05-17 14:18:08] [javac-output-93509]     ^

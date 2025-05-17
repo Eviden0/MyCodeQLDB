@@ -1,0 +1,1618 @@
+[2025-04-22 22:17:52] This is codeql database create F:\Main-Sec\codeAudit\codeql\databases\WebGoat --language=java --command=mvn compile --source-root=F:\Main-Sec\codeAudit\codeql\source\WebGoat
+[2025-04-22 22:17:52] Log file was started late.
+[2025-04-22 22:17:52] [PROGRESS] database create> Initializing database at F:\Main-Sec\codeAudit\codeql\databases\WebGoat.
+[2025-04-22 22:17:53] Running plumbing command: codeql database init --language=java --extractor-options-verbosity=1 --qlconfig-file=F:\Main-Sec\codeAudit\codeql\source\WebGoat\qlconfig.yml --source-root=F:\Main-Sec\codeAudit\codeql\source\WebGoat --allow-missing-source-root=false --allow-already-existing -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat
+[2025-04-22 22:17:53] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from F:\Main-Sec\codeAudit\codeql\codeql-win64\.codeqlmanifest.json
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\actions\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\cpp\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\csharp\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\csv\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\go\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\html\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\java\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\javascript\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\properties\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\python\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\ruby\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\swift\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\xml\codeql-extractor.yml.
+[2025-04-22 22:17:53] [DETAILS] resolve languages> Parsing F:\Main-Sec\codeAudit\codeql\codeql-win64\yaml\codeql-extractor.yml.
+[2025-04-22 22:17:53] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "actions" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\actions",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\cpp",
+                              "extractor_options" : {
+                                "scale_timeouts" : {
+                                  "title" : "Value to scale compiler introspection timeouts with",
+                                  "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-9]+"
+                                },
+                                "log_verbosity" : {
+                                  "title" : "Verbosity of the extractor logging",
+                                  "description" : "Set the verbosity of the extractor logging to 'quiet' (0), 'normal' (1), 'chatty' (2), or 'noisy' (3). The default is 'normal'.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-3]"
+                                }
+                              }
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "binlog" : {
+                                  "title" : "Binlog",
+                                  "description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+                                  "type" : "array"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\csv"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\go",
+                              "extractor_options" : {
+                                "extract_tests" : {
+                                  "title" : "Whether to include Go test files in the CodeQL database.",
+                                  "description" : "A value indicating whether Go test files should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_vendor_dirs" : {
+                                  "title" : "Whether to include Go vendor directories in the CodeQL database.",
+                                  "description" : "A value indicating whether Go vendor directories should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis. This accepts glob patterns that are supported by Java's 'getPathMatcher' implementation.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless_dependency_dir" : {
+                                  "title" : "The path where buildless (standalone) extraction should keep dependencies.",
+                                  "description" : "If set, the buildless (standalone) extractor will store dependencies in this directory.\n",
+                                  "type" : "string"
+                                },
+                                "minimize_dependency_jars" : {
+                                  "title" : "Whether to rewrite and minimize downloaded JAR dependencies (experimental).",
+                                  "description" : "If 'true', JAR dependencies downloaded during extraction will be rewritten to remove unneeded data, such as method bodies. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\properties"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\swift"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\xml"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "F:\\Main-Sec\\codeAudit\\codeql\\codeql-win64\\yaml"
+                            }
+                          ]
+                        }
+                      }
+[2025-04-22 22:17:53] [PROGRESS] database init> Calculating baseline information in F:\Main-Sec\codeAudit\codeql\source\WebGoat
+[2025-04-22 22:17:53] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2025-04-22 22:17:53] [DETAILS] database init> Running command in F:\Main-Sec\codeAudit\codeql\source\WebGoat: F:\Main-Sec\codeAudit\codeql\codeql-win64\tools\win64\scc.exe --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2025-04-22 22:17:59] Using configure-baseline script F:\Main-Sec\codeAudit\codeql\codeql-win64\javascript\tools\configure-baseline.cmd.
+[2025-04-22 22:17:59] [PROGRESS] database init> Running command in F:\Main-Sec\codeAudit\codeql\source\WebGoat: [F:\Main-Sec\codeAudit\codeql\codeql-win64\javascript\tools\configure-baseline.cmd]
+[2025-04-22 22:17:59] [SPAMMY] database init> Ignored an additional 1 files when processing baseline information for JavaScript due to paths and paths-ignore configuration.
+[2025-04-22 22:17:59] [SPAMMY] database init> Found 232 baseline files for java.
+[2025-04-22 22:17:59] [SPAMMY] database init> Found 94 baseline files for javascript.
+[2025-04-22 22:17:59] [PROGRESS] database init> Calculated baseline information for languages: java, javascript (6.2s).
+[2025-04-22 22:18:00] [PROGRESS] database init> Resolving extractor java.
+[2025-04-22 22:18:00] [DETAILS] database init> Found candidate extractor root for java: F:\Main-Sec\codeAudit\codeql\codeql-win64\java.
+[2025-04-22 22:18:00] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from F:\Main-Sec\codeAudit\codeql\codeql-win64\java.
+[2025-04-22 22:18:00] [PROGRESS] database init> Created skeleton CodeQL database at F:\Main-Sec\codeAudit\codeql\databases\WebGoat. This in-progress database is ready to be populated by an extractor.
+[2025-04-22 22:18:00] Plumbing command codeql database init completed.
+[2025-04-22 22:18:00] [PROGRESS] database create> Running build command: [mvn, compile]
+[2025-04-22 22:18:00] Running plumbing command: codeql database trace-command --working-dir=F:\Main-Sec\codeAudit\codeql\source\WebGoat --index-traceless-dbs --no-db-cluster -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat mvn compile
+[2025-04-22 22:18:00] [PROGRESS] database trace-command> Running command in F:\Main-Sec\codeAudit\codeql\source\WebGoat: [mvn, compile]
+[2025-04-22 22:18:04] [build-stdout] [INFO] Scanning for projects...
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 
+[2025-04-22 22:18:05] [build-stdout] [WARNING] Some problems were encountered while building the effective model for org.owasp.webgoat:webgoat-container:jar:8.0.0.M1
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.projectlombok:lombok:jar -> duplicate declaration of version (?) @ line 142, column 21
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 
+[2025-04-22 22:18:05] [build-stdout] [WARNING] Some problems were encountered while building the effective model for org.owasp.webgoat:webwolf:jar:8.0.0.M1
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 'dependencies.dependency.version' for commons-io:commons-io:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 29, column 22
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 
+[2025-04-22 22:18:05] [build-stdout] [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 
+[2025-04-22 22:18:05] [build-stdout] [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[2025-04-22 22:18:05] [build-stdout] [WARNING] 
+[2025-04-22 22:18:05] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-04-22 22:18:05] [build-stdout] [INFO] Reactor Build Order:
+[2025-04-22 22:18:05] [build-stdout] [INFO] 
+[2025-04-22 22:18:05] [build-stdout] [INFO] WebGoat Parent Pom                                                 [pom]
+[2025-04-22 22:18:05] [build-stdout] [INFO] webgoat-container                                                  [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] webgoat-plugins-parent                                             [pom]
+[2025-04-22 22:18:05] [build-stdout] [INFO] bypass-restrictions                                                [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] challenge                                                          [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] client-side-filtering                                              [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] cross-site-scripting                                               [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] html-tampering                                                     [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] http-basics                                                        [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] http-proxies                                                       [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] insecure-login                                                     [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] jwt                                                                [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] sql-injection                                                      [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] xxe                                                                [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] idor                                                               [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] vulnerable-components                                              [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] webwolf-introduction                                               [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] auth-bypass                                                        [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] missing-function-ac                                                [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] csrf                                                               [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] webgoat-server                                                     [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] webwolf                                                            [jar]
+[2025-04-22 22:18:05] [build-stdout] [INFO] 
+[2025-04-22 22:18:05] [build-stdout] [INFO] ------------------< org.owasp.webgoat:webgoat-parent >------------------
+[2025-04-22 22:18:05] [build-stdout] [INFO] Building WebGoat Parent Pom 8.0.0.M1                              [1/22]
+[2025-04-22 22:18:05] [build-stdout] [INFO]   from pom.xml
+[2025-04-22 22:18:05] [build-stdout] [INFO] --------------------------------[ pom ]---------------------------------
+[2025-04-22 22:18:05] [build-stdout] [INFO] 
+[2025-04-22 22:18:05] [build-stdout] [INFO] ----------------< org.owasp.webgoat:webgoat-container >-----------------
+[2025-04-22 22:18:05] [build-stdout] [INFO] Building webgoat-container 8.0.0.M1                               [2/22]
+[2025-04-22 22:18:05] [build-stdout] [INFO]   from webgoat-container\pom.xml
+[2025-04-22 22:18:05] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:06] [build-stdout] [INFO] 
+[2025-04-22 22:18:06] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ webgoat-container ---
+[2025-04-22 22:18:06] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:06] [build-stdout] [INFO] Copying 67 resources
+[2025-04-22 22:18:06] [build-stdout] [INFO] Copying 1 resource
+[2025-04-22 22:18:06] [build-stdout] [INFO] Copying 181 resources
+[2025-04-22 22:18:06] [build-stdout] [INFO] 
+[2025-04-22 22:18:06] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ webgoat-container ---
+[2025-04-22 22:18:07] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:07] [build-stdout] [INFO] 
+[2025-04-22 22:18:07] [build-stdout] [INFO] ----------< org.owasp.webgoat.lesson:webgoat-lessons-parent >-----------
+[2025-04-22 22:18:07] [build-stdout] [INFO] Building webgoat-plugins-parent 8.0.0.M1                          [3/22]
+[2025-04-22 22:18:07] [build-stdout] [INFO]   from webgoat-lessons\pom.xml
+[2025-04-22 22:18:07] [build-stdout] [INFO] --------------------------------[ pom ]---------------------------------
+[2025-04-22 22:18:07] [build-stdout] [INFO] 
+[2025-04-22 22:18:07] [build-stdout] [INFO] ------------< org.owasp.webgoat.lesson:bypass-restrictions >------------
+[2025-04-22 22:18:07] [build-stdout] [INFO] Building bypass-restrictions 8.0.0.M1                             [4/22]
+[2025-04-22 22:18:07] [build-stdout] [INFO]   from webgoat-lessons\bypass-restrictions\pom.xml
+[2025-04-22 22:18:07] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:07] [build-stdout] [INFO] 
+[2025-04-22 22:18:07] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ bypass-restrictions ---
+[2025-04-22 22:18:07] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:07] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:07] [build-stdout] [INFO] Copying 5 resources
+[2025-04-22 22:18:07] [build-stdout] [INFO] 
+[2025-04-22 22:18:07] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ bypass-restrictions ---
+[2025-04-22 22:18:07] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:07] [build-stdout] [INFO] 
+[2025-04-22 22:18:07] [build-stdout] [INFO] -----------------< org.owasp.webgoat.lesson:challenge >-----------------
+[2025-04-22 22:18:07] [build-stdout] [INFO] Building challenge 8.0.0.M1                                       [5/22]
+[2025-04-22 22:18:07] [build-stdout] [INFO]   from webgoat-lessons\challenge\pom.xml
+[2025-04-22 22:18:07] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ challenge ---
+[2025-04-22 22:18:08] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:08] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:08] [build-stdout] [INFO] Copying 57 resources
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ challenge ---
+[2025-04-22 22:18:08] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] -----------< org.owasp.webgoat.lesson:client-side-filtering >-----------
+[2025-04-22 22:18:08] [build-stdout] [INFO] Building client-side-filtering 8.0.0.M1                           [6/22]
+[2025-04-22 22:18:08] [build-stdout] [INFO]   from webgoat-lessons\client-side-filtering\pom.xml
+[2025-04-22 22:18:08] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ client-side-filtering ---
+[2025-04-22 22:18:08] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:08] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:08] [build-stdout] [INFO] Copying 12 resources
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ client-side-filtering ---
+[2025-04-22 22:18:08] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] -----------< org.owasp.webgoat.lesson:cross-site-scripting >------------
+[2025-04-22 22:18:08] [build-stdout] [INFO] Building cross-site-scripting 8.0.0.M1                            [7/22]
+[2025-04-22 22:18:08] [build-stdout] [INFO]   from webgoat-lessons\cross-site-scripting\pom.xml
+[2025-04-22 22:18:08] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:08] [build-stdout] [INFO] 
+[2025-04-22 22:18:08] [build-stdout] [INFO] --- asciidoctor:1.5.3:process-asciidoc (output-html) @ cross-site-scripting ---
+[2025-04-22 22:18:11] [build-stderr] io/console not supported; tty will not be manipulated
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content1.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content10-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content11-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content12-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content13-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content13a-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content14-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content15-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content15a-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content16-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content2.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content3.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content4.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content5.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content5a.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content5b.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content5c.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content6.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content6a.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content6b.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content7-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content7.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content7b.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content7c.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content8-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content8.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content9-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content9.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_content9a-off.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] Rendered F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\cross-site-scripting\src\main\resources\lessonPlans\en\CrossSiteScripting_plan.adoc
+[2025-04-22 22:18:11] [build-stdout] [INFO] 
+[2025-04-22 22:18:11] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ cross-site-scripting ---
+[2025-04-22 22:18:11] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:11] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:11] [build-stdout] [INFO] Copying 43 resources
+[2025-04-22 22:18:11] [build-stdout] [INFO] 
+[2025-04-22 22:18:11] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ cross-site-scripting ---
+[2025-04-22 22:18:12] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:12] [build-stdout] [INFO] 
+[2025-04-22 22:18:12] [build-stdout] [INFO] --------------< org.owasp.webgoat.lesson:html-tampering >---------------
+[2025-04-22 22:18:12] [build-stdout] [INFO] Building html-tampering 8.0.0.M1                                  [8/22]
+[2025-04-22 22:18:12] [build-stdout] [INFO]   from webgoat-lessons\html-tampering\pom.xml
+[2025-04-22 22:18:12] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:12] [build-stdout] [INFO] 
+[2025-04-22 22:18:12] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ html-tampering ---
+[2025-04-22 22:18:12] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:12] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:12] [build-stdout] [INFO] Copying 6 resources
+[2025-04-22 22:18:12] [build-stdout] [INFO] 
+[2025-04-22 22:18:12] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ html-tampering ---
+[2025-04-22 22:18:12] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:12] [build-stdout] [INFO] 
+[2025-04-22 22:18:12] [build-stdout] [INFO] ----------------< org.owasp.webgoat.lesson:http-basics >----------------
+[2025-04-22 22:18:12] [build-stdout] [INFO] Building http-basics 8.0.0.M1                                     [9/22]
+[2025-04-22 22:18:12] [build-stdout] [INFO]   from webgoat-lessons\http-basics\pom.xml
+[2025-04-22 22:18:12] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:12] [build-stdout] [INFO] 
+[2025-04-22 22:18:12] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ http-basics ---
+[2025-04-22 22:18:12] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:12] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:12] [build-stdout] [INFO] Copying 14 resources
+[2025-04-22 22:18:12] [build-stdout] [INFO] 
+[2025-04-22 22:18:12] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ http-basics ---
+[2025-04-22 22:18:13] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] ---------------< org.owasp.webgoat.lesson:http-proxies >----------------
+[2025-04-22 22:18:13] [build-stdout] [INFO] Building http-proxies 8.0.0.M1                                   [10/22]
+[2025-04-22 22:18:13] [build-stdout] [INFO]   from webgoat-lessons\http-proxies\pom.xml
+[2025-04-22 22:18:13] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ http-proxies ---
+[2025-04-22 22:18:13] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:13] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:13] [build-stdout] [INFO] Copying 17 resources
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ http-proxies ---
+[2025-04-22 22:18:13] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --------------< org.owasp.webgoat.lesson:insecure-login >---------------
+[2025-04-22 22:18:13] [build-stdout] [INFO] Building insecure-login 8.0.0.M1                                 [11/22]
+[2025-04-22 22:18:13] [build-stdout] [INFO]   from webgoat-lessons\insecure-login\pom.xml
+[2025-04-22 22:18:13] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ insecure-login ---
+[2025-04-22 22:18:13] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:13] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:13] [build-stdout] [INFO] Copying 5 resources
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ insecure-login ---
+[2025-04-22 22:18:13] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --------------------< org.owasp.webgoat.lesson:jwt >--------------------
+[2025-04-22 22:18:13] [build-stdout] [INFO] Building jwt 8.0.0.M1                                            [12/22]
+[2025-04-22 22:18:13] [build-stdout] [INFO]   from webgoat-lessons\jwt\pom.xml
+[2025-04-22 22:18:13] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ jwt ---
+[2025-04-22 22:18:13] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:13] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:13] [build-stdout] [INFO] Copying 4 resources
+[2025-04-22 22:18:13] [build-stdout] [INFO] 
+[2025-04-22 22:18:13] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ jwt ---
+[2025-04-22 22:18:14] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] ---------------< org.owasp.webgoat.lesson:sql-injection >---------------
+[2025-04-22 22:18:14] [build-stdout] [INFO] Building sql-injection 8.0.0.M1                                  [13/22]
+[2025-04-22 22:18:14] [build-stdout] [INFO]   from webgoat-lessons\sql-injection\pom.xml
+[2025-04-22 22:18:14] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ sql-injection ---
+[2025-04-22 22:18:14] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:14] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:14] [build-stdout] [INFO] Copying 34 resources
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ sql-injection ---
+[2025-04-22 22:18:14] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] --------------------< org.owasp.webgoat.lesson:xxe >--------------------
+[2025-04-22 22:18:14] [build-stdout] [INFO] Building xxe 8.0.0.M1                                            [14/22]
+[2025-04-22 22:18:14] [build-stdout] [INFO]   from webgoat-lessons\xxe\pom.xml
+[2025-04-22 22:18:14] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ xxe ---
+[2025-04-22 22:18:14] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:14] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:14] [build-stdout] [INFO] Copying 17 resources
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ xxe ---
+[2025-04-22 22:18:14] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:14] [build-stdout] [INFO] 
+[2025-04-22 22:18:14] [build-stdout] [INFO] -------------------< org.owasp.webgoat.lesson:idor >--------------------
+[2025-04-22 22:18:14] [build-stdout] [INFO] Building idor 8.0.0.M1                                           [15/22]
+[2025-04-22 22:18:14] [build-stdout] [INFO]   from webgoat-lessons\idor\pom.xml
+[2025-04-22 22:18:14] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:15] [build-stdout] [INFO] 
+[2025-04-22 22:18:15] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ idor ---
+[2025-04-22 22:18:15] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:15] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:15] [build-stdout] [INFO] Copying 14 resources
+[2025-04-22 22:18:15] [build-stdout] [INFO] 
+[2025-04-22 22:18:15] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ idor ---
+[2025-04-22 22:18:15] [build-stdout] [INFO] Changes detected - recompiling the module!
+[2025-04-22 22:18:15] [build-stdout] [INFO] Compiling 9 source files to F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-lessons\idor\target\classes
+[2025-04-22 22:18:21] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-04-22 22:18:21] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-04-22 22:18:21] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-04-22 22:18:21] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-04-22 22:18:35] [build-stdout] [INFO] 
+[2025-04-22 22:18:35] [build-stdout] [INFO] -----------< org.owasp.webgoat.lesson:vulnerable-components >-----------
+[2025-04-22 22:18:35] [build-stdout] [INFO] Building vulnerable-components 8.0.0.M1                          [16/22]
+[2025-04-22 22:18:35] [build-stdout] [INFO]   from webgoat-lessons\vulnerable-components\pom.xml
+[2025-04-22 22:18:35] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:35] [build-stdout] [INFO] 
+[2025-04-22 22:18:35] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ vulnerable-components ---
+[2025-04-22 22:18:35] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:35] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:35] [build-stdout] [INFO] Copying 24 resources
+[2025-04-22 22:18:35] [build-stdout] [INFO] 
+[2025-04-22 22:18:35] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ vulnerable-components ---
+[2025-04-22 22:18:35] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:35] [build-stdout] [INFO] 
+[2025-04-22 22:18:35] [build-stdout] [INFO] -----------< org.owasp.webgoat.lesson:webwolf-introduction >------------
+[2025-04-22 22:18:35] [build-stdout] [INFO] Building webwolf-introduction 8.0.0.M1                           [17/22]
+[2025-04-22 22:18:35] [build-stdout] [INFO]   from webgoat-lessons\webwolf-introduction\pom.xml
+[2025-04-22 22:18:35] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:35] [build-stdout] [INFO] 
+[2025-04-22 22:18:35] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ webwolf-introduction ---
+[2025-04-22 22:18:35] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:35] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:35] [build-stdout] [INFO] Copying 10 resources
+[2025-04-22 22:18:35] [build-stdout] [INFO] 
+[2025-04-22 22:18:35] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ webwolf-introduction ---
+[2025-04-22 22:18:36] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] ----------------< org.owasp.webgoat.lesson:auth-bypass >----------------
+[2025-04-22 22:18:36] [build-stdout] [INFO] Building auth-bypass 8.0.0.M1                                    [18/22]
+[2025-04-22 22:18:36] [build-stdout] [INFO]   from webgoat-lessons\auth-bypass\pom.xml
+[2025-04-22 22:18:36] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ auth-bypass ---
+[2025-04-22 22:18:36] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:36] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:36] [build-stdout] [INFO] Copying 9 resources
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ auth-bypass ---
+[2025-04-22 22:18:36] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] ------------< org.owasp.webgoat.lesson:missing-function-ac >------------
+[2025-04-22 22:18:36] [build-stdout] [INFO] Building missing-function-ac 8.0.0.M1                            [19/22]
+[2025-04-22 22:18:36] [build-stdout] [INFO]   from webgoat-lessons\missing-function-ac\pom.xml
+[2025-04-22 22:18:36] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ missing-function-ac ---
+[2025-04-22 22:18:36] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:36] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:36] [build-stdout] [INFO] Copying 6 resources
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ missing-function-ac ---
+[2025-04-22 22:18:36] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] -------------------< org.owasp.webgoat.lesson:csrf >--------------------
+[2025-04-22 22:18:36] [build-stdout] [INFO] Building csrf 8.0.0.M1                                           [20/22]
+[2025-04-22 22:18:36] [build-stdout] [INFO]   from webgoat-lessons\csrf\pom.xml
+[2025-04-22 22:18:36] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ csrf ---
+[2025-04-22 22:18:36] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:36] [build-stdout] [INFO] Copying 0 resource
+[2025-04-22 22:18:36] [build-stdout] [INFO] Copying 10 resources
+[2025-04-22 22:18:36] [build-stdout] [INFO] 
+[2025-04-22 22:18:36] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ csrf ---
+[2025-04-22 22:18:37] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:37] [build-stdout] [INFO] 
+[2025-04-22 22:18:37] [build-stdout] [INFO] ------------------< org.owasp.webgoat:webgoat-server >------------------
+[2025-04-22 22:18:37] [build-stdout] [INFO] Building webgoat-server 8.0.0.M1                                 [21/22]
+[2025-04-22 22:18:37] [build-stdout] [INFO]   from webgoat-server\pom.xml
+[2025-04-22 22:18:37] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:37] [build-stdout] [INFO] 
+[2025-04-22 22:18:37] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ webgoat-server ---
+[2025-04-22 22:18:37] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:37] [build-stdout] [INFO] skip non existing resourceDirectory F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-server\src\main\resources
+[2025-04-22 22:18:37] [build-stdout] [INFO] skip non existing resourceDirectory F:\Main-Sec\codeAudit\codeql\source\WebGoat\webgoat-server\src\main\resources
+[2025-04-22 22:18:37] [build-stdout] [INFO] 
+[2025-04-22 22:18:37] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ webgoat-server ---
+[2025-04-22 22:18:38] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:38] [build-stdout] [INFO] 
+[2025-04-22 22:18:38] [build-stdout] [INFO] ---------------------< org.owasp.webgoat:webwolf >----------------------
+[2025-04-22 22:18:38] [build-stdout] [INFO] Building webwolf 8.0.0.M1                                        [22/22]
+[2025-04-22 22:18:38] [build-stdout] [INFO]   from webwolf\pom.xml
+[2025-04-22 22:18:38] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2025-04-22 22:18:38] [build-stdout] [INFO] 
+[2025-04-22 22:18:38] [build-stdout] [INFO] --- resources:2.6:resources (default-resources) @ webwolf ---
+[2025-04-22 22:18:38] [build-stdout] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2025-04-22 22:18:38] [build-stdout] [INFO] Copying 1 resource
+[2025-04-22 22:18:38] [build-stdout] [INFO] Copying 12 resources
+[2025-04-22 22:18:38] [build-stdout] [INFO] 
+[2025-04-22 22:18:38] [build-stdout] [INFO] --- compiler:3.3:compile (default-compile) @ webwolf ---
+[2025-04-22 22:18:38] [build-stdout] [INFO] Nothing to compile - all classes are up to date
+[2025-04-22 22:18:38] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-04-22 22:18:38] [build-stdout] [INFO] Reactor Summary for WebGoat Parent Pom 8.0.0.M1:
+[2025-04-22 22:18:38] [build-stdout] [INFO] 
+[2025-04-22 22:18:38] [build-stdout] [INFO] WebGoat Parent Pom ................................. SUCCESS [  0.002 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] webgoat-container .................................. SUCCESS [  2.440 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] webgoat-plugins-parent ............................. SUCCESS [  0.001 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] bypass-restrictions ................................ SUCCESS [  0.442 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] challenge .......................................... SUCCESS [  0.587 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] client-side-filtering .............................. SUCCESS [  0.354 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] cross-site-scripting ............................... SUCCESS [  3.357 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] html-tampering ..................................... SUCCESS [  0.468 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] http-basics ........................................ SUCCESS [  0.353 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] http-proxies ....................................... SUCCESS [  0.324 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] insecure-login ..................................... SUCCESS [  0.330 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] jwt ................................................ SUCCESS [  0.334 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] sql-injection ...................................... SUCCESS [  0.405 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] xxe ................................................ SUCCESS [  0.490 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] idor ............................................... SUCCESS [ 20.263 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] vulnerable-components .............................. SUCCESS [  0.461 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] webwolf-introduction ............................... SUCCESS [  0.365 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] auth-bypass ........................................ SUCCESS [  0.363 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] missing-function-ac ................................ SUCCESS [  0.462 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] csrf ............................................... SUCCESS [  0.358 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] webgoat-server ..................................... SUCCESS [  1.279 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] webwolf ............................................ SUCCESS [  0.224 s]
+[2025-04-22 22:18:38] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-04-22 22:18:38] [build-stdout] [INFO] BUILD SUCCESS
+[2025-04-22 22:18:38] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-04-22 22:18:38] [build-stdout] [INFO] Total time:  34.019 s
+[2025-04-22 22:18:38] [build-stdout] [INFO] Finished at: 2025-04-22T22:18:38+08:00
+[2025-04-22 22:18:38] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2025-04-22 22:18:38] Plumbing command codeql database trace-command completed.
+[2025-04-22 22:18:38] [PROGRESS] database create> Finalizing database at F:\Main-Sec\codeAudit\codeql\databases\WebGoat.
+[2025-04-22 22:18:38] Running plumbing command: codeql database finalize --no-db-cluster -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat
+[2025-04-22 22:18:38] Using pre-finalize script F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\pre-finalize.cmd.
+[2025-04-22 22:18:38] [PROGRESS] database finalize> Running pre-finalize script F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\pre-finalize.cmd in F:\Main-Sec\codeAudit\codeql\source\WebGoat.
+[2025-04-22 22:18:38] Running plumbing command: codeql database trace-command --working-dir=F:\Main-Sec\codeAudit\codeql\source\WebGoat --no-tracing -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\pre-finalize.cmd
+[2025-04-22 22:18:38] [PROGRESS] database trace-command> Running command in F:\Main-Sec\codeAudit\codeql\source\WebGoat: [F:\Main-Sec\codeAudit\codeql\codeql-win64\java\tools\pre-finalize.cmd]
+[2025-04-22 22:18:41] [build-stderr] Scanning for files in F:\Main-Sec\codeAudit\codeql\source\WebGoat...
+[2025-04-22 22:18:41] [build-stderr] F:\Main-Sec\codeAudit\codeql\databases\WebGoat: Indexing files in in F:\Main-Sec\codeAudit\codeql\source\WebGoat...
+[2025-04-22 22:18:41] [build-stderr] Running command in F:\Main-Sec\codeAudit\codeql\source\WebGoat: [F:\Main-Sec\codeAudit\codeql\codeql-win64\xml\tools\index-files.cmd, F:\Main-Sec\codeAudit\codeql\databases\WebGoat\working\files-to-index10250480515246810392.list]
+[2025-04-22 22:18:44] [build-stderr] Scanning for files in F:\Main-Sec\codeAudit\codeql\source\WebGoat...
+[2025-04-22 22:18:44] [build-stderr] F:\Main-Sec\codeAudit\codeql\databases\WebGoat: Indexing files in in F:\Main-Sec\codeAudit\codeql\source\WebGoat...
+[2025-04-22 22:18:44] [build-stderr] Running command in F:\Main-Sec\codeAudit\codeql\source\WebGoat: [F:\Main-Sec\codeAudit\codeql\codeql-win64\properties\tools\index-files.cmd, F:\Main-Sec\codeAudit\codeql\databases\WebGoat\working\files-to-index12608110240790542016.list]
+[2025-04-22 22:18:46] Plumbing command codeql database trace-command completed.
+[2025-04-22 22:18:46] [PROGRESS] database finalize> Running TRAP import for CodeQL database at F:\Main-Sec\codeAudit\codeql\databases\WebGoat...
+[2025-04-22 22:18:46] Running plumbing command: codeql dataset import --dbscheme=F:\Main-Sec\codeAudit\codeql\codeql-win64\java\semmlecode.dbscheme -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java F:\Main-Sec\codeAudit\codeql\databases\WebGoat\trap\java
+[2025-04-22 22:18:46] Clearing disk cache since the version file F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java\default\cache\version does not exist
+[2025-04-22 22:18:46] Tuple pool not found. Clearing relations with cached strings
+[2025-04-22 22:18:46] Trimming disk cache at F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java\default\cache in mode clear.
+[2025-04-22 22:18:46] Sequence stamp origin is -6057744165157798283
+[2025-04-22 22:18:46] Pausing evaluation to hard-clear memory at sequence stamp o+0
+[2025-04-22 22:18:46] Unpausing evaluation
+[2025-04-22 22:18:46] Pausing evaluation to quickly trim disk at sequence stamp o+1
+[2025-04-22 22:18:46] Unpausing evaluation
+[2025-04-22 22:18:46] Pausing evaluation to zealously trim disk at sequence stamp o+2
+[2025-04-22 22:18:46] Unpausing evaluation
+[2025-04-22 22:18:46] Trimming completed (8ms): Purged everything.
+[2025-04-22 22:18:47] Scanning for files in F:\Main-Sec\codeAudit\codeql\databases\WebGoat\trap\java
+[2025-04-22 22:18:47] Found 750 TRAP files (1.84 MiB)
+[2025-04-22 22:18:47] [PROGRESS] dataset import> Importing TRAP files
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (1 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (2 of 750)
+[2025-04-22 22:18:48] Importing application.properties.trap.gz (3 of 750)
+[2025-04-22 22:18:48] Importing messages.properties.trap.gz (4 of 750)
+[2025-04-22 22:18:48] Importing messages_de.properties.trap.gz (5 of 750)
+[2025-04-22 22:18:48] Importing messages_fr.properties.trap.gz (6 of 750)
+[2025-04-22 22:18:48] Importing messages_nl.properties.trap.gz (7 of 750)
+[2025-04-22 22:18:48] Importing messages_ru.properties.trap.gz (8 of 750)
+[2025-04-22 22:18:48] Importing application-test.properties.trap.gz (9 of 750)
+[2025-04-22 22:18:48] Importing logback-test.xml.trap.gz (10 of 750)
+[2025-04-22 22:18:48] Importing application.properties.trap.gz (11 of 750)
+[2025-04-22 22:18:48] Importing messages.properties.trap.gz (12 of 750)
+[2025-04-22 22:18:48] Importing messages_de.properties.trap.gz (13 of 750)
+[2025-04-22 22:18:48] Importing messages_fr.properties.trap.gz (14 of 750)
+[2025-04-22 22:18:48] Importing messages_nl.properties.trap.gz (15 of 750)
+[2025-04-22 22:18:48] Importing messages_ru.properties.trap.gz (16 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (17 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (18 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (19 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (20 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (21 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (22 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (23 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (24 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (25 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (26 of 750)
+[2025-04-22 22:18:48] Importing employees.xml.trap.gz (27 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (28 of 750)
+[2025-04-22 22:18:48] Importing employees.xml.trap.gz (29 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (30 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (31 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (32 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (33 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (34 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_de.properties.trap.gz (35 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_fr.properties.trap.gz (36 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_ru.properties.trap.gz (37 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (38 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_de.properties.trap.gz (39 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_fr.properties.trap.gz (40 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_ru.properties.trap.gz (41 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (42 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (43 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (44 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (45 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (46 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (47 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (48 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (49 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (50 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (51 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_de.properties.trap.gz (52 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_fr.properties.trap.gz (53 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_nl.properties.trap.gz (54 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_ru.properties.trap.gz (55 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (56 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_de.properties.trap.gz (57 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_fr.properties.trap.gz (58 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_nl.properties.trap.gz (59 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_ru.properties.trap.gz (60 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (61 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (62 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (63 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (64 of 750)
+[2025-04-22 22:18:48] Importing IDOR.java.trap.gz (65 of 750)
+[2025-04-22 22:18:48] Importing IDORDiffAttributes.java.trap.gz (66 of 750)
+[2025-04-22 22:18:48] Importing IDOREditOtherProfiile.java.trap.gz (67 of 750)
+[2025-04-22 22:18:48] Importing IDORLogin.java.trap.gz (68 of 750)
+[2025-04-22 22:18:48] Importing IDORViewOtherProfile.java.trap.gz (69 of 750)
+[2025-04-22 22:18:48] Importing IDORViewOwnProfile.java.trap.gz (70 of 750)
+[2025-04-22 22:18:48] Importing IDORViewOwnProfileAltUrl.java.trap.gz (71 of 750)
+[2025-04-22 22:18:48] Importing UserProfile.java.trap.gz (72 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (73 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (74 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (75 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (76 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (77 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (78 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (79 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (80 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (81 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (82 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (83 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (84 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (85 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (86 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_de.properties.trap.gz (87 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_fr.properties.trap.gz (88 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_ru.properties.trap.gz (89 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (90 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_de.properties.trap.gz (91 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_fr.properties.trap.gz (92 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels_ru.properties.trap.gz (93 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (94 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (95 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (96 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (97 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (98 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (99 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (100 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (101 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (102 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (103 of 750)
+[2025-04-22 22:18:48] Importing WebGoatLabels.properties.trap.gz (104 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (105 of 750)
+[2025-04-22 22:18:48] Importing pom.xml.trap.gz (106 of 750)
+[2025-04-22 22:18:48] Importing application.properties.trap.gz (107 of 750)
+[2025-04-22 22:18:48] Importing application.properties.trap.gz (108 of 750)
+[2025-04-22 22:18:48] Importing Lists.members#49.0-1393032596000-java.trap.gz (109 of 750)
+[2025-04-22 22:18:48] Importing ConstructorProperties.members#52.0-1444123828000-java.trap.gz (110 of 750)
+[2025-04-22 22:18:48] Importing BufferedReader.members#52.0-1444123824000-java.trap.gz (111 of 750)
+[2025-04-22 22:18:48] Importing Closeable.members#52.0-1444123802000-java.trap.gz (112 of 750)
+[2025-04-22 22:18:48] Importing Console.members#52.0-1444123828000-java.trap.gz (113 of 750)
+[2025-04-22 22:18:48] Importing DataInput.members#52.0-1444123804000-java.trap.gz (114 of 750)
+[2025-04-22 22:18:48] Importing DataOutput.members#52.0-1444123804000-java.trap.gz (115 of 750)
+[2025-04-22 22:18:48] Importing DataOutputStream.members#52.0-1444123806000-java.trap.gz (116 of 750)
+[2025-04-22 22:18:48] Importing File.members#52.0-1444123806000-java.trap.gz (117 of 750)
+[2025-04-22 22:18:48] Importing FileDescriptor.members#52.0-1444123804000-java.trap.gz (118 of 750)
+[2025-04-22 22:18:48] Importing FileFilter.members#52.0-1444123808000-java.trap.gz (119 of 750)
+[2025-04-22 22:18:48] Importing FileNotFoundException.members#52.0-1444123806000-java.trap.gz (120 of 750)
+[2025-04-22 22:18:48] Importing FilenameFilter.members#52.0-1444123808000-java.trap.gz (121 of 750)
+[2025-04-22 22:18:48] Importing FilterInputStream.members#52.0-1444123806000-java.trap.gz (122 of 750)
+[2025-04-22 22:18:48] Importing FilterOutputStream.members#52.0-1444123804000-java.trap.gz (123 of 750)
+[2025-04-22 22:18:48] Importing Flushable.members#52.0-1444123804000-java.trap.gz (124 of 750)
+[2025-04-22 22:18:48] Importing IOException.members#52.0-1444123802000-java.trap.gz (125 of 750)
+[2025-04-22 22:18:48] Importing InputStream.members#52.0-1444123804000-java.trap.gz (126 of 750)
+[2025-04-22 22:18:48] Importing InvalidClassException.members#52.0-1444123806000-java.trap.gz (127 of 750)
+[2025-04-22 22:18:48] Importing InvalidObjectException.members#52.0-1444123806000-java.trap.gz (128 of 750)
+[2025-04-22 22:18:48] Importing NotActiveException.members#52.0-1444123806000-java.trap.gz (129 of 750)
+[2025-04-22 22:18:48] Importing ObjectInput.members#52.0-1444123804000-java.trap.gz (130 of 750)
+[2025-04-22 22:18:48] Importing ObjectInputStream$GetField.members#52.0-1444123804000-java.trap.gz (131 of 750)
+[2025-04-22 22:18:48] Importing ObjectInputStream.members#52.0-1444123804000-java.trap.gz (132 of 750)
+[2025-04-22 22:18:48] Importing ObjectInputValidation.members#52.0-1444123806000-java.trap.gz (133 of 750)
+[2025-04-22 22:18:48] Importing ObjectOutput.members#52.0-1444123804000-java.trap.gz (134 of 750)
+[2025-04-22 22:18:48] Importing ObjectOutputStream$PutField.members#52.0-1444123804000-java.trap.gz (135 of 750)
+[2025-04-22 22:18:48] Importing ObjectOutputStream.members#52.0-1444123804000-java.trap.gz (136 of 750)
+[2025-04-22 22:18:48] Importing ObjectStreamClass$ClassDataSlot.members#52.0-1444123804000-java.trap.gz (137 of 750)
+[2025-04-22 22:18:48] Importing ObjectStreamClass.members#52.0-1444123804000-java.trap.gz (138 of 750)
+[2025-04-22 22:18:48] Importing ObjectStreamConstants.members#52.0-1444123804000-java.trap.gz (139 of 750)
+[2025-04-22 22:18:48] Importing ObjectStreamException.members#52.0-1444123806000-java.trap.gz (140 of 750)
+[2025-04-22 22:18:48] Importing ObjectStreamField.members#52.0-1444123804000-java.trap.gz (141 of 750)
+[2025-04-22 22:18:48] Importing OutputStream.members#52.0-1444123804000-java.trap.gz (142 of 750)
+[2025-04-22 22:18:48] Importing PrintStream.members#52.0-1444123804000-java.trap.gz (143 of 750)
+[2025-04-22 22:18:48] Importing PrintWriter.members#52.0-1444123804000-java.trap.gz (144 of 750)
+[2025-04-22 22:18:48] Importing Reader.members#52.0-1444123808000-java.trap.gz (145 of 750)
+[2025-04-22 22:18:48] Importing Serializable.members#52.0-1444123802000-java.trap.gz (146 of 750)
+[2025-04-22 22:18:48] Importing SerializablePermission.members#52.0-1444123806000-java.trap.gz (147 of 750)
+[2025-04-22 22:18:48] Importing StreamCorruptedException.members#52.0-1444123806000-java.trap.gz (148 of 750)
+[2025-04-22 22:18:48] Importing SyncFailedException.members#52.0-1444123806000-java.trap.gz (149 of 750)
+[2025-04-22 22:18:48] Importing UnsupportedEncodingException.members#52.0-1444123806000-java.trap.gz (150 of 750)
+[2025-04-22 22:18:48] Importing Writer.members#52.0-1444123804000-java.trap.gz (151 of 750)
+[2025-04-22 22:18:48] Importing AbstractStringBuilder.members#52.0-1444123804000-java.trap.gz (152 of 750)
+[2025-04-22 22:18:48] Importing Appendable.members#52.0-1444123804000-java.trap.gz (153 of 750)
+[2025-04-22 22:18:48] Importing AutoCloseable.members#52.0-1444123802000-java.trap.gz (154 of 750)
+[2025-04-22 22:18:48] Importing Boolean.members#52.0-1444123806000-java.trap.gz (155 of 750)
+[2025-04-22 22:18:48] Importing CharSequence.members#52.0-1444123804000-java.trap.gz (156 of 750)
+[2025-04-22 22:18:48] Importing Character.members#52.0-1444123808000-java.trap.gz (157 of 750)
+[2025-04-22 22:18:48] Importing Class.members#52.0-1444123802000-java.trap.gz (158 of 750)
+[2025-04-22 22:18:48] Importing ClassFormatError.members#52.0-1444123806000-java.trap.gz (159 of 750)
+[2025-04-22 22:18:48] Importing ClassLoader.members#52.0-1444123804000-java.trap.gz (160 of 750)
+[2025-04-22 22:18:48] Importing ClassNotFoundException.members#52.0-1444123804000-java.trap.gz (161 of 750)
+[2025-04-22 22:18:48] Importing ClassValue$ClassValueMap.members#52.0-1444123806000-java.trap.gz (162 of 750)
+[2025-04-22 22:18:48] Importing ClassValue$Entry.members#52.0-1444123806000-java.trap.gz (163 of 750)
+[2025-04-22 22:18:48] Importing ClassValue$Identity.members#52.0-1444123806000-java.trap.gz (164 of 750)
+[2025-04-22 22:18:48] Importing ClassValue$Version.members#52.0-1444123806000-java.trap.gz (165 of 750)
+[2025-04-22 22:18:48] Importing ClassValue.members#52.0-1444123806000-java.trap.gz (166 of 750)
+[2025-04-22 22:18:48] Importing CloneNotSupportedException.members#52.0-1444123802000-java.trap.gz (167 of 750)
+[2025-04-22 22:18:48] Importing Cloneable.members#52.0-1444123804000-java.trap.gz (168 of 750)
+[2025-04-22 22:18:48] Importing Comparable.members#52.0-1444123804000-java.trap.gz (169 of 750)
+[2025-04-22 22:18:48] Importing Deprecated.members#52.0-1444123814000-java.trap.gz (170 of 750)
+[2025-04-22 22:18:48] Importing Double.members#52.0-1444123808000-java.trap.gz (171 of 750)
+[2025-04-22 22:18:48] Importing Enum.members#52.0-1444123806000-java.trap.gz (172 of 750)
+[2025-04-22 22:18:48] Importing Error.members#52.0-1444123806000-java.trap.gz (173 of 750)
+[2025-04-22 22:18:48] Importing Exception.members#52.0-1444123802000-java.trap.gz (174 of 750)
+[2025-04-22 22:18:48] Importing FunctionalInterface.members#52.0-1444123804000-java.trap.gz (175 of 750)
+[2025-04-22 22:18:48] Importing IllegalAccessException.members#52.0-1444123804000-java.trap.gz (176 of 750)
+[2025-04-22 22:18:48] Importing IllegalArgumentException.members#52.0-1444123804000-java.trap.gz (177 of 750)
+[2025-04-22 22:18:48] Importing IllegalStateException.members#52.0-1444123810000-java.trap.gz (178 of 750)
+[2025-04-22 22:18:48] Importing InstantiationException.members#52.0-1444123804000-java.trap.gz (179 of 750)
+[2025-04-22 22:18:48] Importing Integer.members#52.0-1444123806000-java.trap.gz (180 of 750)
+[2025-04-22 22:18:48] Importing InterruptedException.members#52.0-1444123804000-java.trap.gz (181 of 750)
+[2025-04-22 22:18:48] Importing Iterable.members#52.0-1444123804000-java.trap.gz (182 of 750)
+[2025-04-22 22:18:48] Importing LinkageError.members#52.0-1444123806000-java.trap.gz (183 of 750)
+[2025-04-22 22:18:48] Importing Long.members#52.0-1444123806000-java.trap.gz (184 of 750)
+[2025-04-22 22:18:48] Importing NoSuchFieldException.members#52.0-1444123804000-java.trap.gz (185 of 750)
+[2025-04-22 22:18:48] Importing NoSuchMethodException.members#52.0-1444123804000-java.trap.gz (186 of 750)
+[2025-04-22 22:18:48] Importing Number.members#52.0-1444123806000-java.trap.gz (187 of 750)
+[2025-04-22 22:18:48] Importing NumberFormatException.members#52.0-1444123806000-java.trap.gz (188 of 750)
+[2025-04-22 22:18:48] Importing Object.members#52.0-1444123800000-java.trap.gz (189 of 750)
+[2025-04-22 22:18:48] Importing Override.members#52.0-1444123830000-java.trap.gz (190 of 750)
+[2025-04-22 22:18:48] Importing Package.members#52.0-1444123804000-java.trap.gz (191 of 750)
+[2025-04-22 22:18:48] Importing Readable.members#52.0-1444123806000-java.trap.gz (192 of 750)
+[2025-04-22 22:18:48] Importing ReflectiveOperationException.members#52.0-1444123804000-java.trap.gz (193 of 750)
+[2025-04-22 22:18:48] Importing Runnable.members#52.0-1444123804000-java.trap.gz (194 of 750)
+[2025-04-22 22:18:48] Importing RuntimeException.members#52.0-1444123804000-java.trap.gz (195 of 750)
+[2025-04-22 22:18:48] Importing SafeVarargs.members#52.0-1444123830000-java.trap.gz (196 of 750)
+[2025-04-22 22:18:48] Importing SecurityException.members#52.0-1444123804000-java.trap.gz (197 of 750)
+[2025-04-22 22:18:48] Importing SecurityManager.members#52.0-1444123806000-java.trap.gz (198 of 750)
+[2025-04-22 22:18:48] Importing StackTraceElement.members#52.0-1444123804000-java.trap.gz (199 of 750)
+[2025-04-22 22:18:48] Importing String.members#52.0-1444123804000-java.trap.gz (200 of 750)
+[2025-04-22 22:18:48] Importing StringBuffer.members#52.0-1444123806000-java.trap.gz (201 of 750)
+[2025-04-22 22:18:48] Importing StringBuilder.members#52.0-1444123804000-java.trap.gz (202 of 750)
+[2025-04-22 22:18:48] Importing System.members#52.0-1444123830000-java.trap.gz (203 of 750)
+[2025-04-22 22:18:48] Importing Thread$State.members#52.0-1444123804000-java.trap.gz (204 of 750)
+[2025-04-22 22:18:48] Importing Thread$UncaughtExceptionHandler.members#52.0-1444123804000-java.trap.gz (205 of 750)
+[2025-04-22 22:18:48] Importing Thread.members#52.0-1444123804000-java.trap.gz (206 of 750)
+[2025-04-22 22:18:48] Importing ThreadGroup.members#52.0-1444123806000-java.trap.gz (207 of 750)
+[2025-04-22 22:18:48] Importing ThreadLocal$ThreadLocalMap.members#52.0-1444123806000-java.trap.gz (208 of 750)
+[2025-04-22 22:18:48] Importing ThreadLocal.members#52.0-1444123806000-java.trap.gz (209 of 750)
+[2025-04-22 22:18:48] Importing Throwable.members#52.0-1444123802000-java.trap.gz (210 of 750)
+[2025-04-22 22:18:48] Importing UnsupportedOperationException.members#52.0-1444123806000-java.trap.gz (211 of 750)
+[2025-04-22 22:18:48] Importing Annotation.members#52.0-1444123804000-java.trap.gz (212 of 750)
+[2025-04-22 22:18:48] Importing Documented.members#52.0-1444123804000-java.trap.gz (213 of 750)
+[2025-04-22 22:18:48] Importing ElementType.members#52.0-1444123806000-java.trap.gz (214 of 750)
+[2025-04-22 22:18:48] Importing Inherited.members#52.0-1444123828000-java.trap.gz (215 of 750)
+[2025-04-22 22:18:48] Importing Retention.members#52.0-1444123804000-java.trap.gz (216 of 750)
+[2025-04-22 22:18:48] Importing RetentionPolicy.members#52.0-1444123806000-java.trap.gz (217 of 750)
+[2025-04-22 22:18:48] Importing Target.members#52.0-1444123804000-java.trap.gz (218 of 750)
+[2025-04-22 22:18:48] Importing Reference.members#52.0-1444123804000-java.trap.gz (219 of 750)
+[2025-04-22 22:18:48] Importing ReferenceQueue.members#52.0-1444123806000-java.trap.gz (220 of 750)
+[2025-04-22 22:18:48] Importing WeakReference.members#52.0-1444123806000-java.trap.gz (221 of 750)
+[2025-04-22 22:18:48] Importing AccessibleObject.members#52.0-1444123802000-java.trap.gz (222 of 750)
+[2025-04-22 22:18:48] Importing AnnotatedElement.members#52.0-1444123802000-java.trap.gz (223 of 750)
+[2025-04-22 22:18:48] Importing AnnotatedType.members#52.0-1444123804000-java.trap.gz (224 of 750)
+[2025-04-22 22:18:48] Importing Constructor.members#52.0-1444123802000-java.trap.gz (225 of 750)
+[2025-04-22 22:18:48] Importing Executable.members#52.0-1444123802000-java.trap.gz (226 of 750)
+[2025-04-22 22:18:48] Importing Field.members#52.0-1444123804000-java.trap.gz (227 of 750)
+[2025-04-22 22:18:48] Importing GenericDeclaration.members#52.0-1444123802000-java.trap.gz (228 of 750)
+[2025-04-22 22:18:48] Importing InvocationTargetException.members#52.0-1444123804000-java.trap.gz (229 of 750)
+[2025-04-22 22:18:48] Importing Member.members#52.0-1444123802000-java.trap.gz (230 of 750)
+[2025-04-22 22:18:48] Importing Method.members#52.0-1444123804000-java.trap.gz (231 of 750)
+[2025-04-22 22:18:48] Importing Parameter.members#52.0-1444123804000-java.trap.gz (232 of 750)
+[2025-04-22 22:18:48] Importing ParameterizedType.members#52.0-1444123806000-java.trap.gz (233 of 750)
+[2025-04-22 22:18:48] Importing Type.members#52.0-1444123802000-java.trap.gz (234 of 750)
+[2025-04-22 22:18:48] Importing TypeVariable.members#52.0-1444123804000-java.trap.gz (235 of 750)
+[2025-04-22 22:18:48] Importing WildcardType.members#52.0-1444123806000-java.trap.gz (236 of 750)
+[2025-04-22 22:18:48] Importing BigDecimal.members#52.0-1444123810000-java.trap.gz (237 of 750)
+[2025-04-22 22:18:48] Importing BigInteger.members#52.0-1444123808000-java.trap.gz (238 of 750)
+[2025-04-22 22:18:48] Importing MathContext.members#52.0-1444123810000-java.trap.gz (239 of 750)
+[2025-04-22 22:18:48] Importing RoundingMode.members#52.0-1444123810000-java.trap.gz (240 of 750)
+[2025-04-22 22:18:48] Importing ContentHandler.members#52.0-1444123808000-java.trap.gz (241 of 750)
+[2025-04-22 22:18:48] Importing ContentHandlerFactory.members#52.0-1444123808000-java.trap.gz (242 of 750)
+[2025-04-22 22:18:48] Importing FileNameMap.members#52.0-1444123808000-java.trap.gz (243 of 750)
+[2025-04-22 22:18:48] Importing InetAddress$InetAddressHolder.members#52.0-1444123804000-java.trap.gz (244 of 750)
+[2025-04-22 22:18:48] Importing InetAddress.members#52.0-1444123804000-java.trap.gz (245 of 750)
+[2025-04-22 22:18:48] Importing InetAddressImpl.members#52.0-1444123806000-java.trap.gz (246 of 750)
+[2025-04-22 22:18:48] Importing InterfaceAddress.members#52.0-1444123808000-java.trap.gz (247 of 750)
+[2025-04-22 22:18:48] Importing MalformedURLException.members#52.0-1444123806000-java.trap.gz (248 of 750)
+[2025-04-22 22:18:48] Importing NetworkInterface.members#52.0-1444123806000-java.trap.gz (249 of 750)
+[2025-04-22 22:18:48] Importing Proxy$Type.members#52.0-1444123804000-java.trap.gz (250 of 750)
+[2025-04-22 22:18:48] Importing Proxy.members#52.0-1444123804000-java.trap.gz (251 of 750)
+[2025-04-22 22:18:48] Importing SocketAddress.members#52.0-1444123804000-java.trap.gz (252 of 750)
+[2025-04-22 22:18:48] Importing SocketException.members#52.0-1444123804000-java.trap.gz (253 of 750)
+[2025-04-22 22:18:48] Importing URI.members#52.0-1444123806000-java.trap.gz (254 of 750)
+[2025-04-22 22:18:48] Importing URISyntaxException.members#52.0-1444123806000-java.trap.gz (255 of 750)
+[2025-04-22 22:18:48] Importing URL.members#52.0-1444123804000-java.trap.gz (256 of 750)
+[2025-04-22 22:18:48] Importing URLConnection.members#52.0-1444123806000-java.trap.gz (257 of 750)
+[2025-04-22 22:18:48] Importing URLStreamHandler.members#52.0-1444123806000-java.trap.gz (258 of 750)
+[2025-04-22 22:18:48] Importing URLStreamHandlerFactory.members#52.0-1444123806000-java.trap.gz (259 of 750)
+[2025-04-22 22:18:48] Importing UnknownHostException.members#52.0-1444123804000-java.trap.gz (260 of 750)
+[2025-04-22 22:18:48] Importing UnknownServiceException.members#52.0-1444123808000-java.trap.gz (261 of 750)
+[2025-04-22 22:18:48] Importing Buffer.members#52.0-1444123804000-java.trap.gz (262 of 750)
+[2025-04-22 22:18:48] Importing ByteBuffer.members#52.0-1444123804000-java.trap.gz (263 of 750)
+[2025-04-22 22:18:48] Importing ByteOrder.members#52.0-1444123806000-java.trap.gz (264 of 750)
+[2025-04-22 22:18:48] Importing CharBuffer.members#52.0-1444123806000-java.trap.gz (265 of 750)
+[2025-04-22 22:18:48] Importing DoubleBuffer.members#52.0-1444123806000-java.trap.gz (266 of 750)
+[2025-04-22 22:18:48] Importing FloatBuffer.members#52.0-1444123806000-java.trap.gz (267 of 750)
+[2025-04-22 22:18:48] Importing IntBuffer.members#52.0-1444123806000-java.trap.gz (268 of 750)
+[2025-04-22 22:18:48] Importing LongBuffer.members#52.0-1444123806000-java.trap.gz (269 of 750)
+[2025-04-22 22:18:48] Importing MappedByteBuffer.members#52.0-1444123808000-java.trap.gz (270 of 750)
+[2025-04-22 22:18:48] Importing ShortBuffer.members#52.0-1444123806000-java.trap.gz (271 of 750)
+[2025-04-22 22:18:48] Importing AsynchronousChannel.members#52.0-1444123808000-java.trap.gz (272 of 750)
+[2025-04-22 22:18:48] Importing AsynchronousCloseException.members#52.0-1444123804000-java.trap.gz (273 of 750)
+[2025-04-22 22:18:48] Importing AsynchronousFileChannel.members#52.0-1444123808000-java.trap.gz (274 of 750)
+[2025-04-22 22:18:48] Importing ByteChannel.members#52.0-1444123802000-java.trap.gz (275 of 750)
+[2025-04-22 22:18:48] Importing Channel.members#52.0-1444123802000-java.trap.gz (276 of 750)
+[2025-04-22 22:18:48] Importing ClosedChannelException.members#52.0-1444123804000-java.trap.gz (277 of 750)
+[2025-04-22 22:18:48] Importing CompletionHandler.members#52.0-1444123808000-java.trap.gz (278 of 750)
+[2025-04-22 22:18:48] Importing FileChannel$MapMode.members#52.0-1444123808000-java.trap.gz (279 of 750)
+[2025-04-22 22:18:48] Importing FileChannel.members#52.0-1444123808000-java.trap.gz (280 of 750)
+[2025-04-22 22:18:48] Importing FileLock.members#52.0-1444123808000-java.trap.gz (281 of 750)
+[2025-04-22 22:18:48] Importing GatheringByteChannel.members#52.0-1444123802000-java.trap.gz (282 of 750)
+[2025-04-22 22:18:48] Importing InterruptibleChannel.members#52.0-1444123802000-java.trap.gz (283 of 750)
+[2025-04-22 22:18:48] Importing ReadableByteChannel.members#52.0-1444123802000-java.trap.gz (284 of 750)
+[2025-04-22 22:18:48] Importing ScatteringByteChannel.members#52.0-1444123802000-java.trap.gz (285 of 750)
+[2025-04-22 22:18:48] Importing SeekableByteChannel.members#52.0-1444123808000-java.trap.gz (286 of 750)
+[2025-04-22 22:18:48] Importing WritableByteChannel.members#52.0-1444123802000-java.trap.gz (287 of 750)
+[2025-04-22 22:18:48] Importing AbstractInterruptibleChannel.members#52.0-1444123802000-java.trap.gz (288 of 750)
+[2025-04-22 22:18:48] Importing CharacterCodingException.members#52.0-1444123808000-java.trap.gz (289 of 750)
+[2025-04-22 22:18:48] Importing Charset.members#52.0-1444123806000-java.trap.gz (290 of 750)
+[2025-04-22 22:18:48] Importing CharsetDecoder.members#52.0-1444123808000-java.trap.gz (291 of 750)
+[2025-04-22 22:18:48] Importing CharsetEncoder.members#52.0-1444123808000-java.trap.gz (292 of 750)
+[2025-04-22 22:18:48] Importing CoderResult.members#52.0-1444123808000-java.trap.gz (293 of 750)
+[2025-04-22 22:18:48] Importing CodingErrorAction.members#52.0-1444123808000-java.trap.gz (294 of 750)
+[2025-04-22 22:18:48] Importing AccessMode.members#52.0-1444123808000-java.trap.gz (295 of 750)
+[2025-04-22 22:18:48] Importing CopyOption.members#52.0-1444123808000-java.trap.gz (296 of 750)
+[2025-04-22 22:18:48] Importing DirectoryStream$Filter.members#52.0-1444123808000-java.trap.gz (297 of 750)
+[2025-04-22 22:18:48] Importing DirectoryStream.members#52.0-1444123808000-java.trap.gz (298 of 750)
+[2025-04-22 22:18:48] Importing FileStore.members#52.0-1444123808000-java.trap.gz (299 of 750)
+[2025-04-22 22:18:48] Importing FileSystem.members#52.0-1444123808000-java.trap.gz (300 of 750)
+[2025-04-22 22:18:48] Importing LinkOption.members#52.0-1444123808000-java.trap.gz (301 of 750)
+[2025-04-22 22:18:48] Importing OpenOption.members#52.0-1444123808000-java.trap.gz (302 of 750)
+[2025-04-22 22:18:48] Importing Path.members#52.0-1444123808000-java.trap.gz (303 of 750)
+[2025-04-22 22:18:48] Importing PathMatcher.members#52.0-1444123808000-java.trap.gz (304 of 750)
+[2025-04-22 22:18:48] Importing WatchEvent$Kind.members#52.0-1444123808000-java.trap.gz (305 of 750)
+[2025-04-22 22:18:48] Importing WatchEvent$Modifier.members#52.0-1444123808000-java.trap.gz (306 of 750)
+[2025-04-22 22:18:48] Importing WatchEvent.members#52.0-1444123808000-java.trap.gz (307 of 750)
+[2025-04-22 22:18:48] Importing WatchKey.members#52.0-1444123808000-java.trap.gz (308 of 750)
+[2025-04-22 22:18:48] Importing WatchService.members#52.0-1444123808000-java.trap.gz (309 of 750)
+[2025-04-22 22:18:48] Importing Watchable.members#52.0-1444123808000-java.trap.gz (310 of 750)
+[2025-04-22 22:18:48] Importing AttributeView.members#52.0-1444123808000-java.trap.gz (311 of 750)
+[2025-04-22 22:18:48] Importing BasicFileAttributes.members#52.0-1444123808000-java.trap.gz (312 of 750)
+[2025-04-22 22:18:48] Importing FileAttribute.members#52.0-1444123808000-java.trap.gz (313 of 750)
+[2025-04-22 22:18:48] Importing FileAttributeView.members#52.0-1444123808000-java.trap.gz (314 of 750)
+[2025-04-22 22:18:48] Importing FileStoreAttributeView.members#52.0-1444123808000-java.trap.gz (315 of 750)
+[2025-04-22 22:18:48] Importing FileTime.members#52.0-1444123808000-java.trap.gz (316 of 750)
+[2025-04-22 22:18:48] Importing GroupPrincipal.members#52.0-1444123808000-java.trap.gz (317 of 750)
+[2025-04-22 22:18:48] Importing UserPrincipal.members#52.0-1444123808000-java.trap.gz (318 of 750)
+[2025-04-22 22:18:48] Importing UserPrincipalLookupService.members#52.0-1444123808000-java.trap.gz (319 of 750)
+[2025-04-22 22:18:48] Importing FileSystemProvider.members#52.0-1444123808000-java.trap.gz (320 of 750)
+[2025-04-22 22:18:48] Importing AccessControlContext.members#52.0-1444123806000-java.trap.gz (321 of 750)
+[2025-04-22 22:18:48] Importing AccessControlException.members#52.0-1444123808000-java.trap.gz (322 of 750)
+[2025-04-22 22:18:48] Importing BasicPermission.members#52.0-1444123806000-java.trap.gz (323 of 750)
+[2025-04-22 22:18:48] Importing CodeSigner.members#52.0-1444123808000-java.trap.gz (324 of 750)
+[2025-04-22 22:18:48] Importing CodeSource.members#52.0-1444123806000-java.trap.gz (325 of 750)
+[2025-04-22 22:18:48] Importing DomainCombiner.members#52.0-1444123808000-java.trap.gz (326 of 750)
+[2025-04-22 22:18:48] Importing GeneralSecurityException.members#52.0-1444123808000-java.trap.gz (327 of 750)
+[2025-04-22 22:18:48] Importing Guard.members#52.0-1444123804000-java.trap.gz (328 of 750)
+[2025-04-22 22:18:48] Importing InvalidKeyException.members#52.0-1444123808000-java.trap.gz (329 of 750)
+[2025-04-22 22:18:48] Importing Key.members#52.0-1444123808000-java.trap.gz (330 of 750)
+[2025-04-22 22:18:48] Importing KeyException.members#52.0-1444123808000-java.trap.gz (331 of 750)
+[2025-04-22 22:18:48] Importing NoSuchAlgorithmException.members#52.0-1444123808000-java.trap.gz (332 of 750)
+[2025-04-22 22:18:48] Importing NoSuchProviderException.members#52.0-1444123808000-java.trap.gz (333 of 750)
+[2025-04-22 22:18:48] Importing Permission.members#52.0-1444123804000-java.trap.gz (334 of 750)
+[2025-04-22 22:18:48] Importing PermissionCollection.members#52.0-1444123806000-java.trap.gz (335 of 750)
+[2025-04-22 22:18:48] Importing Principal.members#52.0-1444123808000-java.trap.gz (336 of 750)
+[2025-04-22 22:18:48] Importing PrivilegedAction.members#52.0-1444123808000-java.trap.gz (337 of 750)
+[2025-04-22 22:18:48] Importing PrivilegedActionException.members#52.0-1444123808000-java.trap.gz (338 of 750)
+[2025-04-22 22:18:48] Importing PrivilegedExceptionAction.members#52.0-1444123808000-java.trap.gz (339 of 750)
+[2025-04-22 22:18:48] Importing ProtectionDomain$Key.members#52.0-1444123804000-java.trap.gz (340 of 750)
+[2025-04-22 22:18:48] Importing ProtectionDomain.members#52.0-1444123804000-java.trap.gz (341 of 750)
+[2025-04-22 22:18:48] Importing Provider$Service.members#52.0-1444123808000-java.trap.gz (342 of 750)
+[2025-04-22 22:18:48] Importing Provider.members#52.0-1444123808000-java.trap.gz (343 of 750)
+[2025-04-22 22:18:48] Importing PublicKey.members#52.0-1444123808000-java.trap.gz (344 of 750)
+[2025-04-22 22:18:48] Importing SignatureException.members#52.0-1444123808000-java.trap.gz (345 of 750)
+[2025-04-22 22:18:48] Importing Timestamp.members#52.0-1444123808000-java.trap.gz (346 of 750)
+[2025-04-22 22:18:48] Importing CertPath.members#52.0-1444123808000-java.trap.gz (347 of 750)
+[2025-04-22 22:18:48] Importing Certificate.members#52.0-1444123806000-java.trap.gz (348 of 750)
+[2025-04-22 22:18:48] Importing CertificateEncodingException.members#52.0-1444123808000-java.trap.gz (349 of 750)
+[2025-04-22 22:18:48] Importing CertificateException.members#52.0-1444123808000-java.trap.gz (350 of 750)
+[2025-04-22 22:18:48] Importing Array.members#52.0-1444123824000-java.trap.gz (351 of 750)
+[2025-04-22 22:18:48] Importing Blob.members#52.0-1444123824000-java.trap.gz (352 of 750)
+[2025-04-22 22:18:48] Importing CallableStatement.members#52.0-1444123824000-java.trap.gz (353 of 750)
+[2025-04-22 22:18:48] Importing ClientInfoStatus.members#52.0-1444123824000-java.trap.gz (354 of 750)
+[2025-04-22 22:18:48] Importing Clob.members#52.0-1444123824000-java.trap.gz (355 of 750)
+[2025-04-22 22:18:48] Importing Connection.members#52.0-1444123824000-java.trap.gz (356 of 750)
+[2025-04-22 22:18:48] Importing DatabaseMetaData.members#52.0-1444123824000-java.trap.gz (357 of 750)
+[2025-04-22 22:18:48] Importing Date.members#52.0-1444123824000-java.trap.gz (358 of 750)
+[2025-04-22 22:18:48] Importing NClob.members#52.0-1444123824000-java.trap.gz (359 of 750)
+[2025-04-22 22:18:48] Importing ParameterMetaData.members#52.0-1444123824000-java.trap.gz (360 of 750)
+[2025-04-22 22:18:48] Importing PreparedStatement.members#52.0-1444123824000-java.trap.gz (361 of 750)
+[2025-04-22 22:18:48] Importing Ref.members#52.0-1444123824000-java.trap.gz (362 of 750)
+[2025-04-22 22:18:48] Importing ResultSet.members#52.0-1444123824000-java.trap.gz (363 of 750)
+[2025-04-22 22:18:48] Importing ResultSetMetaData.members#52.0-1444123824000-java.trap.gz (364 of 750)
+[2025-04-22 22:18:48] Importing RowId.members#52.0-1444123824000-java.trap.gz (365 of 750)
+[2025-04-22 22:18:48] Importing RowIdLifetime.members#52.0-1444123824000-java.trap.gz (366 of 750)
+[2025-04-22 22:18:48] Importing SQLClientInfoException.members#52.0-1444123824000-java.trap.gz (367 of 750)
+[2025-04-22 22:18:48] Importing SQLException.members#52.0-1444123824000-java.trap.gz (368 of 750)
+[2025-04-22 22:18:48] Importing SQLType.members#52.0-1444123824000-java.trap.gz (369 of 750)
+[2025-04-22 22:18:48] Importing SQLWarning.members#52.0-1444123824000-java.trap.gz (370 of 750)
+[2025-04-22 22:18:48] Importing SQLXML.members#52.0-1444123824000-java.trap.gz (371 of 750)
+[2025-04-22 22:18:48] Importing Savepoint.members#52.0-1444123824000-java.trap.gz (372 of 750)
+[2025-04-22 22:18:49] Importing Statement.members#52.0-1444123824000-java.trap.gz (373 of 750)
+[2025-04-22 22:18:49] Importing Struct.members#52.0-1444123824000-java.trap.gz (374 of 750)
+[2025-04-22 22:18:49] Importing Time.members#52.0-1444123824000-java.trap.gz (375 of 750)
+[2025-04-22 22:18:49] Importing Timestamp.members#52.0-1444123824000-java.trap.gz (376 of 750)
+[2025-04-22 22:18:49] Importing Wrapper.members#52.0-1444123824000-java.trap.gz (377 of 750)
+[2025-04-22 22:18:49] Importing AttributedCharacterIterator$Attribute.members#52.0-1444123808000-java.trap.gz (378 of 750)
+[2025-04-22 22:18:49] Importing AttributedCharacterIterator.members#52.0-1444123808000-java.trap.gz (379 of 750)
+[2025-04-22 22:18:49] Importing CharacterIterator.members#52.0-1444123808000-java.trap.gz (380 of 750)
+[2025-04-22 22:18:49] Importing FieldPosition.members#52.0-1444123808000-java.trap.gz (381 of 750)
+[2025-04-22 22:18:49] Importing Format$Field.members#52.0-1444123808000-java.trap.gz (382 of 750)
+[2025-04-22 22:18:49] Importing Format$FieldDelegate.members#52.0-1444123808000-java.trap.gz (383 of 750)
+[2025-04-22 22:18:49] Importing Format.members#52.0-1444123808000-java.trap.gz (384 of 750)
+[2025-04-22 22:18:49] Importing MessageFormat.members#52.0-1444123808000-java.trap.gz (385 of 750)
+[2025-04-22 22:18:49] Importing ParseException.members#52.0-1444123808000-java.trap.gz (386 of 750)
+[2025-04-22 22:18:49] Importing ParsePosition.members#52.0-1444123808000-java.trap.gz (387 of 750)
+[2025-04-22 22:18:49] Importing Clock.members#52.0-1444123808000-java.trap.gz (388 of 750)
+[2025-04-22 22:18:49] Importing DayOfWeek.members#52.0-1444123808000-java.trap.gz (389 of 750)
+[2025-04-22 22:18:49] Importing Duration.members#52.0-1444123808000-java.trap.gz (390 of 750)
+[2025-04-22 22:18:49] Importing Instant.members#52.0-1444123808000-java.trap.gz (391 of 750)
+[2025-04-22 22:18:49] Importing LocalDate.members#52.0-1444123808000-java.trap.gz (392 of 750)
+[2025-04-22 22:18:49] Importing LocalDateTime.members#52.0-1444123808000-java.trap.gz (393 of 750)
+[2025-04-22 22:18:49] Importing LocalTime.members#52.0-1444123808000-java.trap.gz (394 of 750)
+[2025-04-22 22:18:49] Importing Month.members#52.0-1444123808000-java.trap.gz (395 of 750)
+[2025-04-22 22:18:49] Importing OffsetDateTime.members#52.0-1444123808000-java.trap.gz (396 of 750)
+[2025-04-22 22:18:49] Importing OffsetTime.members#52.0-1444123808000-java.trap.gz (397 of 750)
+[2025-04-22 22:18:49] Importing Period.members#52.0-1444123808000-java.trap.gz (398 of 750)
+[2025-04-22 22:18:49] Importing ZoneId.members#52.0-1444123808000-java.trap.gz (399 of 750)
+[2025-04-22 22:18:49] Importing ZoneOffset.members#52.0-1444123808000-java.trap.gz (400 of 750)
+[2025-04-22 22:18:49] Importing ZonedDateTime.members#52.0-1444123808000-java.trap.gz (401 of 750)
+[2025-04-22 22:18:49] Importing AbstractChronology.members#52.0-1444123808000-java.trap.gz (402 of 750)
+[2025-04-22 22:18:49] Importing ChronoLocalDate.members#52.0-1444123808000-java.trap.gz (403 of 750)
+[2025-04-22 22:18:49] Importing ChronoLocalDateTime.members#52.0-1444123808000-java.trap.gz (404 of 750)
+[2025-04-22 22:18:49] Importing ChronoPeriod.members#52.0-1444123808000-java.trap.gz (405 of 750)
+[2025-04-22 22:18:49] Importing ChronoZonedDateTime.members#52.0-1444123808000-java.trap.gz (406 of 750)
+[2025-04-22 22:18:49] Importing Chronology.members#52.0-1444123808000-java.trap.gz (407 of 750)
+[2025-04-22 22:18:49] Importing Era.members#52.0-1444123808000-java.trap.gz (408 of 750)
+[2025-04-22 22:18:49] Importing IsoChronology.members#52.0-1444123808000-java.trap.gz (409 of 750)
+[2025-04-22 22:18:49] Importing IsoEra.members#52.0-1444123810000-java.trap.gz (410 of 750)
+[2025-04-22 22:18:49] Importing DateTimeFormatter.members#52.0-1444123808000-java.trap.gz (411 of 750)
+[2025-04-22 22:18:49] Importing DateTimeFormatterBuilder$CompositePrinterParser.members#52.0-1444123808000-java.trap.gz (412 of 750)
+[2025-04-22 22:18:49] Importing DateTimeFormatterBuilder$DateTimePrinterParser.members#52.0-1444123808000-java.trap.gz (413 of 750)
+[2025-04-22 22:18:49] Importing DateTimeFormatterBuilder.members#52.0-1444123808000-java.trap.gz (414 of 750)
+[2025-04-22 22:18:49] Importing DateTimeParseContext.members#52.0-1444123808000-java.trap.gz (415 of 750)
+[2025-04-22 22:18:49] Importing DateTimePrintContext.members#52.0-1444123810000-java.trap.gz (416 of 750)
+[2025-04-22 22:18:49] Importing DecimalStyle.members#52.0-1444123808000-java.trap.gz (417 of 750)
+[2025-04-22 22:18:49] Importing FormatStyle.members#52.0-1444123808000-java.trap.gz (418 of 750)
+[2025-04-22 22:18:49] Importing Parsed.members#52.0-1444123810000-java.trap.gz (419 of 750)
+[2025-04-22 22:18:49] Importing ResolverStyle.members#52.0-1444123808000-java.trap.gz (420 of 750)
+[2025-04-22 22:18:49] Importing SignStyle.members#52.0-1444123808000-java.trap.gz (421 of 750)
+[2025-04-22 22:18:49] Importing TextStyle.members#52.0-1444123808000-java.trap.gz (422 of 750)
+[2025-04-22 22:18:49] Importing ChronoField.members#52.0-1444123808000-java.trap.gz (423 of 750)
+[2025-04-22 22:18:49] Importing Temporal.members#52.0-1444123808000-java.trap.gz (424 of 750)
+[2025-04-22 22:18:49] Importing TemporalAccessor.members#52.0-1444123808000-java.trap.gz (425 of 750)
+[2025-04-22 22:18:49] Importing TemporalAdjuster.members#52.0-1444123808000-java.trap.gz (426 of 750)
+[2025-04-22 22:18:49] Importing TemporalAmount.members#52.0-1444123808000-java.trap.gz (427 of 750)
+[2025-04-22 22:18:49] Importing TemporalField.members#52.0-1444123808000-java.trap.gz (428 of 750)
+[2025-04-22 22:18:49] Importing TemporalQuery.members#52.0-1444123808000-java.trap.gz (429 of 750)
+[2025-04-22 22:18:49] Importing TemporalUnit.members#52.0-1444123808000-java.trap.gz (430 of 750)
+[2025-04-22 22:18:49] Importing ValueRange.members#52.0-1444123808000-java.trap.gz (431 of 750)
+[2025-04-22 22:18:49] Importing ZoneOffsetTransition.members#52.0-1444123810000-java.trap.gz (432 of 750)
+[2025-04-22 22:18:49] Importing ZoneOffsetTransitionRule$TimeDefinition.members#52.0-1444123810000-java.trap.gz (433 of 750)
+[2025-04-22 22:18:49] Importing ZoneOffsetTransitionRule.members#52.0-1444123810000-java.trap.gz (434 of 750)
+[2025-04-22 22:18:49] Importing ZoneRules.members#52.0-1444123808000-java.trap.gz (435 of 750)
+[2025-04-22 22:18:49] Importing AbstractCollection.members#52.0-1444123806000-java.trap.gz (436 of 750)
+[2025-04-22 22:18:49] Importing AbstractList.members#52.0-1444123806000-java.trap.gz (437 of 750)
+[2025-04-22 22:18:49] Importing AbstractMap.members#52.0-1444123806000-java.trap.gz (438 of 750)
+[2025-04-22 22:18:49] Importing AbstractSequentialList.members#52.0-1444123816000-java.trap.gz (439 of 750)
+[2025-04-22 22:18:49] Importing AbstractSet.members#52.0-1444123812000-java.trap.gz (440 of 750)
+[2025-04-22 22:18:49] Importing ArrayList.members#52.0-1444123808000-java.trap.gz (441 of 750)
+[2025-04-22 22:18:49] Importing Calendar.members#52.0-1444123818000-java.trap.gz (442 of 750)
+[2025-04-22 22:18:49] Importing Collection.members#52.0-1444123804000-java.trap.gz (443 of 750)
+[2025-04-22 22:18:49] Importing Comparator.members#52.0-1444123806000-java.trap.gz (444 of 750)
+[2025-04-22 22:18:49] Importing Date.members#52.0-1444123808000-java.trap.gz (445 of 750)
+[2025-04-22 22:18:49] Importing Deque.members#52.0-1444123808000-java.trap.gz (446 of 750)
+[2025-04-22 22:18:49] Importing Dictionary.members#52.0-1444123808000-java.trap.gz (447 of 750)
+[2025-04-22 22:18:49] Importing DoubleSummaryStatistics.members#52.0-1444123808000-java.trap.gz (448 of 750)
+[2025-04-22 22:18:49] Importing EnumSet.members#52.0-1444123832000-java.trap.gz (449 of 750)
+[2025-04-22 22:18:49] Importing Enumeration.members#52.0-1444123806000-java.trap.gz (450 of 750)
+[2025-04-22 22:18:49] Importing EventListener.members#52.0-1444123810000-java.trap.gz (451 of 750)
+[2025-04-22 22:18:49] Importing HashMap$Node.members#52.0-1444123806000-java.trap.gz (452 of 750)
+[2025-04-22 22:18:49] Importing HashMap$TreeNode.members#52.0-1444123806000-java.trap.gz (453 of 750)
+[2025-04-22 22:18:49] Importing HashMap.members#52.0-1444123806000-java.trap.gz (454 of 750)
+[2025-04-22 22:18:49] Importing Hashtable.members#52.0-1444123806000-java.trap.gz (455 of 750)
+[2025-04-22 22:18:49] Importing IntSummaryStatistics.members#52.0-1444123808000-java.trap.gz (456 of 750)
+[2025-04-22 22:18:49] Importing InvalidPropertiesFormatException.members#52.0-1444123808000-java.trap.gz (457 of 750)
+[2025-04-22 22:18:49] Importing Iterator.members#52.0-1444123806000-java.trap.gz (458 of 750)
+[2025-04-22 22:18:49] Importing LinkedHashMap$Entry.members#52.0-1444123808000-java.trap.gz (459 of 750)
+[2025-04-22 22:18:49] Importing LinkedHashMap.members#52.0-1444123808000-java.trap.gz (460 of 750)
+[2025-04-22 22:18:49] Importing LinkedList$Node.members#52.0-1444123816000-java.trap.gz (461 of 750)
+[2025-04-22 22:18:49] Importing LinkedList.members#52.0-1444123816000-java.trap.gz (462 of 750)
+[2025-04-22 22:18:49] Importing List.members#52.0-1444123804000-java.trap.gz (463 of 750)
+[2025-04-22 22:18:49] Importing ListIterator.members#52.0-1444123806000-java.trap.gz (464 of 750)
+[2025-04-22 22:18:49] Importing Locale$Category.members#52.0-1444123806000-java.trap.gz (465 of 750)
+[2025-04-22 22:18:49] Importing Locale$FilteringMode.members#52.0-1444123806000-java.trap.gz (466 of 750)
+[2025-04-22 22:18:49] Importing Locale$LanguageRange.members#52.0-1444123806000-java.trap.gz (467 of 750)
+[2025-04-22 22:18:49] Importing Locale.members#52.0-1444123806000-java.trap.gz (468 of 750)
+[2025-04-22 22:18:49] Importing LongSummaryStatistics.members#52.0-1444123808000-java.trap.gz (469 of 750)
+[2025-04-22 22:18:49] Importing Map$Entry.members#52.0-1444123804000-java.trap.gz (470 of 750)
+[2025-04-22 22:18:49] Importing Map.members#52.0-1444123804000-java.trap.gz (471 of 750)
+[2025-04-22 22:18:49] Importing MissingResourceException.members#52.0-1444123808000-java.trap.gz (472 of 750)
+[2025-04-22 22:18:49] Importing Optional.members#52.0-1444123808000-java.trap.gz (473 of 750)
+[2025-04-22 22:18:49] Importing OptionalDouble.members#52.0-1444123808000-java.trap.gz (474 of 750)
+[2025-04-22 22:18:49] Importing OptionalInt.members#52.0-1444123808000-java.trap.gz (475 of 750)
+[2025-04-22 22:18:49] Importing OptionalLong.members#52.0-1444123808000-java.trap.gz (476 of 750)
+[2025-04-22 22:18:49] Importing PrimitiveIterator$OfDouble.members#52.0-1444123808000-java.trap.gz (477 of 750)
+[2025-04-22 22:18:49] Importing PrimitiveIterator$OfInt.members#52.0-1444123808000-java.trap.gz (478 of 750)
+[2025-04-22 22:18:49] Importing PrimitiveIterator$OfLong.members#52.0-1444123808000-java.trap.gz (479 of 750)
+[2025-04-22 22:18:49] Importing PrimitiveIterator.members#52.0-1444123808000-java.trap.gz (480 of 750)
+[2025-04-22 22:18:49] Importing Properties.members#52.0-1444123808000-java.trap.gz (481 of 750)
+[2025-04-22 22:18:49] Importing Queue.members#52.0-1444123808000-java.trap.gz (482 of 750)
+[2025-04-22 22:18:49] Importing Random.members#52.0-1444123808000-java.trap.gz (483 of 750)
+[2025-04-22 22:18:49] Importing RandomAccess.members#52.0-1444123806000-java.trap.gz (484 of 750)
+[2025-04-22 22:18:49] Importing Set.members#52.0-1444123804000-java.trap.gz (485 of 750)
+[2025-04-22 22:18:49] Importing SortedMap.members#52.0-1444123808000-java.trap.gz (486 of 750)
+[2025-04-22 22:18:49] Importing Spliterator$OfDouble.members#52.0-1444123806000-java.trap.gz (487 of 750)
+[2025-04-22 22:18:49] Importing Spliterator$OfInt.members#52.0-1444123806000-java.trap.gz (488 of 750)
+[2025-04-22 22:18:49] Importing Spliterator$OfLong.members#52.0-1444123806000-java.trap.gz (489 of 750)
+[2025-04-22 22:18:49] Importing Spliterator$OfPrimitive.members#52.0-1444123806000-java.trap.gz (490 of 750)
+[2025-04-22 22:18:49] Importing Spliterator.members#52.0-1444123806000-java.trap.gz (491 of 750)
+[2025-04-22 22:18:49] Importing Stack.members#52.0-1444123806000-java.trap.gz (492 of 750)
+[2025-04-22 22:18:49] Importing TimeZone.members#52.0-1444123808000-java.trap.gz (493 of 750)
+[2025-04-22 22:18:49] Importing Vector.members#52.0-1444123806000-java.trap.gz (494 of 750)
+[2025-04-22 22:18:49] Importing WeakHashMap$Entry.members#52.0-1444123806000-java.trap.gz (495 of 750)
+[2025-04-22 22:18:49] Importing WeakHashMap.members#52.0-1444123806000-java.trap.gz (496 of 750)
+[2025-04-22 22:18:49] Importing Callable.members#52.0-1444123808000-java.trap.gz (497 of 750)
+[2025-04-22 22:18:49] Importing ConcurrentMap.members#52.0-1444123806000-java.trap.gz (498 of 750)
+[2025-04-22 22:18:49] Importing ExecutionException.members#52.0-1444123808000-java.trap.gz (499 of 750)
+[2025-04-22 22:18:49] Importing Executor.members#52.0-1444123808000-java.trap.gz (500 of 750)
+[2025-04-22 22:18:49] Importing ExecutorService.members#52.0-1444123808000-java.trap.gz (501 of 750)
+[2025-04-22 22:18:49] Importing Future.members#52.0-1444123808000-java.trap.gz (502 of 750)
+[2025-04-22 22:18:49] Importing TimeUnit.members#52.0-1444123808000-java.trap.gz (503 of 750)
+[2025-04-22 22:18:49] Importing TimeoutException.members#52.0-1444123808000-java.trap.gz (504 of 750)
+[2025-04-22 22:18:49] Importing BiConsumer.members#52.0-1444123806000-java.trap.gz (505 of 750)
+[2025-04-22 22:18:49] Importing BiFunction.members#52.0-1444123806000-java.trap.gz (506 of 750)
+[2025-04-22 22:18:49] Importing BinaryOperator.members#52.0-1444123808000-java.trap.gz (507 of 750)
+[2025-04-22 22:18:49] Importing Consumer.members#52.0-1444123806000-java.trap.gz (508 of 750)
+[2025-04-22 22:18:49] Importing DoubleBinaryOperator.members#52.0-1444123808000-java.trap.gz (509 of 750)
+[2025-04-22 22:18:49] Importing DoubleConsumer.members#52.0-1444123808000-java.trap.gz (510 of 750)
+[2025-04-22 22:18:49] Importing DoubleFunction.members#52.0-1444123808000-java.trap.gz (511 of 750)
+[2025-04-22 22:18:49] Importing DoublePredicate.members#52.0-1444123808000-java.trap.gz (512 of 750)
+[2025-04-22 22:18:49] Importing DoubleSupplier.members#52.0-1444123808000-java.trap.gz (513 of 750)
+[2025-04-22 22:18:49] Importing DoubleToIntFunction.members#52.0-1444123808000-java.trap.gz (514 of 750)
+[2025-04-22 22:18:49] Importing DoubleToLongFunction.members#52.0-1444123808000-java.trap.gz (515 of 750)
+[2025-04-22 22:18:49] Importing DoubleUnaryOperator.members#52.0-1444123808000-java.trap.gz (516 of 750)
+[2025-04-22 22:18:49] Importing Function.members#52.0-1444123806000-java.trap.gz (517 of 750)
+[2025-04-22 22:18:49] Importing IntBinaryOperator.members#52.0-1444123808000-java.trap.gz (518 of 750)
+[2025-04-22 22:18:49] Importing IntConsumer.members#52.0-1444123808000-java.trap.gz (519 of 750)
+[2025-04-22 22:18:49] Importing IntFunction.members#52.0-1444123808000-java.trap.gz (520 of 750)
+[2025-04-22 22:18:49] Importing IntPredicate.members#52.0-1444123808000-java.trap.gz (521 of 750)
+[2025-04-22 22:18:49] Importing IntSupplier.members#52.0-1444123808000-java.trap.gz (522 of 750)
+[2025-04-22 22:18:49] Importing IntToDoubleFunction.members#52.0-1444123808000-java.trap.gz (523 of 750)
+[2025-04-22 22:18:49] Importing IntToLongFunction.members#52.0-1444123808000-java.trap.gz (524 of 750)
+[2025-04-22 22:18:49] Importing IntUnaryOperator.members#52.0-1444123808000-java.trap.gz (525 of 750)
+[2025-04-22 22:18:49] Importing LongBinaryOperator.members#52.0-1444123808000-java.trap.gz (526 of 750)
+[2025-04-22 22:18:49] Importing LongConsumer.members#52.0-1444123808000-java.trap.gz (527 of 750)
+[2025-04-22 22:18:49] Importing LongFunction.members#52.0-1444123808000-java.trap.gz (528 of 750)
+[2025-04-22 22:18:49] Importing LongPredicate.members#52.0-1444123808000-java.trap.gz (529 of 750)
+[2025-04-22 22:18:49] Importing LongSupplier.members#52.0-1444123808000-java.trap.gz (530 of 750)
+[2025-04-22 22:18:49] Importing LongToDoubleFunction.members#52.0-1444123808000-java.trap.gz (531 of 750)
+[2025-04-22 22:18:49] Importing LongToIntFunction.members#52.0-1444123808000-java.trap.gz (532 of 750)
+[2025-04-22 22:18:49] Importing LongUnaryOperator.members#52.0-1444123808000-java.trap.gz (533 of 750)
+[2025-04-22 22:18:49] Importing ObjDoubleConsumer.members#52.0-1444123808000-java.trap.gz (534 of 750)
+[2025-04-22 22:18:49] Importing ObjIntConsumer.members#52.0-1444123808000-java.trap.gz (535 of 750)
+[2025-04-22 22:18:49] Importing ObjLongConsumer.members#52.0-1444123808000-java.trap.gz (536 of 750)
+[2025-04-22 22:18:49] Importing Predicate.members#52.0-1444123806000-java.trap.gz (537 of 750)
+[2025-04-22 22:18:49] Importing Supplier.members#52.0-1444123808000-java.trap.gz (538 of 750)
+[2025-04-22 22:18:49] Importing ToDoubleFunction.members#52.0-1444123808000-java.trap.gz (539 of 750)
+[2025-04-22 22:18:49] Importing ToIntFunction.members#52.0-1444123808000-java.trap.gz (540 of 750)
+[2025-04-22 22:18:49] Importing ToLongFunction.members#52.0-1444123808000-java.trap.gz (541 of 750)
+[2025-04-22 22:18:49] Importing UnaryOperator.members#52.0-1444123806000-java.trap.gz (542 of 750)
+[2025-04-22 22:18:49] Importing Attributes$Name.members#52.0-1444123804000-java.trap.gz (543 of 750)
+[2025-04-22 22:18:49] Importing Attributes.members#52.0-1444123804000-java.trap.gz (544 of 750)
+[2025-04-22 22:18:49] Importing Manifest$FastInputStream.members#52.0-1444123806000-java.trap.gz (545 of 750)
+[2025-04-22 22:18:49] Importing Manifest.members#52.0-1444123806000-java.trap.gz (546 of 750)
+[2025-04-22 22:18:49] Importing BaseStream.members#52.0-1444123806000-java.trap.gz (547 of 750)
+[2025-04-22 22:18:49] Importing Collector$Characteristics.members#52.0-1444123808000-java.trap.gz (548 of 750)
+[2025-04-22 22:18:49] Importing Collector.members#52.0-1444123808000-java.trap.gz (549 of 750)
+[2025-04-22 22:18:49] Importing DoubleStream$Builder.members#52.0-1444123808000-java.trap.gz (550 of 750)
+[2025-04-22 22:18:49] Importing DoubleStream.members#52.0-1444123808000-java.trap.gz (551 of 750)
+[2025-04-22 22:18:49] Importing IntStream$Builder.members#52.0-1444123806000-java.trap.gz (552 of 750)
+[2025-04-22 22:18:49] Importing IntStream.members#52.0-1444123806000-java.trap.gz (553 of 750)
+[2025-04-22 22:18:49] Importing LongStream$Builder.members#52.0-1444123808000-java.trap.gz (554 of 750)
+[2025-04-22 22:18:49] Importing LongStream.members#52.0-1444123808000-java.trap.gz (555 of 750)
+[2025-04-22 22:18:49] Importing Stream$Builder.members#52.0-1444123806000-java.trap.gz (556 of 750)
+[2025-04-22 22:18:49] Importing Stream.members#52.0-1444123806000-java.trap.gz (557 of 750)
+[2025-04-22 22:18:49] Importing Subject.members#52.0-1444123808000-java.trap.gz (558 of 750)
+[2025-04-22 22:18:49] Importing AsyncContext.members#51.0-1498039284000-java.trap.gz (559 of 750)
+[2025-04-22 22:18:49] Importing AsyncEvent.members#51.0-1498039284000-java.trap.gz (560 of 750)
+[2025-04-22 22:18:49] Importing AsyncListener.members#51.0-1498039284000-java.trap.gz (561 of 750)
+[2025-04-22 22:18:49] Importing DispatcherType.members#51.0-1498039284000-java.trap.gz (562 of 750)
+[2025-04-22 22:18:49] Importing Filter.members#51.0-1498039284000-java.trap.gz (563 of 750)
+[2025-04-22 22:18:49] Importing FilterChain.members#51.0-1498039284000-java.trap.gz (564 of 750)
+[2025-04-22 22:18:49] Importing FilterConfig.members#51.0-1498039284000-java.trap.gz (565 of 750)
+[2025-04-22 22:18:49] Importing FilterRegistration$Dynamic.members#51.0-1498039284000-java.trap.gz (566 of 750)
+[2025-04-22 22:18:49] Importing FilterRegistration.members#51.0-1498039284000-java.trap.gz (567 of 750)
+[2025-04-22 22:18:49] Importing HttpConstraintElement.members#51.0-1498039284000-java.trap.gz (568 of 750)
+[2025-04-22 22:18:49] Importing HttpMethodConstraintElement.members#51.0-1498039284000-java.trap.gz (569 of 750)
+[2025-04-22 22:18:49] Importing MultipartConfigElement.members#51.0-1498039284000-java.trap.gz (570 of 750)
+[2025-04-22 22:18:49] Importing ReadListener.members#51.0-1498039284000-java.trap.gz (571 of 750)
+[2025-04-22 22:18:49] Importing Registration$Dynamic.members#51.0-1498039284000-java.trap.gz (572 of 750)
+[2025-04-22 22:18:49] Importing Registration.members#51.0-1498039284000-java.trap.gz (573 of 750)
+[2025-04-22 22:18:49] Importing RequestDispatcher.members#51.0-1498039284000-java.trap.gz (574 of 750)
+[2025-04-22 22:18:49] Importing Servlet.members#51.0-1498039284000-java.trap.gz (575 of 750)
+[2025-04-22 22:18:49] Importing ServletConfig.members#51.0-1498039284000-java.trap.gz (576 of 750)
+[2025-04-22 22:18:49] Importing ServletContext.members#51.0-1498039284000-java.trap.gz (577 of 750)
+[2025-04-22 22:18:49] Importing ServletException.members#51.0-1498039284000-java.trap.gz (578 of 750)
+[2025-04-22 22:18:49] Importing ServletInputStream.members#51.0-1498039284000-java.trap.gz (579 of 750)
+[2025-04-22 22:18:49] Importing ServletOutputStream.members#51.0-1498039284000-java.trap.gz (580 of 750)
+[2025-04-22 22:18:49] Importing ServletRegistration$Dynamic.members#51.0-1498039284000-java.trap.gz (581 of 750)
+[2025-04-22 22:18:49] Importing ServletRegistration.members#51.0-1498039284000-java.trap.gz (582 of 750)
+[2025-04-22 22:18:49] Importing ServletRequest.members#51.0-1498039284000-java.trap.gz (583 of 750)
+[2025-04-22 22:18:49] Importing ServletResponse.members#51.0-1498039284000-java.trap.gz (584 of 750)
+[2025-04-22 22:18:49] Importing ServletSecurityElement.members#51.0-1498039284000-java.trap.gz (585 of 750)
+[2025-04-22 22:18:49] Importing SessionCookieConfig.members#51.0-1498039284000-java.trap.gz (586 of 750)
+[2025-04-22 22:18:49] Importing SessionTrackingMode.members#51.0-1498039284000-java.trap.gz (587 of 750)
+[2025-04-22 22:18:49] Importing WriteListener.members#51.0-1498039284000-java.trap.gz (588 of 750)
+[2025-04-22 22:18:49] Importing HttpConstraint.members#51.0-1498039284000-java.trap.gz (589 of 750)
+[2025-04-22 22:18:49] Importing HttpMethodConstraint.members#51.0-1498039284000-java.trap.gz (590 of 750)
+[2025-04-22 22:18:49] Importing MultipartConfig.members#51.0-1498039284000-java.trap.gz (591 of 750)
+[2025-04-22 22:18:49] Importing ServletSecurity$EmptyRoleSemantic.members#51.0-1498039284000-java.trap.gz (592 of 750)
+[2025-04-22 22:18:49] Importing ServletSecurity$TransportGuarantee.members#51.0-1498039284000-java.trap.gz (593 of 750)
+[2025-04-22 22:18:49] Importing ServletSecurity.members#51.0-1498039284000-java.trap.gz (594 of 750)
+[2025-04-22 22:18:49] Importing JspConfigDescriptor.members#51.0-1498039284000-java.trap.gz (595 of 750)
+[2025-04-22 22:18:49] Importing JspPropertyGroupDescriptor.members#51.0-1498039284000-java.trap.gz (596 of 750)
+[2025-04-22 22:18:49] Importing TaglibDescriptor.members#51.0-1498039284000-java.trap.gz (597 of 750)
+[2025-04-22 22:18:49] Importing Cookie.members#51.0-1498039284000-java.trap.gz (598 of 750)
+[2025-04-22 22:18:49] Importing HttpServletRequest.members#51.0-1498039284000-java.trap.gz (599 of 750)
+[2025-04-22 22:18:49] Importing HttpServletResponse.members#51.0-1498039284000-java.trap.gz (600 of 750)
+[2025-04-22 22:18:49] Importing HttpSession.members#51.0-1498039284000-java.trap.gz (601 of 750)
+[2025-04-22 22:18:49] Importing HttpSessionContext.members#51.0-1498039284000-java.trap.gz (602 of 750)
+[2025-04-22 22:18:49] Importing HttpUpgradeHandler.members#51.0-1498039284000-java.trap.gz (603 of 750)
+[2025-04-22 22:18:49] Importing Part.members#51.0-1498039284000-java.trap.gz (604 of 750)
+[2025-04-22 22:18:49] Importing WebConnection.members#51.0-1498039284000-java.trap.gz (605 of 750)
+[2025-04-22 22:18:49] Importing Result.members#52.0-1444123664000-java.trap.gz (606 of 750)
+[2025-04-22 22:18:49] Importing Source.members#52.0-1444123664000-java.trap.gz (607 of 750)
+[2025-04-22 22:18:49] Importing NonNull.members#49.0-1468521554000-java.trap.gz (608 of 750)
+[2025-04-22 22:18:49] Importing Log.members#49.0-1489655910000-java.trap.gz (609 of 750)
+[2025-04-22 22:18:49] Importing AssignmentEndpoint.members#52.0-1745331153694-java.trap.gz (610 of 750)
+[2025-04-22 22:18:49] Importing AssignmentHints.members#52.0-1745331153771-java.trap.gz (611 of 750)
+[2025-04-22 22:18:49] Importing AssignmentPath.members#52.0-1745331153671-java.trap.gz (612 of 750)
+[2025-04-22 22:18:49] Importing AttackResult$AttackResultBuilder.members#52.0-1745331153700-java.trap.gz (613 of 750)
+[2025-04-22 22:18:49] Importing AttackResult.members#52.0-1745331153701-java.trap.gz (614 of 750)
+[2025-04-22 22:18:49] Importing Endpoint.members#52.0-1745331153402-java.trap.gz (615 of 750)
+[2025-04-22 22:18:49] Importing Language.members#52.0-1745331153496-java.trap.gz (616 of 750)
+[2025-04-22 22:18:49] Importing Messages.members#52.0-1745331153499-java.trap.gz (617 of 750)
+[2025-04-22 22:18:49] Importing PluginMessages.members#52.0-1745331153493-java.trap.gz (618 of 750)
+[2025-04-22 22:18:49] Importing AbstractLesson.members#52.0-1745331153324-java.trap.gz (619 of 750)
+[2025-04-22 22:18:49] Importing Assignment.members#52.0-1745331153274-java.trap.gz (620 of 750)
+[2025-04-22 22:18:49] Importing Category.members#52.0-1745331153343-java.trap.gz (621 of 750)
+[2025-04-22 22:18:49] Importing LessonAdapter.members#52.0-1745331153415-java.trap.gz (622 of 750)
+[2025-04-22 22:18:49] Importing NewLesson.members#52.0-1745331153413-java.trap.gz (623 of 750)
+[2025-04-22 22:18:49] Importing IDOR.members#0.0-1745331040416-java.trap.gz (624 of 750)
+[2025-04-22 22:18:49] Importing IDORDiffAttributes.members#0.0-1745331040417-java.trap.gz (625 of 750)
+[2025-04-22 22:18:49] Importing IDOREditOtherProfiile.members#0.0-1745331040417-java.trap.gz (626 of 750)
+[2025-04-22 22:18:49] Importing IDORLogin.members#0.0-1745331040418-java.trap.gz (627 of 750)
+[2025-04-22 22:18:49] Importing IDORViewOtherProfile.members#0.0-1745331040419-java.trap.gz (628 of 750)
+[2025-04-22 22:18:49] Importing IDORViewOwnProfile.members#0.0-1745331040420-java.trap.gz (629 of 750)
+[2025-04-22 22:18:49] Importing IDORViewOwnProfileAltUrl.members#0.0-1745331040421-java.trap.gz (630 of 750)
+[2025-04-22 22:18:49] Importing UserProfile.members#0.0-1745331040422-java.trap.gz (631 of 750)
+[2025-04-22 22:18:49] Importing Screen.members#52.0-1745331153326-java.trap.gz (632 of 750)
+[2025-04-22 22:18:49] Importing UserSessionData.members#52.0-1745331153697-java.trap.gz (633 of 750)
+[2025-04-22 22:18:49] Importing WebSession.members#52.0-1745331153265-java.trap.gz (634 of 750)
+[2025-04-22 22:18:49] Importing WebgoatContext.members#52.0-1745331153335-java.trap.gz (635 of 750)
+[2025-04-22 22:18:49] Importing Aware.members#50.0-1500521830000-java.trap.gz (636 of 750)
+[2025-04-22 22:18:49] Importing Autowired.members#50.0-1500521832000-java.trap.gz (637 of 750)
+[2025-04-22 22:18:49] Importing Endpoint.members#50.0-1501026738000-java.trap.gz (638 of 750)
+[2025-04-22 22:18:49] Importing MvcEndpoint.members#50.0-1501026738000-java.trap.gz (639 of 750)
+[2025-04-22 22:18:49] Importing HierarchicalMessageSource.members#50.0-1500521868000-java.trap.gz (640 of 750)
+[2025-04-22 22:18:49] Importing MessageSource.members#50.0-1500521868000-java.trap.gz (641 of 750)
+[2025-04-22 22:18:49] Importing MessageSourceResolvable.members#50.0-1500521868000-java.trap.gz (642 of 750)
+[2025-04-22 22:18:49] Importing NoSuchMessageException.members#50.0-1500521868000-java.trap.gz (643 of 750)
+[2025-04-22 22:18:49] Importing ResourceLoaderAware.members#50.0-1500521868000-java.trap.gz (644 of 750)
+[2025-04-22 22:18:49] Importing Configuration.members#50.0-1500521868000-java.trap.gz (645 of 750)
+[2025-04-22 22:18:49] Importing AbstractMessageSource.members#50.0-1500521868000-java.trap.gz (646 of 750)
+[2025-04-22 22:18:49] Importing AbstractResourceBasedMessageSource.members#50.0-1500521868000-java.trap.gz (647 of 750)
+[2025-04-22 22:18:49] Importing MessageSourceSupport.members#50.0-1500521868000-java.trap.gz (648 of 750)
+[2025-04-22 22:18:49] Importing ReloadableResourceBundleMessageSource$PropertiesHolder.members#50.0-1500521868000-java.trap.gz (649 of 750)
+[2025-04-22 22:18:49] Importing ReloadableResourceBundleMessageSource.members#50.0-1500521868000-java.trap.gz (650 of 750)
+[2025-04-22 22:18:49] Importing AliasFor.members#50.0-1500521828000-java.trap.gz (651 of 750)
+[2025-04-22 22:18:49] Importing InputStreamSource.members#50.0-1500521826000-java.trap.gz (652 of 750)
+[2025-04-22 22:18:49] Importing Resource.members#50.0-1500521826000-java.trap.gz (653 of 750)
+[2025-04-22 22:18:49] Importing ResourceLoader.members#50.0-1500521826000-java.trap.gz (654 of 750)
+[2025-04-22 22:18:49] Importing ResourceRegion.members#50.0-1500521826000-java.trap.gz (655 of 750)
+[2025-04-22 22:18:49] Importing CacheControl.members#50.0-1500521958000-java.trap.gz (656 of 750)
+[2025-04-22 22:18:49] Importing HttpEntity.members#50.0-1500521958000-java.trap.gz (657 of 750)
+[2025-04-22 22:18:49] Importing HttpHeaders.members#50.0-1500521958000-java.trap.gz (658 of 750)
+[2025-04-22 22:18:49] Importing HttpMethod.members#50.0-1500521958000-java.trap.gz (659 of 750)
+[2025-04-22 22:18:49] Importing HttpRange.members#50.0-1500521958000-java.trap.gz (660 of 750)
+[2025-04-22 22:18:49] Importing HttpStatus$Series.members#50.0-1500521958000-java.trap.gz (661 of 750)
+[2025-04-22 22:18:49] Importing HttpStatus.members#50.0-1500521958000-java.trap.gz (662 of 750)
+[2025-04-22 22:18:49] Importing MediaType.members#50.0-1500521958000-java.trap.gz (663 of 750)
+[2025-04-22 22:18:49] Importing ResponseEntity$BodyBuilder.members#50.0-1500521958000-java.trap.gz (664 of 750)
+[2025-04-22 22:18:49] Importing ResponseEntity$HeadersBuilder.members#50.0-1500521958000-java.trap.gz (665 of 750)
+[2025-04-22 22:18:49] Importing ResponseEntity.members#50.0-1500521958000-java.trap.gz (666 of 750)
+[2025-04-22 22:18:49] Importing Component.members#50.0-1500521868000-java.trap.gz (667 of 750)
+[2025-04-22 22:18:49] Importing MimeType.members#50.0-1500521828000-java.trap.gz (668 of 750)
+[2025-04-22 22:18:49] Importing MultiValueMap.members#50.0-1500521826000-java.trap.gz (669 of 750)
+[2025-04-22 22:18:49] Importing PropertiesPersister.members#50.0-1500521826000-java.trap.gz (670 of 750)
+[2025-04-22 22:18:49] Importing Mapping.members#50.0-1500521958000-java.trap.gz (671 of 750)
+[2025-04-22 22:18:49] Importing PathVariable.members#50.0-1500521958000-java.trap.gz (672 of 750)
+[2025-04-22 22:18:49] Importing PostMapping.members#50.0-1500521958000-java.trap.gz (673 of 750)
+[2025-04-22 22:18:49] Importing PutMapping.members#50.0-1500521958000-java.trap.gz (674 of 750)
+[2025-04-22 22:18:49] Importing RequestBody.members#50.0-1500521958000-java.trap.gz (675 of 750)
+[2025-04-22 22:18:49] Importing RequestMapping.members#50.0-1500521958000-java.trap.gz (676 of 750)
+[2025-04-22 22:18:49] Importing RequestMethod.members#50.0-1500521958000-java.trap.gz (677 of 750)
+[2025-04-22 22:18:49] Importing RequestParam.members#50.0-1500521958000-java.trap.gz (678 of 750)
+[2025-04-22 22:18:49] Importing ResponseBody.members#50.0-1500521958000-java.trap.gz (679 of 750)
+[2025-04-22 22:18:49] Importing LocaleResolver.members#50.0-1500522004000-java.trap.gz (680 of 750)
+[2025-04-22 22:18:49] Importing Contended.members#52.0-1444123808000-java.trap.gz (681 of 750)
+[2025-04-22 22:18:49] Importing Resource.members#52.0-1444123808000-java.trap.gz (682 of 750)
+[2025-04-22 22:18:49] Importing URLClassPath$Loader.members#52.0-1444123806000-java.trap.gz (683 of 750)
+[2025-04-22 22:18:49] Importing URLClassPath.members#52.0-1444123806000-java.trap.gz (684 of 750)
+[2025-04-22 22:18:49] Importing Interruptible.members#52.0-1444123804000-java.trap.gz (685 of 750)
+[2025-04-22 22:18:49] Importing CallerSensitive.members#52.0-1444123844000-java.trap.gz (686 of 750)
+[2025-04-22 22:18:49] Importing ConstantPool.members#52.0-1444123804000-java.trap.gz (687 of 750)
+[2025-04-22 22:18:49] Importing ConstructorAccessor.members#52.0-1444123804000-java.trap.gz (688 of 750)
+[2025-04-22 22:18:49] Importing FieldAccessor.members#52.0-1444123806000-java.trap.gz (689 of 750)
+[2025-04-22 22:18:49] Importing LangReflectAccess.members#52.0-1444123806000-java.trap.gz (690 of 750)
+[2025-04-22 22:18:49] Importing MethodAccessor.members#52.0-1444123806000-java.trap.gz (691 of 750)
+[2025-04-22 22:18:49] Importing ReflectionFactory.members#52.0-1444123804000-java.trap.gz (692 of 750)
+[2025-04-22 22:18:49] Importing AnnotationType.members#52.0-1444123804000-java.trap.gz (693 of 750)
+[2025-04-22 22:18:49] Importing GenericsFactory.members#52.0-1444123804000-java.trap.gz (694 of 750)
+[2025-04-22 22:18:49] Importing AbstractRepository.members#52.0-1444123804000-java.trap.gz (695 of 750)
+[2025-04-22 22:18:49] Importing ConstructorRepository.members#52.0-1444123804000-java.trap.gz (696 of 750)
+[2025-04-22 22:18:49] Importing GenericDeclRepository.members#52.0-1444123804000-java.trap.gz (697 of 750)
+[2025-04-22 22:18:49] Importing MethodRepository.members#52.0-1444123806000-java.trap.gz (698 of 750)
+[2025-04-22 22:18:49] Importing ArrayTypeSignature.members#52.0-1444123808000-java.trap.gz (699 of 750)
+[2025-04-22 22:18:49] Importing BaseType.members#52.0-1444123806000-java.trap.gz (700 of 750)
+[2025-04-22 22:18:49] Importing BooleanSignature.members#52.0-1444123808000-java.trap.gz (701 of 750)
+[2025-04-22 22:18:49] Importing BottomSignature.members#52.0-1444123808000-java.trap.gz (702 of 750)
+[2025-04-22 22:18:49] Importing ByteSignature.members#52.0-1444123808000-java.trap.gz (703 of 750)
+[2025-04-22 22:18:49] Importing CharSignature.members#52.0-1444123808000-java.trap.gz (704 of 750)
+[2025-04-22 22:18:49] Importing ClassSignature.members#52.0-1444123804000-java.trap.gz (705 of 750)
+[2025-04-22 22:18:49] Importing ClassTypeSignature.members#52.0-1444123808000-java.trap.gz (706 of 750)
+[2025-04-22 22:18:49] Importing DoubleSignature.members#52.0-1444123808000-java.trap.gz (707 of 750)
+[2025-04-22 22:18:49] Importing FieldTypeSignature.members#52.0-1444123806000-java.trap.gz (708 of 750)
+[2025-04-22 22:18:49] Importing FloatSignature.members#52.0-1444123808000-java.trap.gz (709 of 750)
+[2025-04-22 22:18:49] Importing FormalTypeParameter.members#52.0-1444123806000-java.trap.gz (710 of 750)
+[2025-04-22 22:18:49] Importing IntSignature.members#52.0-1444123808000-java.trap.gz (711 of 750)
+[2025-04-22 22:18:49] Importing LongSignature.members#52.0-1444123808000-java.trap.gz (712 of 750)
+[2025-04-22 22:18:49] Importing MethodTypeSignature.members#52.0-1444123804000-java.trap.gz (713 of 750)
+[2025-04-22 22:18:49] Importing ReturnType.members#52.0-1444123806000-java.trap.gz (714 of 750)
+[2025-04-22 22:18:49] Importing ShortSignature.members#52.0-1444123808000-java.trap.gz (715 of 750)
+[2025-04-22 22:18:49] Importing Signature.members#52.0-1444123804000-java.trap.gz (716 of 750)
+[2025-04-22 22:18:49] Importing SimpleClassTypeSignature.members#52.0-1444123808000-java.trap.gz (717 of 750)
+[2025-04-22 22:18:49] Importing Tree.members#52.0-1444123804000-java.trap.gz (718 of 750)
+[2025-04-22 22:18:49] Importing TypeArgument.members#52.0-1444123806000-java.trap.gz (719 of 750)
+[2025-04-22 22:18:49] Importing TypeSignature.members#52.0-1444123806000-java.trap.gz (720 of 750)
+[2025-04-22 22:18:49] Importing TypeTree.members#52.0-1444123806000-java.trap.gz (721 of 750)
+[2025-04-22 22:18:49] Importing TypeVariableSignature.members#52.0-1444123808000-java.trap.gz (722 of 750)
+[2025-04-22 22:18:49] Importing VoidDescriptor.members#52.0-1444123808000-java.trap.gz (723 of 750)
+[2025-04-22 22:18:49] Importing Wildcard.members#52.0-1444123808000-java.trap.gz (724 of 750)
+[2025-04-22 22:18:49] Importing Reifier.members#52.0-1444123806000-java.trap.gz (725 of 750)
+[2025-04-22 22:18:49] Importing TypeTreeVisitor.members#52.0-1444123806000-java.trap.gz (726 of 750)
+[2025-04-22 22:18:49] Importing Visitor.members#52.0-1444123806000-java.trap.gz (727 of 750)
+[2025-04-22 22:18:49] Importing Debug.members#52.0-1444123808000-java.trap.gz (728 of 750)
+[2025-04-22 22:18:49] Importing BaseLocale.members#52.0-1444123808000-java.trap.gz (729 of 750)
+[2025-04-22 22:18:49] Importing Extension.members#52.0-1444123808000-java.trap.gz (730 of 750)
+[2025-04-22 22:18:49] Importing InternalLocaleBuilder$CaseInsensitiveChar.members#52.0-1444123808000-java.trap.gz (731 of 750)
+[2025-04-22 22:18:49] Importing InternalLocaleBuilder$CaseInsensitiveString.members#52.0-1444123808000-java.trap.gz (732 of 750)
+[2025-04-22 22:18:49] Importing InternalLocaleBuilder.members#52.0-1444123808000-java.trap.gz (733 of 750)
+[2025-04-22 22:18:49] Importing LanguageTag.members#52.0-1444123808000-java.trap.gz (734 of 750)
+[2025-04-22 22:18:49] Importing LocaleExtensions.members#52.0-1444123808000-java.trap.gz (735 of 750)
+[2025-04-22 22:18:49] Importing LocaleSyntaxException.members#52.0-1444123808000-java.trap.gz (736 of 750)
+[2025-04-22 22:18:49] Importing ParseStatus.members#52.0-1444123808000-java.trap.gz (737 of 750)
+[2025-04-22 22:18:49] Importing diagnostic.trap.gz (738 of 750)
+[2025-04-22 22:18:49] Importing jcommander-1.35.jar.trap.gz (739 of 750)
+[2025-04-22 22:18:49] Importing tomcat-embed-core-8.5.16.jar.trap.gz (740 of 750)
+[2025-04-22 22:18:49] Importing lombok-1.16.10.jar.trap.gz (741 of 750)
+[2025-04-22 22:18:49] Importing jcl-over-slf4j-1.7.25.jar.trap.gz (742 of 750)
+[2025-04-22 22:18:49] Importing spring-boot-actuator-1.5.5.RELEASE.jar.trap.gz (743 of 750)
+[2025-04-22 22:18:49] Importing spring-beans-4.3.10.RELEASE.jar.trap.gz (744 of 750)
+[2025-04-22 22:18:49] Importing spring-context-4.3.10.RELEASE.jar.trap.gz (745 of 750)
+[2025-04-22 22:18:49] Importing spring-core-4.3.10.RELEASE.jar.trap.gz (746 of 750)
+[2025-04-22 22:18:49] Importing spring-web-4.3.10.RELEASE.jar.trap.gz (747 of 750)
+[2025-04-22 22:18:49] Importing spring-webmvc-4.3.10.RELEASE.jar.trap.gz (748 of 750)
+[2025-04-22 22:18:49] Importing rt.jar.trap.gz (749 of 750)
+[2025-04-22 22:18:49] Importing metadata.trap.gz (750 of 750)
+[2025-04-22 22:18:49] [PROGRESS] dataset import> Merging relations
+[2025-04-22 22:18:49] Merging 1 fragment for 'files'.
+[2025-04-22 22:18:50] Merged 1624 bytes (1.59 KiB) for 'files'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'folders'.
+[2025-04-22 22:18:50] Merged 750 bytes for 'folders'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'containerparent'.
+[2025-04-22 22:18:50] Merged 1953 bytes (1.91 KiB) for 'containerparent'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'locations_default'.
+[2025-04-22 22:18:50] Merged 39129 bytes (38.21 KiB) for 'locations_default'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmllocations'.
+[2025-04-22 22:18:50] Merged 5706 bytes (5.57 KiB) for 'xmllocations'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlNs'.
+[2025-04-22 22:18:50] Merged 122 bytes for 'xmlNs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlElements'.
+[2025-04-22 22:18:50] Merged 6584 bytes (6.43 KiB) for 'xmlElements'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlHasNs'.
+[2025-04-22 22:18:50] Merged 1335 bytes (1.30 KiB) for 'xmlHasNs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlAttrs'.
+[2025-04-22 22:18:50] Merged 185 bytes for 'xmlAttrs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlChars'.
+[2025-04-22 22:18:50] Merged 4043 bytes (3.95 KiB) for 'xmlChars'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'numlines'.
+[2025-04-22 22:18:50] Merged 4611 bytes (4.50 KiB) for 'numlines'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlComments'.
+[2025-04-22 22:18:50] Merged 161 bytes for 'xmlComments'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'xmlEncoding'.
+[2025-04-22 22:18:50] Merged 64 bytes for 'xmlEncoding'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'configs'.
+[2025-04-22 22:18:50] Merged 859 bytes for 'configs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'configLocations'.
+[2025-04-22 22:18:50] Merged 5045 bytes (4.93 KiB) for 'configLocations'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'configNames'.
+[2025-04-22 22:18:50] Merged 2622 bytes (2.56 KiB) for 'configNames'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'configValues'.
+[2025-04-22 22:18:50] Merged 2681 bytes (2.62 KiB) for 'configValues'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'hasLocation'.
+[2025-04-22 22:18:50] Merged 30530 bytes (29.81 KiB) for 'hasLocation'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'packages'.
+[2025-04-22 22:18:50] Merged 227 bytes for 'packages'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'cupackage'.
+[2025-04-22 22:18:50] Merged 1077 bytes (1.05 KiB) for 'cupackage'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'imports'.
+[2025-04-22 22:18:50] Merged 224 bytes for 'imports'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'hasJavadoc'.
+[2025-04-22 22:18:50] Merged 59 bytes for 'hasJavadoc'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'exprs'.
+[2025-04-22 22:18:50] Merged 8972 bytes (8.76 KiB) for 'exprs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'primitives'.
+[2025-04-22 22:18:50] Merged 50 bytes for 'primitives'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'stmts'.
+[2025-04-22 22:18:50] Merged 1186 bytes (1.16 KiB) for 'stmts'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'callableBinding'.
+[2025-04-22 22:18:50] Merged 570 bytes for 'callableBinding'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'callableEnclosingExpr'.
+[2025-04-22 22:18:50] Merged 861 bytes for 'callableEnclosingExpr'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'statementEnclosingExpr'.
+[2025-04-22 22:18:50] Merged 1084 bytes (1.06 KiB) for 'statementEnclosingExpr'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'variableBinding'.
+[2025-04-22 22:18:50] Merged 728 bytes for 'variableBinding'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'classes_or_interfaces'.
+[2025-04-22 22:18:50] Merged 11318 bytes (11.05 KiB) for 'classes_or_interfaces'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isInterface'.
+[2025-04-22 22:18:50] Merged 1413 bytes (1.38 KiB) for 'isInterface'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'extendsReftype'.
+[2025-04-22 22:18:50] Merged 5913 bytes (5.77 KiB) for 'extendsReftype'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isRaw'.
+[2025-04-22 22:18:50] Merged 117 bytes for 'isRaw'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'modifiers'.
+[2025-04-22 22:18:50] Merged 53 bytes for 'modifiers'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'hasModifier'.
+[2025-04-22 22:18:50] Merged 54576 bytes (53.30 KiB) for 'hasModifier'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'typeArgs'.
+[2025-04-22 22:18:50] Merged 4379 bytes (4.28 KiB) for 'typeArgs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isParameterized'.
+[2025-04-22 22:18:50] Merged 1448 bytes (1.41 KiB) for 'isParameterized'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'namestrings'.
+[2025-04-22 22:18:50] Merged 996 bytes for 'namestrings'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'javadoc'.
+[2025-04-22 22:18:50] Merged 59 bytes for 'javadoc'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'javadocText'.
+[2025-04-22 22:18:50] Merged 732 bytes for 'javadocText'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'javadocTag'.
+[2025-04-22 22:18:50] Merged 144 bytes for 'javadocTag'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'arrays'.
+[2025-04-22 22:18:50] Merged 943 bytes for 'arrays'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'fields'.
+[2025-04-22 22:18:50] Merged 4900 bytes (4.79 KiB) for 'fields'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'methods'.
+[2025-04-22 22:18:50] Merged 63474 bytes (61.99 KiB) for 'methods'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'implInterface'.
+[2025-04-22 22:18:50] Merged 3376 bytes (3.30 KiB) for 'implInterface'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'annotValue'.
+[2025-04-22 22:18:50] Merged 935 bytes for 'annotValue'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'params'.
+[2025-04-22 22:18:50] Merged 48025 bytes (46.90 KiB) for 'params'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'paramName'.
+[2025-04-22 22:18:50] Merged 83 bytes for 'paramName'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'localvars'.
+[2025-04-22 22:18:50] Merged 154 bytes for 'localvars'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'fielddecls'.
+[2025-04-22 22:18:50] Merged 56 bytes for 'fielddecls'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'fieldDeclaredIn'.
+[2025-04-22 22:18:50] Merged 67 bytes for 'fieldDeclaredIn'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isNormalComment'.
+[2025-04-22 22:18:50] Merged 48 bytes for 'isNormalComment'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isEolComment'.
+[2025-04-22 22:18:50] Merged 48 bytes for 'isEolComment'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'constrs'.
+[2025-04-22 22:18:50] Merged 4147 bytes (4.05 KiB) for 'constrs'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'wildcards'.
+[2025-04-22 22:18:50] Merged 661 bytes for 'wildcards'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'typeBounds'.
+[2025-04-22 22:18:50] Merged 1024 bytes (1.00 KiB) for 'typeBounds'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'enclInReftype'.
+[2025-04-22 22:18:50] Merged 463 bytes for 'enclInReftype'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'exceptions'.
+[2025-04-22 22:18:50] Merged 4126 bytes (4.03 KiB) for 'exceptions'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'typeVars'.
+[2025-04-22 22:18:50] Merged 1409 bytes (1.38 KiB) for 'typeVars'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isVarargsParam'.
+[2025-04-22 22:18:50] Merged 110 bytes for 'isVarargsParam'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isAnnotType'.
+[2025-04-22 22:18:50] Merged 62 bytes for 'isAnnotType'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isAnnotElem'.
+[2025-04-22 22:18:50] Merged 80 bytes for 'isAnnotElem'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isEnumType'.
+[2025-04-22 22:18:50] Merged 69 bytes for 'isEnumType'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isEnumConst'.
+[2025-04-22 22:18:50] Merged 297 bytes for 'isEnumConst'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'isDefConstr'.
+[2025-04-22 22:18:50] Merged 27 bytes for 'isDefConstr'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilations'.
+[2025-04-22 22:18:50] Merged 52 bytes for 'compilations'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_args'.
+[2025-04-22 22:18:50] Merged 50 bytes for 'compilation_args'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_expanded_args'.
+[2025-04-22 22:18:50] Merged 128 bytes for 'compilation_expanded_args'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'diagnostic_for'.
+[2025-04-22 22:18:50] Merged 52 bytes for 'diagnostic_for'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'diagnostics'.
+[2025-04-22 22:18:50] Merged 80 bytes for 'diagnostics'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_info'.
+[2025-04-22 22:18:50] Merged 51 bytes for 'compilation_info'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_time'.
+[2025-04-22 22:18:50] Merged 455 bytes for 'compilation_time'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_compiling_files'.
+[2025-04-22 22:18:50] Merged 63 bytes for 'compilation_compiling_files'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_compiling_files_completed'.
+[2025-04-22 22:18:50] Merged 50 bytes for 'compilation_compiling_files_completed'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'compilation_finished'.
+[2025-04-22 22:18:50] Merged 80 bytes for 'compilation_finished'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'jarManifestMain'.
+[2025-04-22 22:18:50] Merged 337 bytes for 'jarManifestMain'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'jarManifestEntries'.
+[2025-04-22 22:18:50] Merged 93 bytes for 'jarManifestEntries'.
+[2025-04-22 22:18:50] Merging 1 fragment for 'sourceLocationPrefix'.
+[2025-04-22 22:18:50] Merged 17 bytes for 'sourceLocationPrefix'.
+[2025-04-22 22:18:50] Saving string and id pools to disk.
+[2025-04-22 22:18:50] Finished importing TRAP files.
+[2025-04-22 22:18:50] Read 9.46 MiB of uncompressed TRAP data.
+[2025-04-22 22:18:50] Uncompressed relation data size: 1.24 MiB
+[2025-04-22 22:18:50] Relation data size: 332.31 KiB (merge rate: 970.03 KiB/s)
+[2025-04-22 22:18:50] String pool size: 2.41 MiB
+[2025-04-22 22:18:50] ID pool size: 1.75 MiB
+[2025-04-22 22:18:50] [PROGRESS] dataset import> Finished writing database (relations: 332.31 KiB; string pool: 2.41 MiB).
+[2025-04-22 22:18:50] Pausing evaluation to close the cache at sequence stamp o+159
+[2025-04-22 22:18:50] The disk cache is freshly trimmed; leave it be.
+[2025-04-22 22:18:50] Unpausing evaluation
+[2025-04-22 22:18:50] Plumbing command codeql dataset import completed.
+[2025-04-22 22:18:50] [PROGRESS] database finalize> TRAP import complete (3.8s).
+[2025-04-22 22:18:50] Running plumbing command: codeql database cleanup -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat
+[2025-04-22 22:18:51] [PROGRESS] database cleanup> Cleaning up existing TRAP files after import...
+[2025-04-22 22:18:53] [PROGRESS] database cleanup> TRAP files cleaned up (1.4s).
+[2025-04-22 22:18:53] [PROGRESS] database cleanup> Cleaning up scratch directory...
+[2025-04-22 22:18:53] [PROGRESS] database cleanup> Scratch directory cleaned up (3ms).
+[2025-04-22 22:18:53] Running plumbing command: codeql dataset cleanup -- F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java
+[2025-04-22 22:18:53] [PROGRESS] dataset cleanup> Cleaning up dataset in F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java.
+[2025-04-22 22:18:53] Trimming disk cache at F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java\default\cache in mode trim.
+[2025-04-22 22:18:53] Sequence stamp origin is -6057744138373800257
+[2025-04-22 22:18:53] Pausing evaluation to quickly trim memory at sequence stamp o+0
+[2025-04-22 22:18:53] Unpausing evaluation
+[2025-04-22 22:18:53] Pausing evaluation to zealously trim disk at sequence stamp o+1
+[2025-04-22 22:18:53] Unpausing evaluation
+[2025-04-22 22:18:53] Trimming completed (4ms): Trimmed disposable data from cache.
+[2025-04-22 22:18:53] Pausing evaluation to close the cache at sequence stamp o+2
+[2025-04-22 22:18:53] The disk cache is freshly trimmed; leave it be.
+[2025-04-22 22:18:53] Unpausing evaluation
+[2025-04-22 22:18:53] [PROGRESS] dataset cleanup> Trimmed disposable data from cache.
+[2025-04-22 22:18:53] [PROGRESS] dataset cleanup> Finalizing dataset in F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java
+[2025-04-22 22:18:53] [DETAILS] dataset cleanup> Finished deleting ID pool from F:\Main-Sec\codeAudit\codeql\databases\WebGoat\db-java (6ms).
+[2025-04-22 22:18:53] Plumbing command codeql dataset cleanup completed.
+[2025-04-22 22:18:53] Plumbing command codeql database cleanup completed with status 0.
+[2025-04-22 22:18:53] [PROGRESS] database finalize> Finished zipping source archive (97.99 KiB).
+[2025-04-22 22:18:53] Plumbing command codeql database finalize completed.
+[2025-04-22 22:18:53] [PROGRESS] database create> Successfully created database at F:\Main-Sec\codeAudit\codeql\databases\WebGoat.
+[2025-04-22 22:18:53] Terminating normally.

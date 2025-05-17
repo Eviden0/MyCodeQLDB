@@ -1,0 +1,18 @@
+[2025-05-17 14:19:30] [javac-output-98696] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:19:30] [javac-output-98696] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:19:30] [javac-output-98696] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:19:30] [javac-output-98696] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:19:30] [javac-output-98696] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:19:32] [javac-output-98696] warning: No processor claimed any of these annotations: javax.xml.bind.annotation.XmlAttribute,javax.xml.bind.annotation.XmlElements,javax.xml.bind.annotation.XmlElementWrapper,javax.xml.bind.annotation.XmlRegistry,javax.xml.bind.annotation.XmlEnumValue,javax.xml.bind.annotation.XmlRootElement,javax.xml.bind.annotation.XmlElement
+[2025-05-17 14:19:33] [javac-output-98696] /root/8u101/jdk/make/src/classes/build/tools/generatebreakiteratordata/CharacterCategory.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:33] [javac-output-98696] /**
+[2025-05-17 14:19:33] [javac-output-98696] ^
+[2025-05-17 14:19:33] [javac-output-98696] /root/8u101/jdk/make/src/classes/build/tools/generatebreakiteratordata/RuleBasedBreakIteratorBuilder.java:1276: warning: [lossy-conversions] implicit cast from int to short in compound assignment is possibly lossy
+[2025-05-17 14:19:33] [javac-output-98696]             state[numCategories] |= END_STATE_FLAG;
+[2025-05-17 14:19:33] [javac-output-98696]                                     ^
+[2025-05-17 14:19:33] [javac-output-98696] /root/8u101/jdk/make/src/classes/build/tools/generatebreakiteratordata/RuleBasedBreakIteratorBuilder.java:1583: warning: [lossy-conversions] implicit cast from int to short in compound assignment is possibly lossy
+[2025-05-17 14:19:33] [javac-output-98696]                 state[numCategories] &= ALL_FLAGS;
+[2025-05-17 14:19:33] [javac-output-98696]                                         ^
+[2025-05-17 14:19:34] [javac-output-98696] /root/8u101/jdk/make/src/classes/build/tools/charsetmapping/EUC_TW.java:122: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-17 14:19:34] [javac-output-98696]                     suppFlag[e.bs] |= (1 << plane);
+[2025-05-17 14:19:34] [javac-output-98696]                                       ^

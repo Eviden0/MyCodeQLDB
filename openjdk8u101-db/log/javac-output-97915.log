@@ -1,0 +1,293 @@
+[2025-05-17 14:18:37] [javac-output-97915] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed": no such directory
+[2025-05-17 14:18:37] [javac-output-97915] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar": no such file or directory
+[2025-05-17 14:18:37] [javac-output-97915] warning: [path] bad path element "/usr/lib/jvm/java-8-openjdk-amd64/jre/classes": no such file or directory
+[2025-05-17 14:18:37] [javac-output-97915] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-17 14:18:37] [javac-output-97915] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:18:37] [javac-output-97915] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-17 14:18:37] [javac-output-97915] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-17 14:18:44] [javac-output-97915] warning: No processor claimed any of these annotations: javax.xml.bind.annotation.XmlAnyElement,javax.annotation.processing.SupportedOptions,javax.xml.bind.annotation.XmlElementWrapper,com.sun.xml.internal.bind.annotation.XmlLocation,com.sun.xml.internal.txw2.annotation.XmlAttribute,javax.xml.bind.annotation.XmlElementRef,javax.annotation.processing.SupportedAnnotationTypes,javax.xml.bind.annotation.XmlElements,javax.xml.ws.spi.WebServiceFeatureAnnotation,javax.xml.bind.annotation.XmlIDREF,javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter,javax.xml.bind.annotation.XmlSchemaType,javax.xml.bind.annotation.XmlEnum,javax.xml.bind.annotation.XmlElementDecl,com.sun.org.glassfish.gmbal.ManagedAttribute,javax.xml.bind.annotation.XmlAccessorType,com.sun.xml.internal.ws.api.FeatureConstructor,javax.xml.bind.annotation.XmlAnyAttribute,com.sun.org.glassfish.gmbal.ManagedData,javax.xml.bind.annotation.XmlEnumValue,javax.xml.bind.annotation.XmlTransient,com.sun.org.glassfish.gmbal.AMXMetadata,javax.xml.bind.annotation.XmlElementRefs,javax.xml.bind.annotation.XmlValue,com.sun.xml.internal.txw2.annotation.XmlElement,javax.xml.bind.annotation.XmlSchema,com.sun.org.glassfish.gmbal.DescriptorKey,com.sun.istack.internal.Nullable,com.sun.org.glassfish.gmbal.InheritedAttributes,javax.xml.bind.annotation.XmlType,javax.xml.bind.annotation.XmlMixed,com.sun.xml.internal.txw2.annotation.XmlNamespace,javax.xml.bind.annotation.XmlAttribute,com.sun.org.glassfish.external.arc.Taxonomy,javax.xml.bind.annotation.XmlRootElement,com.oracle.webservices.internal.api.message.PropertySet.Property,com.sun.org.glassfish.gmbal.ManagedObject,com.sun.istack.internal.NotNull,com.sun.org.glassfish.gmbal.Description,javax.xml.bind.annotation.XmlRegistry,javax.xml.bind.annotation.XmlID,javax.xml.bind.annotation.XmlElement
+[2025-05-17 14:18:50] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/javax/xml/ws/WebServiceFeature.java:50: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:50] [javac-output-97915]    /**
+[2025-05-17 14:18:50] [javac-output-97915]    ^
+[2025-05-17 14:18:51] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/codemodel/internal/JFormatter.java:44: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:51] [javac-output-97915]     /** all classes and ids encountered during the collection mode **/
+[2025-05-17 14:18:51] [javac-output-97915]     ^
+[2025-05-17 14:18:51] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/codemodel/internal/JDefinedClass.java:130: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:51] [javac-output-97915]     /** List containing the enum value declarations
+[2025-05-17 14:18:51] [javac-output-97915]     ^
+[2025-05-17 14:18:53] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/org/relaxng/datatype/ValidationContext.java:1: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:53] [javac-output-97915] /**
+[2025-05-17 14:18:53] [javac-output-97915] ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:102: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:100: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:146: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:144: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:161: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:159: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:275: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:273: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:531: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:543: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:541: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]     ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:795: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]         ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:793: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]         ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:823: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]         ^
+[2025-05-17 14:18:56] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/txw2/NamespaceSupport.java:835: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:56] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:56] [javac-output-97915]         ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:78: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:76: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:108: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:106: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:343: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:341: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:571: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:569: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/xsom/impl/parser/state/AttributesImpl.java:617: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:81: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:79: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:111: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:109: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:346: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:344: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:574: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:572: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:57] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/jxc/gen/config/AttributesImpl.java:620: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:57] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:18:57] [javac-output-97915]     ^
+[2025-05-17 14:18:58] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/ws/wscompile/AbortException.java:28: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:58] [javac-output-97915] /**
+[2025-05-17 14:18:58] [javac-output-97915] ^
+[2025-05-17 14:18:59] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/ws/processor/generator/JwsImplGenerator.java:475: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:18:59] [javac-output-97915]   /**
+[2025-05-17 14:18:59] [javac-output-97915]   ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/org/jvnet/staxex/XMLStreamReaderEx.java:123: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     ///**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/org/jvnet/staxex/XMLStreamReaderEx.java:75: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     ///**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:84: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:116: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:111: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915] ////    public void marshal(@NotNull BridgeContext context,T object,Node output) throws JAXBException ;
+[2025-05-17 14:19:00] [javac-output-97915] ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:125: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915] ////    public void marshal(@NotNull BridgeContext context,T object, ContentHandler contentHandler) throws JAXBException;
+[2025-05-17 14:19:00] [javac-output-97915] ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:139: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:134: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915] ////    public void marshal(@NotNull BridgeContext context,T object, Result result) throws JAXBException;
+[2025-05-17 14:19:00] [javac-output-97915] ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:163: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/XMLBridge.java:209: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/BindingContext.java:109: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:00] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/spi/db/BindingContext.java:267: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:00] [javac-output-97915]     /**
+[2025-05-17 14:19:00] [javac-output-97915]     ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/oracle/webservices/internal/api/message/MessageContext.java:83: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]     /**
+[2025-05-17 14:19:02] [javac-output-97915]     ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/model/SEIModel.java:92: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]     /**
+[2025-05-17 14:19:02] [javac-output-97915]     ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/model/SEIModel.java:81: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]     /**
+[2025-05-17 14:19:02] [javac-output-97915]     ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/model/SEIModel.java:73: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]     /**
+[2025-05-17 14:19:02] [javac-output-97915]     ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/databinding/Databinding.java:66: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]         /**
+[2025-05-17 14:19:02] [javac-output-97915]         ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/databinding/Databinding.java:126: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]         /**
+[2025-05-17 14:19:02] [javac-output-97915]         ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/databinding/Databinding.java:111: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]         /**
+[2025-05-17 14:19:02] [javac-output-97915]         ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/databinding/Databinding.java:99: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]         /**
+[2025-05-17 14:19:02] [javac-output-97915]         ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/api/databinding/Databinding.java:88: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]         /**
+[2025-05-17 14:19:02] [javac-output-97915]         ^
+[2025-05-17 14:19:02] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/oracle/webservices/internal/api/databinding/Databinding.java:124: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:02] [javac-output-97915]     /**
+[2025-05-17 14:19:02] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:93: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:91: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:111: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:109: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:148: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:146: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:247: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:245: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:444: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:454: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:452: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     ////////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:702: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]         ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:700: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]         ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:726: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]         ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/util/NamespaceSupport.java:737: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]         ////////////////////////////////////////////////////////////////
+[2025-05-17 14:19:04] [javac-output-97915]         ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/tools/internal/ws/wsdl/parser/JAXWSBindingExtensionHandler.java:200: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915]     /**
+[2025-05-17 14:19:04] [javac-output-97915]     ^
+[2025-05-17 14:19:04] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/org/glassfish/gmbal/ParameterNames.java:42: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:04] [javac-output-97915] /**
+[2025-05-17 14:19:04] [javac-output-97915] ^
+[2025-05-17 14:19:06] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/util/NamespaceContextIterator.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:06] [javac-output-97915] /**
+[2025-05-17 14:19:06] [javac-output-97915] ^
+[2025-05-17 14:19:06] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/util/LogDomainConstants.java:28: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:06] [javac-output-97915] /**
+[2025-05-17 14:19:06] [javac-output-97915] ^
+[2025-05-17 14:19:06] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/util/transform/EfficientStreamingTransformer.java:82: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:06] [javac-output-97915]     /**
+[2025-05-17 14:19:06] [javac-output-97915]     ^
+[2025-05-17 14:19:06] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/util/transform/EfficientStreamingTransformer.java:70: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:06] [javac-output-97915]   /**
+[2025-05-17 14:19:06] [javac-output-97915]   ^
+[2025-05-17 14:19:06] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/util/transform/EfficientStreamingTransformer.java:402: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:06] [javac-output-97915]     /**
+[2025-05-17 14:19:06] [javac-output-97915]     ^
+[2025-05-17 14:19:06] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/util/MimeHeadersUtil.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:06] [javac-output-97915] /**
+[2025-05-17 14:19:06] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/SOAPDocumentFragment.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/SOAPIOException.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/SOAPDocument.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/SOAPDocumentImpl.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/dynamic/SOAPFactoryDynamicImpl.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/dynamic/SOAPMessageFactoryDynamicImpl.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/ver1_2/BodyElement1_2Impl.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:07] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/messaging/saaj/soap/ver1_2/SOAPMessageFactory1_2Impl.java:26: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-17 14:19:07] [javac-output-97915] /**
+[2025-05-17 14:19:07] [javac-output-97915] ^
+[2025-05-17 14:19:15] [javac-output-97915] /root/8u101/jaxws/src/share/jaxws_classes/com/sun/xml/internal/ws/server/DefaultResourceInjector.java:44: error: no suitable method found for inject(Object,WSWebServiceContext)
+[2025-05-17 14:19:15] [javac-output-97915]             instance.getClass(),WebServiceContext.class,false).inject(instance,context);
+[2025-05-17 14:19:15] [javac-output-97915]                                                               ^
+[2025-05-17 14:19:15] [javac-output-97915]     method InjectionPlan.inject(CAP#1,WebServiceContext) is not applicable
+[2025-05-17 14:19:15] [javac-output-97915]       (argument mismatch; Object cannot be converted to CAP#1)
+[2025-05-17 14:19:15] [javac-output-97915]     method InjectionPlan.inject(CAP#1,Callable<WebServiceContext>) is not applicable
+[2025-05-17 14:19:15] [javac-output-97915]       (argument mismatch; Object cannot be converted to CAP#1)
+[2025-05-17 14:19:15] [javac-output-97915]   where CAP#1 is a fresh type-variable:
+[2025-05-17 14:19:15] [javac-output-97915]     CAP#1 extends Object from capture of ? extends Object
