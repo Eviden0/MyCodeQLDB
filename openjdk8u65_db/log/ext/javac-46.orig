@@ -1,0 +1,10 @@
+-bootclasspath
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/classes
+-Xlint:all,-deprecation,-unchecked,-rawtypes,-cast,-serial,-dep-ann,-static,-fallthrough,-try,-varargs,-empty,-finally
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/jdk/src/share/demo/jfc/Notepad
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/democlasses/jfc/Notepad
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/democlasses/jfc/Notepad/_the.BUILD_DEMO_Notepad_batch.tmp

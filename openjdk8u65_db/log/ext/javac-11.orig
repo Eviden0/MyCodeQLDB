@@ -1,0 +1,14 @@
+-source
+7
+-target
+7
+-bootclasspath
+/usr/lib/jvm/jdk1.7.0_80/jre/lib/rt.jar:/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar
+-Xlint:all,-deprecation,-unchecked,-serial,-fallthrough,-cast,-rawtypes,-static,-dep-ann
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/corba/src/share/classes
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/btclasses/logutil_classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/btclasses/logutil_classes/_the.BUILD_LOGUTIL_batch.tmp

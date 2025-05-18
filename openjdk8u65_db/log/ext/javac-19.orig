@@ -1,0 +1,14 @@
+-source
+7
+-target
+7
+-bootclasspath
+/usr/lib/jvm/jdk1.7.0_80/jre/lib/rt.jar
+-Xlint:all,-deprecation,-unchecked,-rawtypes,-cast,-serial,-dep-ann,-static,-fallthrough,-try,-varargs,-empty,-finally
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/jdk/make/src/classes:/root/jdk8u/jdk/src/solaris/classes/sun/awt/X11/generator
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/btclasses
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/btclasses/_the.BUILD_TOOLS_batch.tmp

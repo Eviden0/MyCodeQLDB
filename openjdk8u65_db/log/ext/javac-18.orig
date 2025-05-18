@@ -1,0 +1,11 @@
+-XDignore.symbol.file=true
+-Xlint:all,-varargs,-rawtypes,-deprecation,-unchecked,-serial,-dep-ann,-cast,-fallthrough,-static
+-g
+-g
+-Xbootclasspath/p:/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jaxp/dist/lib/classes.jar
+-implicit:none
+-sourcepath
+/root/jdk8u/jaxws/src/share/jaxws_classes
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jaxws/jaxws_classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jaxws/jaxws_classes/_the.BUILD_JAXWS_batch.tmp

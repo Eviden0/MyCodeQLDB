@@ -1,0 +1,12 @@
+[2025-05-18 01:19:30] [javac-extractor-15585] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/Openjdk8u65_db/log/ext/javac-8.args
+                                              user.dir=/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug
+[2025-05-18 01:19:30] [javac-extractor-15585] Compilation name /root/Openjdk8u65_db/trap/java/diagnostics/diagnostic-8.trap.gz
+[2025-05-18 01:19:31] [javac-extractor-15585] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-18 01:19:31] [javac-extractor-15585] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-18 01:19:31] [javac-extractor-15585] Javac init time: 0.4s
+[2025-05-18 01:19:31] [javac-extractor-15585] Javac attr time: 0.0s
+[2025-05-18 01:19:31] [javac-extractor-15585] Extractor time: 0.0s
+[2025-05-18 01:19:31] [javac-extractor-15585] Other time: 0.1s
+[2025-05-18 01:19:31] [javac-extractor-15585] Total time: 0.5s
+[2025-05-18 01:19:31] [javac-extractor-15585] [ERROR] 1 errors were reported by javac.

@@ -1,0 +1,286 @@
+[2025-05-18 01:20:58] [javac-output-22585] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed": no such directory
+[2025-05-18 01:20:58] [javac-output-22585] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/sunrsasign.jar": no such file or directory
+[2025-05-18 01:20:58] [javac-output-22585] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/classes": no such file or directory
+[2025-05-18 01:20:58] [javac-output-22585] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-18 01:20:58] [javac-output-22585] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:20:58] [javac-output-22585] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:20:58] [javac-output-22585] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/SAXException.java:176: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/SAXException.java:174: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/SAXParseException.java:67: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/SAXParseException.java:65: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/SAXParseException.java:279: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/SAXParseException.java:277: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/stream/XMLStreamReader.java:497: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]   /**
+[2025-05-18 01:21:04] [javac-output-22585]   ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/stream/XMLStreamReader.java:485: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]   /**
+[2025-05-18 01:21:04] [javac-output-22585]   ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/stream/XMLStreamReader.java:575: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]   /**
+[2025-05-18 01:21:04] [javac-output-22585]   ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/stream/XMLStreamWriter.java:256: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]   /**
+[2025-05-18 01:21:04] [javac-output-22585]   ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/transform/stream/StreamResult.java:185: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/transform/stream/StreamResult.java:183: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/xml/internal/stream/util/ReadOnlyIterator.java:27: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585] /**
+[2025-05-18 01:21:04] [javac-output-22585] ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentFragmentScannerImpl.java:130: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /** Scanner state: trailing misc. USED BY DOCUMENT_SCANNER_IMPL*/
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentFragmentScannerImpl.java:370: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /** stores character data. */
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentFragmentScannerImpl.java:1452: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /**xxx there is one check of duplicate attribute that has been removed.
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentFragmentScannerImpl.java:1425: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /**
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentFragmentScannerImpl.java:1407: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /**
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLDocumentScannerImpl.java:1482: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /**
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java:2968: warning: [lossy-conversions] implicit cast from long to int in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]                 fOffset += n;
+[2025-05-18 01:21:04] [javac-output-22585]                            ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java:369: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     ///////////////// Locator methods finished.
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java:2041: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]     /**
+[2025-05-18 01:21:04] [javac-output-22585]     ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:98: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585]   /**
+[2025-05-18 01:21:04] [javac-output-22585]   ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:205: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable[';'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:206: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable['/'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:207: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable[':'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:208: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable['@'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:209: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable['&'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:210: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable['='] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:211: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable['+'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:212: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable['$'] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/URI.java:213: warning: [lossy-conversions] implicit cast from int to byte in compound assignment is possibly lossy
+[2025-05-18 01:21:04] [javac-output-22585]       fgLookupTable[','] |= PATH_CHARACTERS;
+[2025-05-18 01:21:04] [javac-output-22585]                             ^
+[2025-05-18 01:21:04] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xerces/internal/util/XMLAttributesIteratorImpl.java:35: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:04] [javac-output-22585] /**
+[2025-05-18 01:21:04] [javac-output-22585] ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:105: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:103: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:149: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:147: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:164: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:162: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:278: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:276: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:534: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:546: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:544: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:800: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]         ////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]         ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:798: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]         ////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]         ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:828: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]         ////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]         ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/NamespaceSupport.java:840: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]         ////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]         ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/transform/dom/DOMResult.java:344: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/transform/dom/DOMResult.java:342: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     //////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/regexp/internal/REDebugCompiler.java:131: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     /**
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/regexp/internal/REDebugCompiler.java:114: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     /**
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xpath/internal/XPathContext.java:617: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   /** Misnamed string manager for XPath messages.  */
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/InputSource.java:348: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/Attributes.java:99: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/Attributes.java:97: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/Attributes.java:196: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/Attributes.java:194: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/DTMDefaultBase.java:101: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   /** The block size of the node arrays */
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/DTMDefaultBase.java:126: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   /** The mask for the identity.
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:1578: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:1576: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:1609: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:1607: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:1688: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:1686: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:2193: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:2191: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:2259: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:2257: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:2351: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM.java:2349: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/XMLReader.java:90: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/XMLReader.java:88: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/XMLReader.java:241: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/XMLReader.java:239: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/XMLReader.java:355: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/XMLReader.java:353: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:05] [javac-output-22585]     ^
+[2025-05-18 01:21:05] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xpath/internal/operations/Variable.java:257: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:05] [javac-output-22585]   /**
+[2025-05-18 01:21:05] [javac-output-22585]   ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/com/sun/org/apache/xpath/internal/compiler/OpMap.java:101: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]   /**
+[2025-05-18 01:21:06] [javac-output-22585]   ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:90: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:88: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:123: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:121: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:175: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:173: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:421: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/helpers/DefaultHandler.java:419: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/javax/xml/parsers/SAXParser.java:498: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     /** <p>Get current state of canonicalization.</p>
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/HandlerBase.java:76: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/HandlerBase.java:74: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/HandlerBase.java:107: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^
+[2025-05-18 01:21:06] [javac-output-22585] /root/jdk8u/jaxp/src/org/xml/sax/HandlerBase.java:105: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:21:06] [javac-output-22585]     ////////////////////////////////////////////////////////////////////
+[2025-05-18 01:21:06] [javac-output-22585]     ^

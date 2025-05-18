@@ -1,0 +1,1243 @@
+[2025-05-18 01:18:32] This is codeql database create /root/Openjdk8u65_db --language=java --command=make all DISABLE_HOTSPOT_OS_VERSION_CHECK=OK ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:18:32] Log file was started late.
+[2025-05-18 01:18:32] [PROGRESS] database create> Initializing database at /root/Openjdk8u65_db.
+[2025-05-18 01:18:32] Running plumbing command: codeql database init --language=java --extractor-options-verbosity=1 --qlconfig-file=/root/jdk8u/qlconfig.yml --source-root=/root/jdk8u --allow-missing-source-root=false --allow-already-existing -- /root/Openjdk8u65_db
+[2025-05-18 01:18:32] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2025-05-18 01:18:32] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /root/codeql/.codeqlmanifest.json
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/properties/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/go/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/javascript/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/swift/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/python/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/java/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/xml/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/actions/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/cpp/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/csharp/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/csv/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/yaml/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/html/codeql-extractor.yml.
+[2025-05-18 01:18:33] [DETAILS] resolve languages> Parsing /root/codeql/ruby/codeql-extractor.yml.
+[2025-05-18 01:18:33] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "properties" : [
+                            {
+                              "extractor_root" : "/root/codeql/properties"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "/root/codeql/go",
+                              "extractor_options" : {
+                                "extract_tests" : {
+                                  "title" : "Whether to include Go test files in the CodeQL database.",
+                                  "description" : "A value indicating whether Go test files should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_vendor_dirs" : {
+                                  "title" : "Whether to include Go vendor directories in the CodeQL database.",
+                                  "description" : "A value indicating whether Go vendor directories should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/root/codeql/javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "/root/codeql/swift"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/root/codeql/python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/root/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis. This accepts glob patterns that are supported by Java's 'getPathMatcher' implementation.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless_dependency_dir" : {
+                                  "title" : "The path where buildless (standalone) extraction should keep dependencies.",
+                                  "description" : "If set, the buildless (standalone) extractor will store dependencies in this directory.\n",
+                                  "type" : "string"
+                                },
+                                "minimize_dependency_jars" : {
+                                  "title" : "Whether to rewrite and minimize downloaded JAR dependencies (experimental).",
+                                  "description" : "If 'true', JAR dependencies downloaded during extraction will be rewritten to remove unneeded data, such as method bodies. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/root/codeql/xml"
+                            }
+                          ],
+                          "actions" : [
+                            {
+                              "extractor_root" : "/root/codeql/actions",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/root/codeql/cpp",
+                              "extractor_options" : {
+                                "scale_timeouts" : {
+                                  "title" : "Value to scale compiler introspection timeouts with",
+                                  "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-9]+"
+                                },
+                                "log_verbosity" : {
+                                  "title" : "Verbosity of the extractor logging",
+                                  "description" : "Set the verbosity of the extractor logging to 'quiet' (0), 'normal' (1), 'chatty' (2), or 'noisy' (3). The default is 'normal'.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-3]"
+                                }
+                              }
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/root/codeql/csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "binlog" : {
+                                  "title" : "Binlog",
+                                  "description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+                                  "type" : "array"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/root/codeql/csv"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "/root/codeql/yaml"
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/root/codeql/html"
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/root/codeql/ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+[2025-05-18 01:18:33] [PROGRESS] database init> Calculating baseline information in /root/jdk8u
+[2025-05-18 01:18:33] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2025-05-18 01:18:33] [DETAILS] database init> Running command in /root/jdk8u: /root/codeql/tools/linux64/scc --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2025-05-18 01:18:33] Using configure-baseline script /root/codeql/javascript/tools/configure-baseline.sh.
+[2025-05-18 01:18:33] [PROGRESS] database init> Running command in /root/jdk8u: [/root/codeql/javascript/tools/configure-baseline.sh]
+[2025-05-18 01:18:33] [SPAMMY] database init> Found 30195 baseline files for java.
+[2025-05-18 01:18:33] [SPAMMY] database init> Found 1293 baseline files for javascript.
+[2025-05-18 01:18:33] [SPAMMY] database init> Found 3801 baseline files for cpp.
+[2025-05-18 01:18:33] [SPAMMY] database init> Found 2 baseline files for csharp.
+[2025-05-18 01:18:33] [SPAMMY] database init> Found 2 baseline files for ruby.
+[2025-05-18 01:18:33] [PROGRESS] database init> Calculated baseline information for languages: cpp, csharp, java, javascript, ruby (524ms).
+[2025-05-18 01:18:36] [PROGRESS] database init> Resolving extractor java.
+[2025-05-18 01:18:36] [DETAILS] database init> Found candidate extractor root for java: /root/codeql/java.
+[2025-05-18 01:18:36] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from /root/codeql/java.
+[2025-05-18 01:18:36] [PROGRESS] database init> Created skeleton CodeQL database at /root/Openjdk8u65_db. This in-progress database is ready to be populated by an extractor.
+[2025-05-18 01:18:36] Plumbing command codeql database init completed.
+[2025-05-18 01:18:36] [PROGRESS] database create> Running build command: [make, all, DISABLE_HOTSPOT_OS_VERSION_CHECK=OK, ZIP_DEBUGINFO_FILES=0]
+[2025-05-18 01:18:36] Running plumbing command: codeql database trace-command --working-dir=/root/jdk8u --index-traceless-dbs --no-db-cluster -- /root/Openjdk8u65_db make all DISABLE_HOTSPOT_OS_VERSION_CHECK=OK ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:18:36] [PROGRESS] database trace-command> Running command in /root/jdk8u: [make, all, DISABLE_HOTSPOT_OS_VERSION_CHECK=OK, ZIP_DEBUGINFO_FILES=0]
+[2025-05-18 01:18:36] [build-stdout] Building OpenJDK for target 'all' in configuration 'linux-x86_64-normal-server-slowdebug'
+[2025-05-18 01:18:36] [build-stdout] ## Starting langtools
+[2025-05-18 01:18:36] [build-stdout] Compiling 2 files for BUILD_TOOLS
+[2025-05-18 01:18:40] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:18:40] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:18:40] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:18:40] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:18:47] [build-stdout] Compiling 32 properties into resource bundles
+[2025-05-18 01:18:47] [build-stdout] Compiling 780 files for BUILD_BOOTSTRAP_LANGTOOLS
+[2025-05-18 01:18:53] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:18:53] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:18:53] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:18:53] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:18:59] [build-stdout] Creating langtools/dist/bootstrap/lib/javac.jar
+[2025-05-18 01:19:00] [build-stdout] Updating langtools/dist/lib/src.zip
+[2025-05-18 01:19:00] [build-stdout] Compiling 783 files for BUILD_FULL_JAVAC
+[2025-05-18 01:19:07] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:07] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:07] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:07] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:11] [build-stdout] Creating langtools/dist/lib/classes.jar
+[2025-05-18 01:19:11] [build-stdout] ## Finished langtools (build time 00:00:35)
+[2025-05-18 01:19:11] [build-stdout] ## Starting hotspot
+[2025-05-18 01:19:11] [build-stderr] make[2]: warning: -jN forced in submake: disabling jobserver mode.
+[2025-05-18 01:19:11] [build-stdout] Warning: The jvmg target has been replaced with debug
+[2025-05-18 01:19:11] [build-stdout] Warning: Please update your usage
+[2025-05-18 01:19:11] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:11] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:11] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:11] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:11] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:11] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:11] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:11] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:11] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:11] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:11] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:11] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:11] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:11] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:11] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:11] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:11] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:11] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:11] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:11] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:11] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:11] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:11] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:11] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:11] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:11] [build-stdout] Creating Makefile ...
+[2025-05-18 01:19:11] [build-stdout] Creating directory list ../shared_dirs.lst
+[2025-05-18 01:19:11] [build-stdout] Creating flags.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating flags_vm.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating vm.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating adlc.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating jvmti.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating trace.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating sa.make ...
+[2025-05-18 01:19:11] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:11] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:11] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:11] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:11] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:11] [build-stdout] Creating Makefile ...
+[2025-05-18 01:19:11] [build-stdout] Creating flags.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating flags_vm.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating vm.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating adlc.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating jvmti.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating trace.make ...
+[2025-05-18 01:19:11] [build-stdout] Creating sa.make ...
+[2025-05-18 01:19:12] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:12] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:12] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:12] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:12] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:12] [build-stdout] Creating Makefile ...
+[2025-05-18 01:19:12] [build-stdout] Creating flags.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating flags_vm.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating vm.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating adlc.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating jvmti.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating trace.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating sa.make ...
+[2025-05-18 01:19:12] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:12] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:12] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:12] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:12] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:12] [build-stdout] Creating Makefile ...
+[2025-05-18 01:19:12] [build-stdout] Creating flags.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating flags_vm.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating vm.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating adlc.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating jvmti.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating trace.make ...
+[2025-05-18 01:19:12] [build-stdout] Creating sa.make ...
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/adlparse.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/archDesc.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/arena.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/dfa.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/dict2.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/filebuff.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/forms.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/formsopt.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/formssel.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/main.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/opcodes.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/output_c.cpp
+[2025-05-18 01:19:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/adlc/output_h.cpp
+[2025-05-18 01:19:12] [build-stdout] Making adlc
+[2025-05-18 01:19:13] [build-stderr] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[2025-05-18 01:19:13] [build-stderr] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[2025-05-18 01:19:13] [build-stderr] 1 warning
+[2025-05-18 01:19:13] [build-stderr] 1 warning
+[2025-05-18 01:19:14] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:14] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:14] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:14] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:14] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:14] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:14] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:14] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:14] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/jvmtifiles/jvmtiEnv.hpp
+[2025-05-18 01:19:14] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/jvmtifiles/jvmtiEnter.cpp
+[2025-05-18 01:19:14] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/jvmtifiles/jvmtiEnterTrace.cpp
+[2025-05-18 01:19:15] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/jvmtifiles/jvmtiEnvRecommended.cpp
+[2025-05-18 01:19:15] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/jvmtifiles/bytecodeInterpreterWithChecks.cpp
+[2025-05-18 01:19:15] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/jvmtifiles/jvmti.h
+[2025-05-18 01:19:15] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/tracefiles/traceEventClasses.hpp
+[2025-05-18 01:19:15] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/tracefiles/traceEventIds.hpp
+[2025-05-18 01:19:15] [build-stdout] Generating /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/tracefiles/traceTypes.hpp
+[2025-05-18 01:19:16] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:16] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:16] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:16] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:16] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:16] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:16] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:16] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:16] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:16] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:16] [build-stdout] Making /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug/../generated/sa-jdi.jar
+[2025-05-18 01:19:16] [build-stderr] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[2025-05-18 01:19:19] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:19:19] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:19:19] [build-stderr] 1 warning
+[2025-05-18 01:19:20] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:20] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:20] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:20] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:29] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:29] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:29] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:29] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:30] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:30] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:30] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:30] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:31] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:31] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:31] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:31] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:32] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:19:32] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:19:32] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:19:32] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:19:32] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:32] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:32] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:32] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:32] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:32] [build-stdout] Generating precompiled header precompiled.hpp.gch
+[2025-05-18 01:19:34] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:19:34] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:19:34] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:19:34] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:19:34] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:19:34] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/abstractCompiler.cpp
+[2025-05-18 01:19:34] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/accessFlags.cpp
+[2025-05-18 01:19:34] [build-stdout] Compiling ../generated/adfiles/ad_x86_64.cpp
+[2025-05-18 01:19:34] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_clone.cpp
+[2025-05-18 01:19:34] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_expand.cpp
+[2025-05-18 01:19:35] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_format.cpp
+[2025-05-18 01:19:35] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_gen.cpp
+[2025-05-18 01:19:36] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_misc.cpp
+[2025-05-18 01:19:36] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_peephole.cpp
+[2025-05-18 01:19:36] [build-stdout] Compiling ../generated/adfiles/ad_x86_64_pipeline.cpp
+[2025-05-18 01:19:36] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/adaptiveFreeList.cpp
+[2025-05-18 01:19:36] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/adaptiveSizePolicy.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/addnode.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/adjoiningGenerations.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/adjoiningVirtualSpaces.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/advancedThresholdPolicy.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/ageTable.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_interface/allocTracer.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/allocation.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/allocationStats.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/altHashing.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/annotations.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/arguments.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/array.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/arrayKlass.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/arrayOop.cpp
+[2025-05-18 01:19:37] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/asPSOldGen.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/asPSYoungGen.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parNew/asParNewGeneration.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/asm/assembler.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/os_cpu/linux_x86/vm/assembler_linux_x86.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/assembler_x86.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/atomic.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/attachListener.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/attachListener_linux.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/barrierSet.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/basicLock.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/bcEscapeAnalyzer.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/biasedLocking.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/binaryTreeDictionary.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/bitMap.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/block.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/blockOffsetTable.cpp
+[2025-05-18 01:19:38] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/bufferingOopClosure.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/buildOopMap.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/bytecode.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/bytecodeAssembler.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/bytecodeHistogram.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/bytecodeInfo.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/bytecodeInterpreter.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling ../generated/jvmtifiles/bytecodeInterpreterWithChecks.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/bytecodeInterpreter_x86.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/bytecodeStream.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/bytecodeTracer.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/bytecodes.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/bytecodes_x86.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_CFGPrinter.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Canonicalizer.cpp
+[2025-05-18 01:19:39] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_CodeStubs_x86.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Compilation.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Compiler.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Defs.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_FpuStackSim_x86.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_FrameMap.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_FrameMap_x86.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_GraphBuilder.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_IR.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Instruction.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_InstructionPrinter.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_LIR.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_LIRAssembler.cpp
+[2025-05-18 01:19:40] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_LIRAssembler_x86.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_LIRGenerator.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_LIRGenerator_x86.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_LinearScan.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_LinearScan_x86.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_MacroAssembler_x86.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Optimizer.cpp
+[2025-05-18 01:19:41] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_RangeCheckElimination.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_Runtime1.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c1_Runtime1_x86.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_ValueMap.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_ValueSet.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_ValueStack.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_ValueType.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/c1/c1_globals.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/c2_globals.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/c2_init_x86.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/c2compiler.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/cSpaceCounters.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/callGenerator.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/callnode.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/cardTableExtension.cpp
+[2025-05-18 01:19:42] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/cardTableModRefBS.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/cardTableRS.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/cfgnode.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/chaitin.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/chunkedList.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciArray.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciArrayKlass.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciBaseObject.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciCallSite.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciConstant.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciConstantPoolCache.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciEnv.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciExceptionHandler.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciField.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciFlags.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciInstance.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciInstanceKlass.cpp
+[2025-05-18 01:19:43] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciKlass.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciMemberName.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciMetadata.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciMethod.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciMethodBlocks.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciMethodData.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciMethodHandle.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciNullObject.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciObjArray.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciObjArrayKlass.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciObject.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciObjectFactory.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciReplay.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciSignature.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciStreams.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciSymbol.cpp
+[2025-05-18 01:19:44] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciType.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciTypeArray.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciTypeArrayKlass.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciTypeFlow.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/ci/ciUtilities.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/classFileError.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/classFileParser.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/classFileStream.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/classLoader.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/classLoaderData.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/classLoadingService.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/classes.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/cmsAdaptiveSizePolicy.cpp
+[2025-05-18 01:19:45] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/cmsCollectorPolicy.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/cmsGCAdaptivePolicyCounters.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/cmsLockVerifier.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/coalesce.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/codeBlob.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/asm/codeBuffer.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/codeCache.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_interface/collectedHeap.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/collectionSetChooser.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/collectorCounters.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/collectorPolicy.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/compactibleFreeListSpace.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/compilationPolicy.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/compile.cpp
+[2025-05-18 01:19:46] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/compileBroker.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/compileLog.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/compiledIC.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/compiledICHolder.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/compiledIC_x86.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/compilerOracle.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/compressedStream.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/concurrentG1Refine.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/concurrentG1RefineThread.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/concurrentGCThread.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/concurrentMark.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/concurrentMarkSweepGeneration.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/concurrentMarkSweepThread.cpp
+[2025-05-18 01:19:47] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/concurrentMarkThread.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/connode.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/constMethod.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/constantPool.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/constantTag.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/copy.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/cpCache.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/cppInterpreter.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/cppInterpreter_x86.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/debug.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/debugInfo.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/debugInfoRec.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/debug_x86.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/decoder.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/decoder_elf.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/decoder_linux.cpp
+[2025-05-18 01:19:48] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/defNewGeneration.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/defaultMethods.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/deoptimization.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/depChecker_x86.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/dependencies.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling ../generated/adfiles/dfa_x86_64.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/diagnosticArgument.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/diagnosticCommand.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/diagnosticFramework.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/libadt/dict.cpp
+[2025-05-18 01:19:49] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/dictionary.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/dirtyCardQueue.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/disassembler.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/divnode.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/doCall.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/domgraph.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/dtraceAttacher.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/dtraceJSDT.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/dtraceJSDT_linux.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/elfFile.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/elfFuncDescTable.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/elfStringTable.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/elfSymbolTable.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/errorReporter.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/escape.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/events.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/evmCompat.cpp
+[2025-05-18 01:19:50] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/exceptionHandlerTable.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/exceptions.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/fieldDescriptor.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/fieldType.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/filemap.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/forte.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/fprofiler.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/frame.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/frame_x86.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/freeBlockDictionary.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/freeChunk.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/freeList.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1AllocRegion.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1Allocator.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1Allocator_ext.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1BiasedArray.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1BlockOffsetTable.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1CardCounts.cpp
+[2025-05-18 01:19:51] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1CodeCacheRemSet.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1CollectedHeap.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1CollectedHeap_ext.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1CollectorPolicy.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1ErgoVerbose.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1GCPhaseTimes.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1HRPrinter.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1HotCardCache.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1Log.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1MMUTracker.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1MarkSweep.cpp
+[2025-05-18 01:19:52] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1MarkSweep_ext.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/g1MemoryPool.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1MonitoringSupport.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1OopClosures.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1PageBasedVirtualSpace.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1ParScanThreadState.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1RegionToSpaceMapper.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1RemSet.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1RemSetSummary.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1RootProcessor.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1SATBCardTableModRefBS.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1StringDedup.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1StringDedupQueue.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1StringDedupStat.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1StringDedupTable.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1StringDedupThread.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/g1_globals.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gSpaceCounters.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcAdaptivePolicyCounters.cpp
+[2025-05-18 01:19:53] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_interface/gcCause.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcId.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/gcLocker.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/gcNotifier.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcPolicyCounters.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcStats.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/gcTaskManager.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/gcTaskThread.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcTimer.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcTrace.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcTraceSend.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcTraceTime.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/gcUtil.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/gcm.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/genCollectedHeap.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/genMarkSweep.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/genRemSet.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/generateOopMap.cpp
+[2025-05-18 01:19:54] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/generateOptoStub.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/generation.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/generationCounters.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/generationSizer.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/generationSpec.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/globalDefinitions.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/globals.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/graphKit.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/growableArray.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/guardedMemory.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/hSpaceCounters.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/handles.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/hashtable.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/heap.cpp
+[2025-05-18 01:19:55] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/heapDumper.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/heapInspection.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/heapRegion.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/heapRegionManager.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/heapRegionRemSet.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/heapRegionSet.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/heapRegionType.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/histogram.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/icBuffer.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/icBuffer_x86.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/icache.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/icache_x86.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/idealGraphPrinter.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/idealKit.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/ifg.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/ifnode.cpp
+[2025-05-18 01:19:56] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/immutableSpace.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/indexSet.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/init.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/instanceClassLoaderKlass.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/instanceMirrorKlass.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/instanceOop.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/instanceRefKlass.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/intHisto.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/interfaceSupport.cpp
+[2025-05-18 01:19:57] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/interp_masm_x86.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/interp_masm_x86_64.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/interpreter.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/interpreterRT_x86_64.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/interpreter_x86_64.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/invocationCounter.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/iterator.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/java.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/javaAssertions.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/javaClasses.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jni.cpp
+[2025-05-18 01:19:58] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jniCheck.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jniFastGetField.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/jniFastGetField_x86_64.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/jniHandles.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/jniPeriodicChecker.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvm.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/jvm_linux.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiClassFileReconstituter.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiCodeBlobEvents.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling ../generated/jvmtifiles/jvmtiEnter.cpp
+[2025-05-18 01:19:59] [build-stdout] Compiling ../generated/jvmtifiles/jvmtiEnterTrace.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiEnv.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiEnvBase.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiEnvThreadState.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiEventController.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiExport.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiExtensions.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiGetLoadedClasses.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiImpl.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiManageCapabilities.cpp
+[2025-05-18 01:20:00] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiRawMonitor.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiRedefineClasses.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiTagMap.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiThreadState.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiTrace.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/jvmtiUtil.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/klass.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/klassVtable.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/lcm.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/library_call.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/linkResolver.cpp
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/linkedlist.cpp
+[2025-05-18 01:20:01] [build-stdout] Assembling /root/jdk8u/hotspot/src/os_cpu/linux_x86/vm/linux_x86_64.s
+[2025-05-18 01:20:01] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/live.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/loaderConstraints.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/location.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/locknode.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/loopPredicate.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/loopTransform.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/loopUnswitch.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/loopnode.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/loopopts.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/lowMemoryDetector.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/machnode.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/macro.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/macroAssembler_x86.cpp
+[2025-05-18 01:20:02] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/mallocSiteTable.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/mallocTracker.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/management.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/markOop.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/markSweep.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/matcher.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/mathexactnode.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/memBaseline.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/memRegion.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/memReporter.cpp
+[2025-05-18 01:20:03] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/memTracker.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/memnode.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/memoryManager.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/memoryPool.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/memoryService.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/memprofiler.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/metachunk.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/metadata.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/metadataOnStackMark.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/metaspace.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/metaspaceCounters.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/metaspaceShared.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/metaspaceShared_x86_64.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/metaspaceTracer.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/method.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/methodComparator.cpp
+[2025-05-18 01:20:04] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/methodCounters.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/methodData.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/methodHandles.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/methodHandles_x86.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/methodLiveness.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/monitorChunk.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/mulnode.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/multnode.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/mutableNUMASpace.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/mutableSpace.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/mutex.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/mutexLocker.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/mutex_linux.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/nativeCallStack.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/nativeInst_x86.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/nativeLookup.cpp
+[2025-05-18 01:20:05] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/nmethod.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/nmtCommon.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/nmtDCmd.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/node.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/numberSeq.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/objArrayKlass.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/objArrayOop.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/objectCountEventSender.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/objectMonitor.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/objectStartArray.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/oop.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/oopFactory.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/compiler/oopMap.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/oopMapCache.cpp
+[2025-05-18 01:20:06] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/oopRecorder.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/oopsHierarchy.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/opcodes.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/orderAccess.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/os.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/osThread.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/osThread_linux.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/os_linux.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/os_cpu/linux_x86/vm/os_linux_x86.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/posix/vm/os_posix.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/ostream.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/output.cpp
+[2025-05-18 01:20:07] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parNew/parCardTableModRefBS.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/parGCAllocBuffer.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/parMarkBitMap.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parNew/parNewGeneration.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/parallelScavengeHeap.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/park.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/parse1.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/parse2.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/parse3.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/parseHelper.cpp
+[2025-05-18 01:20:08] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/wbtestmethods/parserTests.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/pcDesc.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/pcTasks.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/perf.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/perfData.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/perfMemory.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/perfMemory_linux.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/phase.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/phaseX.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/placeholders.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/libadt/port.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/postaloc.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/preserveException.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/privilegedStack.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/promotionInfo.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psAdaptiveSizePolicy.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psCompactionManager.cpp
+[2025-05-18 01:20:09] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psGCAdaptivePolicyCounters.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psGenerationCounters.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psMarkSweep.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psMarkSweepDecorator.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/psMemoryPool.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psOldGen.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psParallelCompact.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psPromotionLAB.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psPromotionManager.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psScavenge.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psTasks.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psVirtualspace.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/psYoungGen.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/ptrQueue.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/quickSort.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/referencePolicy.cpp
+[2025-05-18 01:20:10] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/referenceProcessor.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/reflection.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/reflectionUtils.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/reg_split.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/regalloc.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/asm/register.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/register_definitions_x86.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/register_x86.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/regmask.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/relocInfo.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/relocInfo_x86.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/relocator.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/replacednodes.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/resolutionErrors.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/resourceArea.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/rewriter.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/rframe.cpp
+[2025-05-18 01:20:11] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/rootnode.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/rtmLocking.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/runtime.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/runtimeService.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/runtime_x86_64.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/safepoint.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/satbQueue.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/scopeDesc.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/serviceThread.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/libadt/set.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/sharedHeap.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/sharedPathsMiscInfo.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/sharedRuntime.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/sharedRuntimeTrans.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/sharedRuntimeTrig.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/sharedRuntime_x86_64.cpp
+[2025-05-18 01:20:12] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/signature.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/simpleThresholdPolicy.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/sizes.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/space.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/spaceCounters.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/spaceDecorator.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/sparsePRT.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/specialized_oop_closures.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/split_if.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/stackMapFrame.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/stackMapTable.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/stackValue.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/stackValueCollection.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/statSampler.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/stringUtils.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/stringopts.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/stubCodeGenerator.cpp
+[2025-05-18 01:20:13] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/stubGenerator_x86_64.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/stubRoutines.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/stubRoutines_linux.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/stubRoutines_x86.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/stubRoutines_x86_64.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/stubs.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/subnode.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/superword.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/survRateGroup.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/suspendibleThreadSet.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/sweeper.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/symbol.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/symbolTable.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/synchronizer.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/systemDictionary.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/task.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/taskqueue.cpp
+[2025-05-18 01:20:14] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/templateInterpreter.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/templateInterpreter_x86.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/templateInterpreter_x86_64.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/interpreter/templateTable.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/templateTable_x86_64.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/tenuredGeneration.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/thread.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/threadCritical_linux.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/os_cpu/linux_x86/vm/threadLS_linux_x86.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/threadLocalAllocBuffer.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/threadLocalStorage.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/threadService.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/thread_ext.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/os_cpu/linux_x86/vm/thread_linux_x86.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/ticks.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/timer.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/type.cpp
+[2025-05-18 01:20:15] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/typeArrayKlass.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/oops/typeArrayOop.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/unhandledOops.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/memory/universe.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/unsafe.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/utf8.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/opto/vectornode.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/libadt/vectset.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/verificationType.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/verifier.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vframe.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vframeArray.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vframe_hp.cpp
+[2025-05-18 01:20:16] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/services/virtualMemoryTracker.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/virtualspace.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/concurrentMarkSweep/vmCMSOperations.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/vmError.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/os/linux/vm/vmError_linux.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/shared/vmGCOperations.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/parallelScavenge/vmPSOperations.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vmStructs.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/classfile/vmSymbols.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vmThread.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vm_operations.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/gc_implementation/g1/vm_operations_g1.cpp
+[2025-05-18 01:20:17] [build-stdout] Compiling /root/jdk8u/hotspot/src/os_cpu/linux_x86/vm/vm_version_linux_x86.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/vm_version_x86.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/vmreg.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/vmreg_x86.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/code/vtableStubs.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/cpu/x86/vm/vtableStubs_x86_64.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/whitebox.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/prims/whitebox_ext.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/workgroup.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/xmlstream.cpp
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/utilities/yieldingWorkgroup.cpp
+[2025-05-18 01:20:18] [build-stdout] Making signal interposition lib...
+[2025-05-18 01:20:18] [build-stdout] Making SA debugger back-end...
+[2025-05-18 01:20:18] [build-stdout] **NOTICE** Dtrace support disabled: /usr/include/sys/sdt.h not found
+[2025-05-18 01:20:18] [build-stdout] Compiling /root/jdk8u/hotspot/src/share/vm/runtime/vm_version.cpp
+[2025-05-18 01:20:19] [build-stdout] Linking vm...
+[2025-05-18 01:20:24] [build-stdout] All done.
+[2025-05-18 01:20:24] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:20:24] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:20:24] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:20:24] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:20:24] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:20:24] [build-stderr] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[2025-05-18 01:20:24] [build-stderr] 1 warning
+[2025-05-18 01:20:25] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:20:25] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:20:25] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:20:25] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:20:26] [build-stdout] Generating linux_amd64_docs/jvmti.html
+[2025-05-18 01:20:26] [build-stderr] INFO: ENABLE_FULL_DEBUG_SYMBOLS=1
+[2025-05-18 01:20:26] [build-stderr] INFO: ALT_OBJCOPY=/usr/bin/objcopy
+[2025-05-18 01:20:26] [build-stderr] INFO: /usr/bin/objcopy cmd found so will create .debuginfo files.
+[2025-05-18 01:20:26] [build-stderr] INFO: STRIP_POLICY=min_strip
+[2025-05-18 01:20:26] [build-stderr] INFO: ZIP_DEBUGINFO_FILES=0
+[2025-05-18 01:20:27] [build-stdout] ## Finished hotspot (build time 00:01:16)
+[2025-05-18 01:20:27] [build-stdout] ## Starting corba
+[2025-05-18 01:20:27] [build-stdout] Compiling 6 files for BUILD_LOGUTIL
+[2025-05-18 01:20:28] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:20:28] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:20:28] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:20:28] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:20:28] [build-stdout] Creating corba/btjars/logutil.jar
+[2025-05-18 01:20:29] [build-stdout] Compiling 141 files for BUILD_IDLJ
+[2025-05-18 01:20:30] [build-stderr] Note: /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/som/idlemit/MetaPragma.java uses or overrides a deprecated API.
+[2025-05-18 01:20:30] [build-stderr] Note: Recompile with -Xlint:deprecation for details.
+[2025-05-18 01:20:30] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:20:30] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:20:31] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:20:31] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:20:31] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:20:31] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:20:34] [build-stdout] Creating corba/btjars/idlj.jar
+[2025-05-18 01:20:34] [build-stdout] Compiling 1 files for BUILD_STRIPPROP
+[2025-05-18 01:20:34] [build-stdout] Compiling 1495 files for BUILD_BOOTSTRAP_CORBA
+[2025-05-18 01:20:34] [build-stdout] Compiling 1495 files for BUILD_CORBA
+[2025-05-18 01:20:36] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:20:36] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:20:36] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:20:36] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:20:36] [build-stdout] Updating corba/dist/lib/src.zip
+[2025-05-18 01:20:36] [build-stdout] Creating corba/btjars/stripproperties.jar
+[2025-05-18 01:20:39] [build-stderr] Note: Some input files use or override a deprecated API.
+[2025-05-18 01:20:39] [build-stderr] Note: Recompile with -Xlint:deprecation for details.
+[2025-05-18 01:20:39] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:20:39] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:20:39] [build-stderr] Note: Some input files use or override a deprecated API.
+[2025-05-18 01:20:39] [build-stderr] Note: Recompile with -Xlint:deprecation for details.
+[2025-05-18 01:20:39] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:20:39] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:20:41] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:20:41] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:20:41] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:20:41] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:20:41] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:20:41] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:20:41] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:20:41] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:20:51] [build-stdout] Creating corba/btjars/btcorba.jar
+[2025-05-18 01:20:51] [build-stdout] Creating corba/dist/lib/classes.jar
+[2025-05-18 01:20:52] [build-stdout] Creating bin.zip
+[2025-05-18 01:20:52] [build-stdout] ## Finished corba (build time 00:00:25)
+[2025-05-18 01:20:52] [build-stdout] ## Starting jaxp
+[2025-05-18 01:20:52] [build-stdout] Compiling 1884 files for BUILD_JAXP
+[2025-05-18 01:20:52] [build-stdout] Updating jaxp/dist/lib/src.zip
+[2025-05-18 01:20:58] [build-stderr] Note: Some input files use or override a deprecated API.
+[2025-05-18 01:20:58] [build-stderr] Note: Recompile with -Xlint:deprecation for details.
+[2025-05-18 01:20:58] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:20:58] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:21:00] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:21:00] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:21:00] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:21:00] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:21:16] [build-stdout] Creating jaxp/dist/lib/classes.jar
+[2025-05-18 01:21:16] [build-stdout] ## Finished jaxp (build time 00:00:24)
+[2025-05-18 01:21:16] [build-stdout] ## Starting jaxws
+[2025-05-18 01:21:17] [build-stdout] Compiling 24 files for BUILD_JAF
+[2025-05-18 01:21:17] [build-stdout] Compiling 2968 files for BUILD_JAXWS
+[2025-05-18 01:21:17] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:21:17] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:21:19] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:21:19] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:21:19] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:21:19] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:21:21] [build-stdout] Updating jaxws/dist/lib/src.zip
+[2025-05-18 01:21:25] [build-stderr] Note: Some input files use or override a deprecated API.
+[2025-05-18 01:21:25] [build-stderr] Note: Recompile with -Xlint:deprecation for details.
+[2025-05-18 01:21:25] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:21:25] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:21:28] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:21:28] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:21:28] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:21:28] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:21:50] [build-stdout] Creating jaxws/dist/lib/classes.jar
+[2025-05-18 01:21:51] [build-stdout] ## Finished jaxws (build time 00:00:35)
+[2025-05-18 01:21:51] [build-stdout] ## Starting jdk
+[2025-05-18 01:21:51] [build-stdout] Importing CORBA classes.jar
+[2025-05-18 01:21:51] [build-stdout] Importing CORBA src.zip
+[2025-05-18 01:21:51] [build-stdout] Importing CORBA bin.zip
+[2025-05-18 01:21:52] [build-stdout] Importing JAXP classes.jar
+[2025-05-18 01:21:52] [build-stdout] Importing JAXP src.zip
+[2025-05-18 01:21:52] [build-stdout] Importing JAXWS classes.jar
+[2025-05-18 01:21:52] [build-stdout] Importing JAXWS src.zip
+[2025-05-18 01:21:53] [build-stdout] Importing LANGTOOLS src.zip
+[2025-05-18 01:21:53] [build-stdout] Importing LANGTOOLS classes.jar
+[2025-05-18 01:21:53] [build-stdout] Compiling 162 files for BUILD_TOOLS
+[2025-05-18 01:21:53] [build-stdout] Generating charsetmapping classes
+[2025-05-18 01:21:53] [build-stdout] Generating buffer classes
+[2025-05-18 01:21:53] [build-stdout] Generating icon classes
+[2025-05-18 01:21:53] [build-stdout] Generating exceptions classes
+[2025-05-18 01:21:55] [build-stderr] Note: Some input files use unchecked or unsafe operations.
+[2025-05-18 01:21:55] [build-stderr] Note: Recompile with -Xlint:unchecked for details.
+[2025-05-18 01:21:56] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:21:56] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:21:56] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:21:56] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:21:59] [build-stdout] Copying and cleaning 53 properties
+[2025-05-18 01:21:59] [build-stdout] Compiling 521 properties into resource bundles
+[2025-05-18 01:21:59] [build-stdout] Creating sun/util/LocaleDataMetaInfo.java from 423 found resources.
+[2025-05-18 01:22:00] [build-stdout] Generating sun/misc/Version.java
+[2025-05-18 01:22:00] [build-stdout] Generating sun/misc/Version.java compact1
+[2025-05-18 01:22:00] [build-stdout] Generating sun/misc/Version.java compact2
+[2025-05-18 01:22:00] [build-stdout] Generating sun/misc/Version.java compact3
+[2025-05-18 01:22:00] [build-stderr] Aliases: Table size 1024 (10 bits), shift 0, max chain depth 3
+[2025-05-18 01:22:00] [build-stderr] Classes: Table size 32 (5 bits), shift 1, max chain depth 3
+[2025-05-18 01:22:00] [build-stderr] Cache: Table size 32 (5 bits), shift 1, max chain depth 3
+[2025-05-18 01:22:03] [build-stdout] Generating X11 wrapper (64-bit version)
+[2025-05-18 01:22:03] [build-stdout] Generating beaninfo
+[2025-05-18 01:22:04] [build-stdout] Generating Nimbus source files
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-8.326673E-17, 5.0, 11.0, 16.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was greater than 3: encode(15.029411, 1.0, 14.0, 15.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was greater than 3: encode(15.029411, 1.0, 14.0, 15.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was greater than 3: encode(15.029411, 1.0, 14.0, 15.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was greater than 3: encode(15.029411, 1.0, 14.0, 15.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was greater than 3: encode(15.029411, 1.0, 14.0, 15.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was greater than 3: encode(15.029411, 1.0, 14.0, 15.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] encoded value was less than 0: encode(-0.05882353, 1.0, 24.0, 25.0)
+[2025-05-18 01:22:04] [build-stderr] [Error] Encountered Infinity: encode(-0.00877193, 0.0, 7.0, 7.0)
+[2025-05-18 01:22:08] [build-stdout] Verifying /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/gensrc_x11wrappers/sizes.64.verification.tmp to /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/gensrc_x11wrappers/sizes.64
+[2025-05-18 01:22:09] [build-stdout] Generating HTML DTD file
+[2025-05-18 01:22:09] [build-stdout] Compiling 4 files for BUILD_BREAKITERATOR
+[2025-05-18 01:22:09] [build-stderr] [Parsed DTD html32 in 73ms]
+[2025-05-18 01:22:09] [build-stderr] Error: time is more than 10 years from present: 1420063200000
+[2025-05-18 01:22:09] [build-stderr] java.lang.RuntimeException: time is more than 10 years from present: 1420063200000
+[2025-05-18 01:22:09] [build-stderr] 	at build.tools.generatecurrencydata.GenerateCurrencyData.makeSpecialCaseEntry(GenerateCurrencyData.java:287)
+[2025-05-18 01:22:09] [build-stderr] 	at build.tools.generatecurrencydata.GenerateCurrencyData.buildMainAndSpecialCaseTables(GenerateCurrencyData.java:226)
+[2025-05-18 01:22:09] [build-stderr] 	at build.tools.generatecurrencydata.GenerateCurrencyData.main(GenerateCurrencyData.java:157)
+[2025-05-18 01:22:09] [build-stderr] make[2]: *** [/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/currency.data] Error 1
+[2025-05-18 01:22:09] [build-stderr] make[2]: *** Waiting for unfinished jobs....
+[2025-05-18 01:22:10] [build-stderr] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[2025-05-18 01:22:10] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+[2025-05-18 01:22:10] [build-stderr] WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+[2025-05-18 01:22:10] [build-stderr] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[2025-05-18 01:22:10] [build-stderr] make[1]: *** [gendata-only] Error 2
+[2025-05-18 01:22:10] [build-stderr] make: *** [jdk-only] Error 2
+[2025-05-18 01:22:10] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/root/codeql/tools/linux64/preload_tracer, make, all, DISABLE_HOTSPOT_OS_VERSION_CHECK=OK, ZIP_DEBUGINFO_FILES=0])
+[2025-05-18 01:22:11] Exception caught at top level: Exit status 2 from command: [make, all, DISABLE_HOTSPOT_OS_VERSION_CHECK=OK, ZIP_DEBUGINFO_FILES=0]
+                      com.semmle.cli2.Commandline.executeAndCheckResult(Commandline.java:170)
+                      com.semmle.cli2.Commandline.runWithoutReturn(Commandline.java:123)
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:227)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:126)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:201)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:185)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

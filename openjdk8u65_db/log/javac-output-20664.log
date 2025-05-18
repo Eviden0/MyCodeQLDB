@@ -1,0 +1,62 @@
+[2025-05-18 01:20:31] [javac-output-20664] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed": no such directory
+[2025-05-18 01:20:31] [javac-output-20664] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-18 01:20:31] [javac-output-20664] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:20:31] [javac-output-20664] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:20:31] [javac-output-20664] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-18 01:20:32] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Token.java:415: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:32] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:32] [javac-output-20664]   ^
+[2025-05-18 01:20:32] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Token.java:450: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:32] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:32] [javac-output-20664]   ^
+[2025-05-18 01:20:32] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Token.java:509: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:32] [javac-output-20664]   ///**
+[2025-05-18 01:20:32] [javac-output-20664]   ^
+[2025-05-18 01:20:32] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Token.java:559: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:32] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:32] [javac-output-20664]   ^
+[2025-05-18 01:20:32] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Token.java:653: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:32] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:32] [javac-output-20664]   ^
+[2025-05-18 01:20:32] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Token.java:637: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:32] [javac-output-20664]   /**
+[2025-05-18 01:20:32] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/ValueEntry.java:211: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   /** Calculate the 'repository ID' for the value. This method should not be
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Util.java:325: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Util.java:360: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Util.java:358: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Arguments.java:271: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///**
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/toJavaPortable/UnionGen.java:570: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/toJavaPortable/UnionGen.java:1021: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/toJavaPortable/ForwardValueGen.java:194: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Parser.java:3762: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ////////////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Parser.java:3822: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ////////////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Preprocessor.java:630: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Preprocessor.java:1069: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^
+[2025-05-18 01:20:33] [javac-output-20664] /root/jdk8u/corba/src/share/classes/com/sun/tools/corba/se/idl/Preprocessor.java:1273: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:33] [javac-output-20664]   ///////////////
+[2025-05-18 01:20:33] [javac-output-20664]   ^

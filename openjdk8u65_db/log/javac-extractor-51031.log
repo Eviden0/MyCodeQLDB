@@ -1,0 +1,23 @@
+[2025-05-18 01:33:17] [javac-extractor-51031] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/Openjdk8u65_db/log/ext/javac-63.args
+                                              user.dir=/root/jdk8u/jdk/make
+[2025-05-18 01:33:17] [javac-extractor-51031] Compilation name /root/Openjdk8u65_db/trap/java/diagnostics/diagnostic-41.trap.gz
+[2025-05-18 01:33:18] [javac-extractor-51031] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-18 01:33:18] [javac-extractor-51031] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-18 01:33:18] [javac-extractor-51031] Processing file /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/gen_profile_3/sun/misc/Version.java
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/PrintStream.members/PrintStream.members#51.0-1428695660000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/sun/misc/Version.members/Version.members#0.0-1747531736924-java.trap.gz as it exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/String.members/String.members#51.0-1428695660000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Object.members/Object.members#51.0-1428695660000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/System.members/System.members#51.0-1428695664000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/CharSequence.members/CharSequence.members#51.0-1428695660000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Character.members/Character.members#51.0-1428695664000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Integer.members/Integer.members#51.0-1428695664000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/NumberFormatException.members/NumberFormatException.members#51.0-1428695662000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#51.0-1428695662000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/Serializable.members/Serializable.members#51.0-1428695660000-java.trap.gz as the trap-old exists
+[2025-05-18 01:33:18] [javac-extractor-51031] Javac init time: 0.8s
+[2025-05-18 01:33:18] [javac-extractor-51031] Javac attr time: 0.1s
+[2025-05-18 01:33:18] [javac-extractor-51031] Extractor time: 0.1s
+[2025-05-18 01:33:18] [javac-extractor-51031] Other time: 0.1s
+[2025-05-18 01:33:18] [javac-extractor-51031] Total time: 1.1s

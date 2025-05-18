@@ -1,0 +1,14 @@
+[2025-05-18 01:32:46] [javac-output-46736] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed": no such directory
+[2025-05-18 01:32:46] [javac-output-46736] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-18 01:32:46] [javac-output-46736] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:32:46] [javac-output-46736] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:32:46] [javac-output-46736] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-18 01:32:47] [javac-output-46736] /root/jdk8u/jdk/src/share/demo/jfc/TableExample/JDBCAdapter.java:134: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:47] [javac-output-46736]     //////////////////////////////////////////////////////////////////////////
+[2025-05-18 01:32:47] [javac-output-46736]     ^
+[2025-05-18 01:32:47] [javac-output-46736] /root/jdk8u/jdk/src/share/demo/jfc/TableExample/TableMap.java:42: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:47] [javac-output-46736] /**
+[2025-05-18 01:32:47] [javac-output-46736] ^
+[2025-05-18 01:32:47] [javac-output-46736] /root/jdk8u/jdk/src/share/demo/jfc/TableExample/TableExample.java:42: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:47] [javac-output-46736] /**
+[2025-05-18 01:32:47] [javac-output-46736] ^

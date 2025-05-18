@@ -1,0 +1,10 @@
+-g
+-encoding
+ascii
+-source
+6
+-target
+6
+-d
+linux_amd64_docs
+/root/jdk8u/hotspot/src/share/vm/prims/jvmtiGen.java

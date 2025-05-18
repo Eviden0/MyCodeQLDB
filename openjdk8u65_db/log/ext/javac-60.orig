@@ -1,0 +1,16 @@
+-g
+-source
+7
+-target
+7
+-bootclasspath
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/classes
+-g
+-bootclasspath
+/usr/lib/jvm/jdk1.7.0_80/jre/lib/rt.jar:/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/nashorn/nashorn_classes
+-implicit:none
+-sourcepath
+/root/jdk8u/nashorn/buildtools/nasgen/src:/root/jdk8u/jdk/src/share/classes/jdk/internal/org/objectweb/asm
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/nashorn/nasgen_classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/nashorn/nasgen_classes/_the.BUILD_NASGEN_batch.tmp

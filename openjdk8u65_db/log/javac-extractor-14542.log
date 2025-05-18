@@ -1,0 +1,58 @@
+[2025-05-18 01:19:13] [javac-extractor-14542] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/root/Openjdk8u65_db/log/ext/javac-3.args
+                                              user.dir=/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/hotspot/linux_amd64_compiler2/debug
+[2025-05-18 01:19:13] [javac-extractor-14542] Compilation name /root/Openjdk8u65_db/trap/java/diagnostics/diagnostic-3.trap.gz
+[2025-05-18 01:19:14] [javac-extractor-14542] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-05-18 01:19:14] [javac-extractor-14542] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-05-18 01:19:14] [javac-extractor-14542] Processing file /root/jdk8u/hotspot/src/share/vm/prims/jvmtiGen.java
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/javax/xml/parsers/ParserConfigurationException.members/ParserConfigurationException.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/org/xml/sax/SAXException.members/SAXException.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/org/xml/sax/SAXParseException.members/SAXParseException.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Object.members/Object.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/PrintStream.members/PrintStream.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/String.members/String.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/System.members/System.members#51.0-1428695664000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Cloneable.members/Cloneable.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/Serializable.members/Serializable.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/Vector.members/Vector.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/AbstractList.members/AbstractList.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/AbstractCollection.members/AbstractCollection.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/Collection.members/Collection.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Iterable.members/Iterable.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/List.members/List.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/RandomAccess.members/RandomAccess.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/Iterator.members/Iterator.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/ListIterator.members/ListIterator.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/Enumeration.members/Enumeration.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Class.members/Class.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/reflect/GenericDeclaration.members/GenericDeclaration.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/reflect/Type.members/Type.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/reflect/AnnotatedElement.members/AnnotatedElement.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/ClassNotFoundException.members/ClassNotFoundException.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/File.members/File.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/javax/xml/transform/Source.members/Source.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/FileOutputStream.members/FileOutputStream.members#51.0-1428695664000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/OutputStream.members/OutputStream.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/javax/xml/transform/Result.members/Result.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Throwable.members/Throwable.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Exception.members/Exception.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/IOException.members/IOException.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/javax/xml/validation/Schema.members/Schema.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/org/xml/sax/ErrorHandler.members/ErrorHandler.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/org/xml/sax/EntityResolver.members/EntityResolver.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/org/xml/sax/InputSource.members/InputSource.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/InputStream.members/InputStream.members#51.0-1428695660000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/IllegalArgumentException.members/IllegalArgumentException.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/ClassLoader.members/ClassLoader.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/Error.members/Error.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/lang/RuntimeException.members/RuntimeException.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/util/Properties.members/Properties.members#51.0-1428695664000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/PrintWriter.members/PrintWriter.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/Reader.members/Reader.members#51.0-1428695664000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/java/io/Writer.members/Writer.members#51.0-1428695662000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] [WARN] Not rewriting trap file for /root/Openjdk8u65_db/trap/java/classes/org/w3c/dom/TypeInfo.members/TypeInfo.members#51.0-1428695402000-java.trap.gz as it exists
+[2025-05-18 01:19:14] [javac-extractor-14542] Javac init time: 0.7s
+[2025-05-18 01:19:14] [javac-extractor-14542] Javac attr time: 0.1s
+[2025-05-18 01:19:14] [javac-extractor-14542] Extractor time: 0.1s
+[2025-05-18 01:19:14] [javac-extractor-14542] Other time: 0.1s
+[2025-05-18 01:19:14] [javac-extractor-14542] Total time: 1.0s

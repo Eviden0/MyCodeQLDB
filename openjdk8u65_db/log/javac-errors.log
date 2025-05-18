@@ -1,0 +1,7 @@
+[2025-05-18 01:19:29] [javac-extractor-15455] [ERROR] 1 errors were reported by javac.
+[2025-05-18 01:19:30] [javac-extractor-15520] [ERROR] 1 errors were reported by javac.
+[2025-05-18 01:19:31] [javac-extractor-15585] [ERROR] 1 errors were reported by javac.
+[2025-05-18 01:19:32] [javac-extractor-15650] [ERROR] 1 errors were reported by javac.
+[2025-05-18 01:21:42] [javac-extractor-26939] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2025-05-18 01:21:42] [javac-extractor-26939] [ERROR] Unknown method invocation of kind MEMBER_SELECT: InjectionPlan.buildInjectionPlan(instance.getClass(), WebServiceContext.class, false).inject(instance, context)
+[2025-05-18 01:21:50] [javac-extractor-26939] [ERROR] 1 errors were reported by javac.

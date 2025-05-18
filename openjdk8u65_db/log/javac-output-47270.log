@@ -1,0 +1,5 @@
+[2025-05-18 01:32:51] [javac-output-47270] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed": no such directory
+[2025-05-18 01:32:51] [javac-output-47270] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-18 01:32:51] [javac-output-47270] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:32:51] [javac-output-47270] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:32:51] [javac-output-47270] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.

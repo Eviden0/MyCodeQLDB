@@ -1,0 +1,286 @@
+[2025-05-18 01:20:40] [javac-output-21544] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed": no such directory
+[2025-05-18 01:20:40] [javac-output-21544] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/sunrsasign.jar": no such file or directory
+[2025-05-18 01:20:40] [javac-output-21544] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/classes": no such file or directory
+[2025-05-18 01:20:40] [javac-output-21544] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-18 01:20:40] [javac-output-21544] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:20:40] [javac-output-21544] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:20:40] [javac-output-21544] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-18 01:20:44] [javac-output-21544] /root/jdk8u/corba/src/share/classes/com/sun/corba/se/impl/io/IIOPInputStream.java:525: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:44] [javac-output-21544]     /////////////////
+[2025-05-18 01:20:44] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:73: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:133: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:783: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:843: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:1998: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2086: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2146: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2178: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2210: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2270: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2358: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2418: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2478: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2762: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:2962: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:3218: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:3306: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:3422: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:3538: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/OMGSystemException.java:3740: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:60: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:176: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:349: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:381: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:442: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:533: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/UtilSystemException.java:902: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/Any.java:137: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/Any.java:192: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/Any.java:633: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/PolicyOperations.java:28: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/IDLType.java:33: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/IDLTypeOperations.java:27: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/IRObjectOperations.java:28: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:57: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:63: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:69: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:75: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:82: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:89: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:96: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:103: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:110: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:117: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:124: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:131: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:138: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:145: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:152: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:159: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:166: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:173: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:180: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:187: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:194: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:201: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:208: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/DefinitionKind.java:215: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/CompletionStatus.java:61: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/org/omg/CORBA/CompletionStatus.java:67: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:68: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:1120: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:1905: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:2133: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:2193: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:2686: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:3436: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:3496: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:3668: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:6715: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:8370: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:8514: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:8602: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:8802: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers/com/sun/corba/se/impl/logging/ORBUtilSystemException.java:8834: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]     ///////////////////////////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]     ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/corba/src/share/classes/com/sun/corba/se/spi/monitoring/MonitoringManager.java:45: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544]   ///////////////////////////////////////
+[2025-05-18 01:20:45] [javac-output-21544]   ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ORBInitializer.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ORBInitializerOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ORBInitInfo.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ORBInitInfoOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/IOP/CodecFactory.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/IOP/CodecFactoryOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ClientRequestInterceptor.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ClientRequestInterceptorOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/InterceptorOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/Interceptor.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ServerRequestInterceptor.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/ServerRequestInterceptorOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/IORInterceptor.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/IORInterceptorOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/PolicyFactory.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^
+[2025-05-18 01:20:45] [javac-output-21544] /root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc/org/omg/PortableInterceptor/PolicyFactoryOperations.java:4: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:20:45] [javac-output-21544] /**
+[2025-05-18 01:20:45] [javac-output-21544] ^

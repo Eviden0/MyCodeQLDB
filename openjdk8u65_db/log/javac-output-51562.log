@@ -1,0 +1,9 @@
+[2025-05-18 01:33:24] [javac-output-51562] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:33:24] [javac-output-51562] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:33:24] [javac-output-51562] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-18 01:33:25] [javac-output-51562] warning: package javax.crypto does not exist
+[2025-05-18 01:33:25] [javac-output-51562] warning: package javax.crypto.interfaces does not exist
+[2025-05-18 01:33:25] [javac-output-51562] warning: package javax.crypto.spec does not exist
+[2025-05-18 01:33:25] [javac-output-51562] warning: package javax.tools.annotation does not exist
+[2025-05-18 01:33:25] [javac-output-51562] warning: package jdk.management.cmm does not exist
+[2025-05-18 01:33:25] [javac-output-51562] warning: package com.oracle.nio does not exist

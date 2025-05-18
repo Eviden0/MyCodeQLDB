@@ -1,0 +1,10 @@
+-XDignore.symbol.file=true
+-Xlint:all,-deprecation
+-Werror
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/langtools/src/share/classes:/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/langtools/gensrc:/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/langtools/genstubs
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/langtools/classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/langtools/classes/_the.BUILD_FULL_JAVAC_batch.tmp

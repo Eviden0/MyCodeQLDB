@@ -1,0 +1,10 @@
+-XDignore.symbol.file=true
+-Xlint:all,-deprecation,-unchecked,-rawtypes,-cast,-serial,-dep-ann,-static,-fallthrough
+-g
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/jaxp/src
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jaxp/classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jaxp/classes/_the.BUILD_JAXP_batch.tmp

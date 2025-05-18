@@ -1,0 +1,32 @@
+[2025-05-18 01:32:43] [javac-output-46413] warning: [path] bad path element "/usr/lib/jvm/jdk1.7.0_80/jre/lib/endorsed": no such directory
+[2025-05-18 01:32:43] [javac-output-46413] warning: [path] bad path element "/usr/java/packages/lib/ext": no such directory
+[2025-05-18 01:32:43] [javac-output-46413] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:32:43] [javac-output-46413] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2025-05-18 01:32:43] [javac-output-46413] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2025-05-18 01:32:44] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/Font2DTest.java:76: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:44] [javac-output-46413] /**
+[2025-05-18 01:32:44] [javac-output-46413] ^
+[2025-05-18 01:32:44] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/Font2DTest.java:829: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:44] [javac-output-46413]     /// Interface functions...
+[2025-05-18 01:32:44] [javac-output-46413]     ^
+[2025-05-18 01:32:44] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/Font2DTest.java:1044: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:44] [javac-output-46413]     /// Inner class definitions...
+[2025-05-18 01:32:44] [javac-output-46413]     ^
+[2025-05-18 01:32:44] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/FontPanel.java:85: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:44] [javac-output-46413] /**
+[2025-05-18 01:32:44] [javac-output-46413] ^
+[2025-05-18 01:32:44] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/FontPanel.java:136: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:44] [javac-output-46413]     private int g2Transform = NONE; /// ABP
+[2025-05-18 01:32:44] [javac-output-46413]                                     ^
+[2025-05-18 01:32:44] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/FontPanel.java:426: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:44] [javac-output-46413]     /// Inner class definition...
+[2025-05-18 01:32:44] [javac-output-46413]     ^
+[2025-05-18 01:32:45] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/FontPanel.java:1193: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:45] [javac-output-46413]         /// Listener Functions
+[2025-05-18 01:32:45] [javac-output-46413]         ^
+[2025-05-18 01:32:45] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/RangeMenu.java:56: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:45] [javac-output-46413] /**
+[2025-05-18 01:32:45] [javac-output-46413] ^
+[2025-05-18 01:32:45] [javac-output-46413] /root/jdk8u/jdk/src/share/demo/jfc/Font2DTest/Font2DTestApplet.java:51: warning: [dangling-doc-comments] documentation comment is not attached to any declaration
+[2025-05-18 01:32:45] [javac-output-46413] /**
+[2025-05-18 01:32:45] [javac-output-46413] ^

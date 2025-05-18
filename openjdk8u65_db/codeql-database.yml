@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: /root/jdk8u
+baselineLinesOfCode: 4668766
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  sha: 9670be874b0c77957429d4a87cd8ea02485d3806
+  cliVersion: 2.21.3
+  creationTime: 2025-05-18T01:28:49.690315869Z
+finalised: true

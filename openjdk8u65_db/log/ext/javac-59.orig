@@ -1,0 +1,14 @@
+-g
+-source
+7
+-target
+7
+-bootclasspath
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/classes
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/nashorn/src
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/nashorn/nashorn_classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/nashorn/nashorn_classes/_the.BUILD_NASHORN_batch.tmp

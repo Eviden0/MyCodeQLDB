@@ -1,0 +1,11 @@
+-cp
+/usr/lib/jvm/jdk1.7.0_80/lib/tools.jar
+-XDignore.symbol.file=true
+-Xlint:all,-deprecation,-unchecked,-serial,-fallthrough,-cast,-rawtypes,-static,-dep-ann
+-g
+-implicit:none
+-sourcepath
+/root/jdk8u/corba/src/share/classes:/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/gensrc:/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/logwrappers
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/classes
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/corba/classes/_the.BUILD_CORBA_batch.tmp

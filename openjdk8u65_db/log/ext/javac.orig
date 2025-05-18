@@ -1,0 +1,12 @@
+-XDignore.symbol.file=true
+-g
+-Xlint:all,-deprecation
+-Werror
+-g
+-Xprefer:source
+-implicit:none
+-sourcepath
+/root/jdk8u/langtools/make/tools:/root/jdk8u/langtools/src/share/classes
+-d
+/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/langtools/btclasses
+@/root/jdk8u/build/linux-x86_64-normal-server-slowdebug/langtools/btclasses/_the.BUILD_TOOLS_batch.tmp
